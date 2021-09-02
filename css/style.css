@@ -86,4 +86,32 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.ink-a-js {
+  background-color: firebrick;
+}
+
+.ink-b-js {
+  background-color: saddlebrown;
+}
+
+.ink-c-js {
+  background-color: sandybrown;
+}
+
+.ink-e-js {
+  background-color: tomato;
+}
+
+.ink-d-js {
+  background-color: olive;
+}
+
+.ink-e-js {
+  background-color: khaki;
+}
+
+.ink-f-js {
+  background-color: hotpink;
+}
 /*# sourceMappingURL=style.css.map */
