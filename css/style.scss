@@ -1,41 +1,75 @@
+@import 
+'_scroll-bar.scss',
+'_navigation.scss',
+'_mainColors.scss',
+'_button.scss',
+'_loader.scss',
+'_menu.scss',
+'_a.scss',
+'_b.scss',
+'_c.scss',
+'_d.scss',
+'_e.scss',
+'_f.scss';
+
 html {
-    overflow-x: hidden;
-    color: red !important;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: repeat(100vh);
+  scroll-snap-points-y: repeat(100vh);
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+@font-face {
+  font-family: handwrite;
+  src: url("police/Free Pen.otf") format("opentype");
 }
 
 body {
-    margin: 0;
-    height: 600vh;
+  margin: 0;
 }
 
 main {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
 }
+
+
 
 /*  BALISE SECTION PREMIER CONTENANT */
-section {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-}
+.ink-a,
+.ink-b,
+.ink-c,
+.ink-e,
+.ink-d,
+.ink-e,
+.ink-f {
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  scroll-snap-align: start;
+}
 /*  FIN BALISE SECTION PREMIER CONTENANT */
+
 /*  GSAP ACTIF DEUXIEME CONTENANT */
 .ink-a-js,
 .ink-b-js,
@@ -44,35 +78,23 @@ section {
 .ink-d-js,
 .ink-e-js,
 .ink-f-js {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
 }
+/*  FIN GSAP ACTIF DEUXIEME CONTENANT */
 
-.ink-a-js {
-    background-color: firebrick;
-}
-.ink-b-js {
-    background-color: saddlebrown;
-}
-.ink-c-js {
-    background-color: sandybrown;
-}
-.ink-e-js {
-    background-color: tomato;
-}
-.ink-d-js {
-    background-color: olive;
-}
-.ink-e-js {
-    background-color: khaki;
-}
-.ink-f-js {
-    background-color: hotpink;
-}
+
+
+
+
+
+
+
+

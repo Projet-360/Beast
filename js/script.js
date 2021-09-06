@@ -10,7 +10,7 @@ let tl = gsap.timeline({
   }
 });
 
-gsap.utils.toArray("div").forEach((section, i) => {
+gsap.utils.toArray(".ink-container-box").forEach((section, i) => {
   if (i) {
     tl.fromTo(section, {scale: 0}, {
       scale: 1,
