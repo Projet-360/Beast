@@ -32,9 +32,10 @@ gsap.utils.toArray(".ink-container-box").forEach((section, i) => {
 
 
 
-let main = document.getElementById('ink');
+let main = document.getElementById('main-ink');
+
 ScrollTrigger.create({
-  trigger: ".ink-a-js",
+  trigger: ".ink-a",
   start: "top",
   end: "bottom",
   toggleClass: {targets: main, className: "a"},
@@ -42,41 +43,41 @@ ScrollTrigger.create({
 });
 
 ScrollTrigger.create({
-  trigger: ".ink-b-js",
-  start: "top+=100%",
-  end: "bottom+=100%",
+  trigger: ".ink-b",
+  start: "top",
+  end: "bottom",
   toggleClass: {targets: main, className: "b"},
   //markers: true
 });
 
 ScrollTrigger.create({
-  trigger: ".ink-c-js",
-  start: "top+=200%",
-  end: "bottom+=200%",
+  trigger: ".ink-c",
+  start: "top",
+  end: "bottom",
   toggleClass: {targets: main, className: "c"},
   //markers: true
 });
 
 ScrollTrigger.create({
-  trigger: ".ink-d-js",
-  start: "top+=300%",
-  end: "bottom+=300%",
+  trigger: ".ink-d",
+  start: "top",
+  end: "bottom",
   toggleClass: {targets: main, className: "d"},
   //markers: true
 });
 
 ScrollTrigger.create({
-  trigger: ".ink-e-js",
-  start: "top+=400%",
-  end: "bottom+=400%",
+  trigger: ".ink-e",
+  start: "top",
+  end: "bottom",
   toggleClass: {targets: main, className: "e"},
   //markers: true
 });
 
 ScrollTrigger.create({
-  trigger: ".ink-f-js",
-  start: "top+=500%",
-  end: "bottom+=500%",
+  trigger: ".ink-f",
+  start: "top",
+  end: "bottom",
   toggleClass: {targets: main, className: "f"},
   //markers: true
 });
