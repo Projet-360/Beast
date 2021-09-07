@@ -2,10 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>
-    Inkorporation music
-  </title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description" content="Author: A.N. Author,
     Illustrator: P. Picture, Category: Books, Price: $17.99,
@@ -16,22 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="css/style.css" defer async rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  
-
-  <main role="main" id="main-ink" class="main-ink">
-
+  <!-- partial:index.partial.html -->
+  <main role="main" id="ink" class="ink">
     <div id="stars" class="stars">
       <div class="stars-background"></div>
       <div class="twinkling"></div>
       <div id="grained"></div>
     </div>
 
-    <section class="ink-a" id="a">
-      <div class="ink-a-js ink-container-box">
+    <section class="ink-a">
+      <div class="ink-box ink-a-js">
         <h1 class="ink-a-js-lefttop">#Inkorporation</h1>
         <h3 class="ink-a-js-leftbottom">#Fr, Toulouse</h3>
 
@@ -295,333 +290,48 @@
                 C2329,972,2316.4,983.9,2301,984z" />
             </g>
           </svg>
-        </div>       
+        </div>   
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="ink-b" id="b">
-      <div class="ink-b-js ink-container-box">
-        <div class="ink-b-js-text">
-          <h2>
-            Welcome<br> to my<br> world
-          </h2>
-          <p>
-            This space is dedicated to my musical news and my sales. It is also made to get in touch with you. I am an
-            eclectic composer. Don't be disturbed if you come across different artistic directions !
-          </p>
-          <a href="#c">Follow me</a>
-        </div>
+    <section id="b" class="ink-b">
+      <div class="ink-box ink-b-js">
+        O
       </div>
     </section>
 
-    <section class="ink-c" id="c">
-      <div class="ink-c-js ink-container-box">
-        <div class="ink-c-js-text">
-          <p>
-            <span>MY</span>
-            <span>FIRST EP</span>
-            <span>x</span>
-            <span>TO INTRODUCE</span>
-            <span>MY SELF</span>
-            <span>TO YOU</span>
-          </p>
-
-          <a href="#d">+</a>
-        </div>
-        <a class="ink-c-js-button" href="#">
-          Listen on platforms
-        </a>
+    <section class="ink-c">
+      <div class="ink-box ink-c-js">
+        O
       </div>
     </section>
 
-    <section class="ink-d" id="d">
-      <div class="ink-d-js ink-container-box">
-
-
-        <div class="ink-d-js-item">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 490">
-            <defs>
-              <mask id="planet">
-                <circle cx="250" cy="259" r="221" fill="#fff" />
-              </mask>
-              <mask id="depthmap-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-depthmap-mask.jpg" />
-              </mask>
-              <mask id="deep-depthmap-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-deep-depthmap-mask.jpg" />
-              </mask>
-              <mask id="highlight-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-highlight-mask.jpg" />
-              </mask>
-              <mask id="shadows-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-shadows-mask.jpg" />
-              </mask>
-              <mask id="atmosphere-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-atmosphere.jpg" />
-              </mask>
-
-              <filter id="deepDepthMap">
-                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-2 0 0 0 0 0 0 0 2" />
-                <feColorMatrix type="matrix"
-                  values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
-                <feConvolveMatrix order="5 5" preserveAlpha="true"
-                  kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0" />
-              </filter>
-
-              <filter id="depthMap">
-                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" />
-                <feColorMatrix type="matrix"
-                  values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
-              </filter>
-
-              <filter id="light">
-                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" />
-                <feColorMatrix type="matrix"
-                  values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
-              </filter>
-            </defs>
-
-            <g mask="url(#planet)" class="planet">
-              <image width="1490" height="444" class="texture" xlink:href="./icon/jupiter/jupiter-texture--loop.jpg"
-                x="0" y="37" />
-
-              <image width="1490" height="444" class="weather" xlink:href="./icon/jupiter/jupiter-weather--loop.jpg"
-                x="0" y="37" />
-
-              <g mask="url(#shadows-mask)" class="shadows">
-                <image width="1490" height="444" filter="url(#light)"
-                  xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37" />
-              </g>
-
-              <g mask="url(#highlight-mask)" class="highlight">
-                <image width="1490" height="444" filter="url(#light)"
-                  xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37" />
-              </g>
-
-              <g mask="url(#depthmap-mask)" class="depthmap">
-                <image width="1490" height="444" filter="url(#depthMap)"
-                  xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37" />
-              </g>
-
-              <g mask="url(#deep-depthmap-mask)" class="deep-depthmap">
-                <image width="1490" height="444" filter="url(#deepDepthMap)"
-                  xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37" />
-              </g>
-            </g>
-            <linearGradient id="atmosphere" gradientUnits="userSpaceOnUse" x1="198.04" y1="489.44" x2="301.73"
-              y2="1.63">
-              <stop offset="0" stop-color="#140c02" />
-              <stop offset=".2" stop-color="#0a0804" />
-              <stop offset=".88" stop-color="#ffdbb4" />
-              <stop offset="1" stop-color="#fff" />
-            </linearGradient>
-
-            <path fill="url(#atmosphere)" mask="url(#atmosphere-mask)" id="jupiter" d="M0 0h500v490H0z" />
-          </svg>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <canvas id="myCanvasJupiter"></canvas>
-
-          <div class="optionsContainer">
-
-            <bouton id="playMusic" type="button" value="1" class="botón"
-              onclick="this.classList.toggle('active'), this.value=2">
-              <div class="icono" width="200" height="200">
-                <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
-                <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
-              </div>
-              <div class="puntero"></div>
-            </bouton>
-
-          </div>
-
-          <a class="ink-d-js-link" href="#e">+</a>
-          <a class="ink-d-js-linksecond" href="#e">more from Jupiter</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div class="ink-d-js-item-box">
-            <h3 class="ink-d-js-item-box-title">Jupiter</h3>
-            <p class="ink-d-js-item-box-text">
-              This planet mean the exploration, a trip to the unknow, an expansion by the spiritual access. Jupiter
-              gives the permission to go beyond the rules, discover other cultures and thinkings. His determination,
-              optimism and spirituality lead him on long journeys.
-            </p>
-          </div>
-        </div>
-
-
+    <section class="ink-d">
+      <div class="ink-box ink-d-js">
+        O
       </div>
     </section>
 
-    <section class="ink-e" id="e">
-      <div class="ink-e-js ink-container-box">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 490">
-          <defs>
-            <mask id="planet">
-              <circle cx="250" cy="259" r="221" fill="#fff" />
-            </mask>
-            <mask id="depthmap-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-depthmap-mask.jpg" />
-            </mask>
-            <mask id="deep-depthmap-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-deep-depthmap-mask.jpg" />
-            </mask>
-            <mask id="highlight-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-highlight-mask.jpg" />
-            </mask>
-            <mask id="shadows-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-shadows-mask.jpg" />
-            </mask>
-            <mask id="mars-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-atmosphere.jpg" />
-            </mask>
-
-            <filter id="deepDepthMap">
-              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-2 0 0 0 0 0 0 0 2" />
-              <feColorMatrix type="matrix"
-                values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
-              <feConvolveMatrix order="5 5" preserveAlpha="true"
-                kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0" />
-            </filter>
-
-            <filter id="depthMap">
-              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" />
-              <feColorMatrix type="matrix"
-                values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
-            </filter>
-
-            <filter id="light">
-              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" />
-              <feColorMatrix type="matrix"
-                values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
-            </filter>
-          </defs>
-
-          <g mask="url(#planet)" class="planet">
-            <image width="1490" height="444" class="texture" xlink:href="./icon/mars/mars-texture--loop.jpg" x="0"
-              y="37" />
-
-            <image width="1490" height="444" class="weather" xlink:href="./icon/mars/mars-weather--loop.jpg" x="0"
-              y="37" />
-
-            <g mask="url(#depthmap-mask)" class="depthmap">
-              <image width="1490" height="444" filter="url(#depthMap)" xlink:href="./icon/mars/mars-texture--loop.jpg"
-                x="0" y="37" />
-            </g>
-
-            <g mask="url(#deep-depthmap-mask)" class="deep-depthmap" style="opacity: .3;">
-              <image width="1490" height="444" filter="url(#deepDepthMap)"
-                xlink:href="./icon/mars/mars-texture--loop.jpg" x="0" y="37" />
-            </g>
-          </g>
-
-          <linearGradient id="mars" gradientUnits="userSpaceOnUse" x1="198.04" y1="489.44" x2="301.73" y2="1.63">
-            <stop offset="0" stop-color="#140c02" />
-            <stop offset=".2" stop-color="#0a0804" />
-            <stop offset=".88" stop-color="#ff6c6c" />
-            <stop offset="1" stop-color="#fff" />
-          </linearGradient>
-
-          <path fill="url(#mars)" mask="url(#mars-mask)" id="mars" d="M0 0h500v490H0z" />
-        </svg>
-
-        <div class="ink-e-js-item">
-          <h3 class="ink-e-js-item-title">MARS</h3>
-
-          <p class="ink-e-js-item-text">
-            This planet represents the power of action. Its representative is the god of war "Arès". Blood flows in
-            abundance. In the body as well as on the field. Mars holds the hatred but also the primary side of our
-            survival. If he masters and manages these dark sides, he becomes a source of productive energy. The chosen
-            style is "hard electro music". It starts with violence but will end in the balance and control of it. The
-            fighting spirit, the competition, the leader, the warrior.
-          </p>
-
-          <a href="#d">+</a>
-        </div>
-
-
-
-
+    <section class="ink-e">
+      <div class="ink-box ink-e-js">
+        O
       </div>
     </section>
 
-    <section class="ink-f" id="f">
-      <div class="ink-f-js ink-container-box">
-
+    <section class="ink-f">
+      <div class="ink-box ink-f-js">
+        O
       </div>
     </section>
-
   </main>
+  <!-- partial -->
 
-  <script src="./js/libs/jquery.min.js"></script>
-  <script src="./js/libs/processing.min.js"></script>
-  <script src="./js/libs/grained.js"></script>
   <script src="./js/libs/gsap.min.js"></script>
   <script src="./js/libs/ScrollTrigger.min.js"></script>
   <script src="./js/libs/EasePack.min.js"></script>
+  <script src="./js/libs/grained.js"></script>
 
-  <!-- <script type="module" src="./js/libs/index.js"></script> -->
-  <script type="module" src="./js/index.js"></script> 
-
-
-
+  <script type="module" src="./js/index.js"></script>
 
 </body>
 
