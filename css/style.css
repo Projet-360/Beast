@@ -36,23 +36,6 @@ main {
 section {
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /*  FIN BALISE SECTION PREMIER CONTENANT */
@@ -67,6 +50,8 @@ section {
   height: 100vh;
   width: 100vw;
   position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   top: 0;
   bottom: 0;
   right: 0;
@@ -78,13 +63,13 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,7 +89,7 @@ section {
   top: 20px;
   margin: 0;
   -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+          transform: rotate(0deg);
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -114,7 +99,7 @@ section {
 .ink-a .ink-a-js .ink-a-js-lefttop::after {
   content: "Multidimensional composer";
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
   position: absolute;
   right: 20px;
   top: 189px;
@@ -130,7 +115,7 @@ section {
   bottom: 20px;
   margin: 0;
   -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+          transform: rotate(0deg);
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -140,7 +125,7 @@ section {
 .ink-a .ink-a-js .ink-a-js-leftbottom::after {
   content: "2021";
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
   position: absolute;
   right: -17px;
   top: 80px;
@@ -154,20 +139,20 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: stretch;
-  align-content: stretch;
+      align-content: stretch;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transform: translateY(-160px);
-  transform: translateY(-160px);
+          transform: translateY(-160px);
 }
 
 .ink-a .ink-a-js .ink-a-js-up #ink-a-js-up-svg {
@@ -179,131 +164,15 @@ section {
 }
 
 .ink-a .ink-a-js .ink-a-js-img {
-  width: 330px;
+  width: 300px;
   z-index: 10;
   position: absolute;
-}
-
-.ink-a .ink-a-js .ink-a-js-sell {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  position: absolute;
-  z-index: 20;
-  -webkit-transform: translateY(-172px);
-  transform: translateY(-172px);
-}
-
-.ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 15px;
-  background-color: unset;
-  padding: 10px 20px;
-  position: relative;
-  margin: 10px 115px;
-  font-weight: 500;
-  width: 250px;
-  height: 51px;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(to left, #67aeff, #153aa0);
-}
-
-.ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton:before {
-  content: "";
-  background: -webkit-gradient(linear, right top, left top, from(#67aeff), to(#153aa0));
-  background: linear-gradient(to left, #67aeff, #153aa0);
-  width: 0px;
-  height: 48px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  z-index: 0;
-}
-
-.ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton .ink-a-js-sell-texte-bouton-href {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 250px;
-  height: 51px;
-  margin-top: 22px;
-  font-family: 'Raleway', sans-serif;
-  position: absolute;
-  text-transform: uppercase;
-  color: #67aeff;
-  font-size: 20px;
-  font-weight: 300;
-  text-decoration: none;
-  display: block;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  z-index: 10;
-  letter-spacing: 0px;
-}
-
-.ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton:hover::before {
-  width: 248px;
-}
-
-.ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton:hover .ink-a-js-sell-texte-bouton-href {
-  color: white;
-  -webkit-filter: drop-shadow(5px 5px 4px #000000);
-  filter: drop-shadow(5px 5px 4px #000000);
-  letter-spacing: 3px;
 }
 
 .ink-a .ink-a-js .ink-a-js-link {
   font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   -webkit-transform: translate(0px, 36vh);
-  transform: translate(0px, 36vh);
+          transform: translate(0px, 36vh);
   text-transform: uppercase;
   z-index: 5;
   position: fixed;
@@ -312,18 +181,18 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: stretch;
-  align-content: stretch;
+      align-content: stretch;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ink-a .ink-a-js .ink-a-js-link .ink-a-js-link-a {
@@ -332,18 +201,18 @@ section {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: stretch;
-  align-content: stretch;
+      align-content: stretch;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-size: 40px;
   font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -366,7 +235,7 @@ section {
   width: 70px;
   height: 70px;
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
   color: black;
   font-size: 25px;
   border: 6px solid black;
@@ -393,18 +262,18 @@ section {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 100;
   position: absolute;
   width: 80px;
@@ -419,7 +288,7 @@ section {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   -webkit-transform: translate(0vw, 180px) rotate(0deg);
-  transform: translate(0vw, 180px) rotate(0deg);
+          transform: translate(0vw, 180px) rotate(0deg);
   font-weight: 400;
   letter-spacing: 2px;
   text-align: center;
@@ -451,7 +320,7 @@ section {
 .ink-a .ink-a-js-enter:hover {
   font-size: 30px;
   -webkit-transform: translate(0vw, 180px) rotate(45deg);
-  transform: translate(0vw, 180px) rotate(45deg);
+          transform: translate(0vw, 180px) rotate(45deg);
   border-color: #67aeff;
   color: #67aeff;
   background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
@@ -460,7 +329,7 @@ section {
 .ink-a .ink-a-js-enter:hover .ink-a-js-enter-span {
   font-size: 30px;
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+          transform: rotate(-90deg);
   background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -470,7 +339,7 @@ section {
 
 .ink-a .ink-a-js-enter:hover .ink-a-js-enter-span.two {
   -webkit-transform: rotate(0deg) !important;
-  transform: rotate(0deg) !important;
+          transform: rotate(0deg) !important;
 }
 
 .ink-a svg {
@@ -509,6 +378,147 @@ section {
   to {
     -webkit-filter: hue-rotate(-30deg);
   }
+}
+
+.ink-b-js {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.ink-b-js .ink-b-js-img {
+  width: auto;
+  height: 35%;
+  margin-top: 12%;
+}
+
+.ink-b-js .ink-b-js-sell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 20;
+  margin-top: 10vw;
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  background-color: unset;
+  padding: 10px 20px;
+  position: relative;
+  margin: 10px 115px;
+  font-weight: 500;
+  width: 73vw;
+  height: 51px;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #67aeff, #153aa0);
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton:before {
+  content: "";
+  background: -webkit-gradient(linear, right top, left top, from(#67aeff), to(#153aa0));
+  background: linear-gradient(to left, #67aeff, #153aa0);
+  width: 0px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 0;
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton .ink-b-js-sell-texte-bouton-href {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 51px;
+  margin-top: 22px;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  text-transform: uppercase;
+  color: #061a31;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 10;
+  letter-spacing: 0px;
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton:hover::before {
+  width: 248px;
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton:hover .ink-b-js-sell-texte-bouton-href {
+  color: white;
+  -webkit-filter: drop-shadow(5px 5px 4px #000000);
+          filter: drop-shadow(5px 5px 4px #000000);
+  letter-spacing: 3px;
 }
 
 .stars {
@@ -554,11 +564,9 @@ section {
   top: 0;
   left: 0;
   z-index: 10;
-  opacity: 0.2;
+  opacity: 0.3;
   -webkit-filter: sepia(1);
   filter: sepia(1);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 @keyframes move-twink-back {
