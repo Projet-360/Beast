@@ -1,3 +1,18 @@
+main.b  {
+    .ink-a-js-img {
+        opacity: 0 !important;
+        transition: opacity .5s ease;
+    }
+    .twinkling {
+        opacity: 0 !important;
+    }
+    #grained {
+        opacity: 0 !important;
+    }
+
+    background-color: #90a4db !important;
+}
+
 .ink-b-js {
     display: flex;
     flex-direction: column;
@@ -5,12 +20,10 @@
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 50px;
 
     .ink-b-js-img {
-        width: auto;
-        height: 35%;
-        margin-top: 12%;
+        max-height: 35vh;
     }
     
     .ink-b-js-sell {
@@ -22,8 +35,8 @@
         align-items: center;
         position: relative;
         z-index: 20;
-
-        margin-top: 10vw;
+        position: absolute;
+        bottom: 60px;
     
         .ink-b-js-sell-texte-bouton {
             display: flex;
@@ -40,7 +53,7 @@
             margin: 10px 115px;
     
             font-weight: 500;
-            width: 73vw;
+            width: 35vh;
             height: 51px;
             border-image-slice: 1;
             border-width: 2px;

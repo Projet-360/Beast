@@ -6,7 +6,7 @@ let tl = gsap.timeline({
   scrollTrigger: {
     start: 0,
     end: "bottom",
-    scrub: 1
+    scrub: 3
   }
 });
 
@@ -25,16 +25,24 @@ gsap.utils.toArray(".ink-box").forEach((section, i) => {
 
 
 
-
-
+gsap.utils.toArray(".ink-section").forEach((section, i) => {
+  ScrollTrigger.create({
+    trigger: section,
+    start: "top",
+    end: "bottom",
+    toggleClass: {targets: main, className: i},
+    markers: true
+  });  
+});
 
 
 
 
 
 // let main = document.getElementById('ink');
+
 // ScrollTrigger.create({
-//   trigger: ".ink-a-js",
+//   trigger: ".ink-a",
 //   start: "top",
 //   end: "bottom",
 //   toggleClass: {targets: main, className: "a"},
@@ -42,42 +50,41 @@ gsap.utils.toArray(".ink-box").forEach((section, i) => {
 // });
 
 // ScrollTrigger.create({
-//   trigger: ".ink-b-js",
-//   start: "top+=100%",
-//   end: "bottom+=100%",
+//   trigger: ".ink-b",
+//   start: "top",
+//   end: "bottom",
 //   toggleClass: {targets: main, className: "b"},
 //   //markers: true
 // });
 
 // ScrollTrigger.create({
-//   trigger: ".ink-c-js",
-//   start: "top+=200%",
-//   end: "bottom+=200%",
+//   trigger: ".ink-c",
+//   start: "top",
+//   end: "bottom",
 //   toggleClass: {targets: main, className: "c"},
 //   //markers: true
 // });
 
 // ScrollTrigger.create({
-//   trigger: ".ink-d-js",
-//   start: "top+=300%",
-//   end: "bottom+=300%",
+//   trigger: ".ink-d",
+//   start: "top",
+//   end: "bottom",
 //   toggleClass: {targets: main, className: "d"},
 //   //markers: true
 // });
 
 // ScrollTrigger.create({
-//   trigger: ".ink-e-js",
-//   start: "top+=400%",
-//   end: "bottom+=400%",
+//   trigger: ".ink-e",
+//   start: "top",
+//   end: "bottom",
 //   toggleClass: {targets: main, className: "e"},
 //   //markers: true
 // });
 
 // ScrollTrigger.create({
-//   trigger: ".ink-f-js",
-//   start: "top+=500%",
-//   end: "bottom+=500%",
+//   trigger: ".ink-f",
+//   start: "top",
+//   end: "bottom",
 //   toggleClass: {targets: main, className: "f"},
 //   //markers: true
 // });
-

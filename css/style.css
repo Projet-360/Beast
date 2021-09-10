@@ -380,6 +380,24 @@ section {
   }
 }
 
+main.b {
+  background-color: #90a4db !important;
+}
+
+main.b .ink-a-js-img {
+  opacity: 0 !important;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+main.b .twinkling {
+  opacity: 0 !important;
+}
+
+main.b #grained {
+  opacity: 0 !important;
+}
+
 .ink-b-js {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,13 +416,11 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
+  padding: 50px;
 }
 
 .ink-b-js .ink-b-js-img {
-  width: auto;
-  height: 35%;
-  margin-top: 12%;
+  max-height: 35vh;
 }
 
 .ink-b-js .ink-b-js-sell {
@@ -427,7 +443,8 @@ section {
           align-items: center;
   position: relative;
   z-index: 20;
-  margin-top: 10vw;
+  position: absolute;
+  bottom: 60px;
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton {
@@ -454,7 +471,7 @@ section {
   position: relative;
   margin: 10px 115px;
   font-weight: 500;
-  width: 73vw;
+  width: 35vh;
   height: 51px;
   border-image-slice: 1;
   border-width: 2px;
@@ -521,6 +538,54 @@ section {
   letter-spacing: 3px;
 }
 
+.ink-nav {
+  position: fixed;
+  bottom: 0px;
+  width: 250px;
+  height: 40px;
+  z-index: 1000;
+}
+
+.ink-nav .ink-nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ink-nav .ink-nav-ul .ink-nav-ul-li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.ink-nav .ink-nav-ul .ink-nav-ul-li a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .stars {
   z-index: 0;
 }
@@ -564,7 +629,7 @@ section {
   top: 0;
   left: 0;
   z-index: 10;
-  opacity: 0.3;
+  opacity: 0.2;
   -webkit-filter: sepia(1);
   filter: sepia(1);
 }

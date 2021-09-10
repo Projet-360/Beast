@@ -1,0 +1,34 @@
+.ink-nav {
+    position: fixed;
+    bottom: 0px;
+    width: 250px;
+    height: 40px;
+    z-index: 1000;
+
+    .ink-nav-ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        .ink-nav-ul-li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+
+            a {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                position: relative;
+                display: flex;
+            }
+        }
+    }
+}
