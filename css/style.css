@@ -133,6 +133,12 @@ section {
   font-weight: 100;
 }
 
+@media screen and (max-width: 760px) {
+  .ink-a .ink-a-js .ink-a-js-leftbottom {
+    display: none;
+  }
+}
+
 .ink-a .ink-a-js .ink-a-js-up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,8 +291,8 @@ section {
   color: white;
   border: 1px solid white;
   padding: 10px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-transform: translate(0vw, 180px) rotate(0deg);
           transform: translate(0vw, 180px) rotate(0deg);
   font-weight: 400;
@@ -301,8 +307,8 @@ section {
 }
 
 .ink-a .ink-a-js-enter .ink-a-js-enter-span {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   position: absolute;
   content: "enter";
   font-weight: 400;
@@ -380,22 +386,20 @@ section {
   }
 }
 
-main.b {
+.ink.b {
+  -webkit-transition: background-color .5s ease .5s;
+  transition: background-color .5s ease .5s;
   background-color: #90a4db !important;
 }
 
-main.b .ink-a-js-img {
+.ink.b .ink-a-js-img {
   opacity: 0 !important;
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
+  -webkit-transition: opacity .5s ease .8s;
+  transition: opacity .5s ease .8s;
 }
 
-main.b .twinkling {
-  opacity: 0 !important;
-}
-
-main.b #grained {
-  opacity: 0 !important;
+.ink.b .stars {
+  opacity: 0;
 }
 
 .ink-b-js {
@@ -420,7 +424,7 @@ main.b #grained {
 }
 
 .ink-b-js .ink-b-js-img {
-  max-height: 35vh;
+  max-height: 40vh;
 }
 
 .ink-b-js .ink-b-js-sell {
@@ -445,6 +449,32 @@ main.b #grained {
   z-index: 20;
   position: absolute;
   bottom: 60px;
+  width: 40vh;
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-icon {
+  margin-bottom: 20px;
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-icon .ink-b-js-sell-icon-title {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px 0px 5px 0px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-icon a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-icon a svg {
+  height: auto;
+  width: 30px;
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton {
@@ -471,7 +501,7 @@ main.b #grained {
   position: relative;
   margin: 10px 115px;
   font-weight: 500;
-  width: 35vh;
+  width: 100%;
   height: 51px;
   border-image-slice: 1;
   border-width: 2px;

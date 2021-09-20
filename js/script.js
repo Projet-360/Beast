@@ -1,3 +1,6 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+  
 gsap.registerPlugin(ScrollTrigger, EasePack);
 
 gsap.config({force3D: false});
@@ -25,66 +28,48 @@ gsap.utils.toArray(".ink-box").forEach((section, i) => {
 
 
 
-gsap.utils.toArray(".ink-section").forEach((section, i) => {
+  let main = document.getElementById('ink');
+
   ScrollTrigger.create({
-    trigger: section,
+    trigger: ".ink-a",
     start: "top",
     end: "bottom",
-    toggleClass: {targets: main, className: i},
-    markers: true
-  });  
+    toggleClass: {targets: main, className: "a"},  
+  });
+  
+  ScrollTrigger.create({
+    trigger: ".ink-b",
+    start: "top",
+    end: "bottom",
+    toggleClass: {targets: main, className: "b"},  
+  });
+  
+  ScrollTrigger.create({
+    trigger: ".ink-c",
+    start: "top",
+    end: "bottom",
+    toggleClass: {targets: main, className: "c"},  
+  });
+  
+  ScrollTrigger.create({
+    trigger: ".ink-d",
+    start: "top",
+    end: "bottom",
+    toggleClass: {targets: main, className: "d"},  
+  });
+  
+  ScrollTrigger.create({
+    trigger: ".ink-e",
+    start: "top",
+    end: "bottom",
+    toggleClass: {targets: main, className: "e"},  
+  });
+  
+  ScrollTrigger.create({
+    trigger: ".ink-f",
+    start: "top",
+    end: "bottom",
+    toggleClass: {targets: main, className: "f"},  
+  });
 });
 
-
-
-
-
-// let main = document.getElementById('ink');
-
-// ScrollTrigger.create({
-//   trigger: ".ink-a",
-//   start: "top",
-//   end: "bottom",
-//   toggleClass: {targets: main, className: "a"},
-//   //markers: true
-// });
-
-// ScrollTrigger.create({
-//   trigger: ".ink-b",
-//   start: "top",
-//   end: "bottom",
-//   toggleClass: {targets: main, className: "b"},
-//   //markers: true
-// });
-
-// ScrollTrigger.create({
-//   trigger: ".ink-c",
-//   start: "top",
-//   end: "bottom",
-//   toggleClass: {targets: main, className: "c"},
-//   //markers: true
-// });
-
-// ScrollTrigger.create({
-//   trigger: ".ink-d",
-//   start: "top",
-//   end: "bottom",
-//   toggleClass: {targets: main, className: "d"},
-//   //markers: true
-// });
-
-// ScrollTrigger.create({
-//   trigger: ".ink-e",
-//   start: "top",
-//   end: "bottom",
-//   toggleClass: {targets: main, className: "e"},
-//   //markers: true
-// });
-
-// ScrollTrigger.create({
-//   trigger: ".ink-f",
-//   start: "top",
-//   end: "bottom",
-//   toggleClass: {targets: main, className: "f"},
-//   //markers: true
-// });
