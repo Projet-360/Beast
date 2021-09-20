@@ -38,11 +38,19 @@
 
 
         .ink-b-js-sell-icon {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+
             margin-bottom: 20px;
 
             .ink-b-js-sell-icon-title {
                 text-align: center;
                 font-family: 'Raleway', sans-serif;
+                width: 100%;
                 margin: 0px 0px 5px 0px;
                 color: white;
                 font-size: 12px;
@@ -52,12 +60,9 @@
             a {
                 text-decoration: none;
                 color: white;
-                margin-right: 10px;
-                margin-left: 10px;
-
                 svg {
-                    height: auto;
-                    width: 30px;
+                    height: 6vw;
+                    width: 6vw;
                 }
             }
         }
@@ -122,7 +127,7 @@
     
             &:hover {
                 &::before {
-                    width: 248px;
+                    width: 100%;
                 }
     
                 .ink-b-js-sell-texte-bouton-href {

@@ -453,12 +453,30 @@ section {
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-icon .ink-b-js-sell-icon-title {
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
   margin: 0px 0px 5px 0px;
   color: white;
   font-size: 12px;
@@ -468,13 +486,11 @@ section {
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-icon a {
   text-decoration: none;
   color: white;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-icon a svg {
-  height: auto;
-  width: 30px;
+  height: 6vw;
+  width: 6vw;
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton {
@@ -558,7 +574,7 @@ section {
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton:hover::before {
-  width: 248px;
+  width: 100%;
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton:hover .ink-b-js-sell-texte-bouton-href {
@@ -624,7 +640,7 @@ section {
   background: url("../icon/stars.png") repeat top center;
   background-size: 1500px;
   z-index: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
