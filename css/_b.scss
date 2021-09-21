@@ -87,6 +87,10 @@
             border-image-slice: 1;
             border-width: 2px;
             border-image-source: linear-gradient(to left, #67aeff, #153aa0);
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
     
             &:before {
                 content: "";
