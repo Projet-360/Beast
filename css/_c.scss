@@ -112,6 +112,12 @@
             height: 40px;
             border: 2px solid white;
             color: white;
+
+            img {                
+                width: 25px;
+                height: 25px;
+                filter: invert(1);
+            }
         }
     }
 }

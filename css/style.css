@@ -425,6 +425,8 @@ section {
 
 .ink-b-js .ink-b-js-img {
   max-height: 40vh;
+  width: 100%;
+  height: auto;
 }
 
 .ink-b-js .ink-b-js-sell {
@@ -470,7 +472,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-icon .ink-b-js-sell-icon-title {
@@ -488,9 +490,11 @@ section {
   color: white;
 }
 
-.ink-b-js .ink-b-js-sell .ink-b-js-sell-icon a svg {
+.ink-b-js .ink-b-js-sell .ink-b-js-sell-icon a img {
   height: 6vw;
   width: 6vw;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-texte-bouton {
@@ -755,6 +759,13 @@ section {
   height: 40px;
   border: 2px solid white;
   color: white;
+}
+
+.ink-c-js .ink-c-js-container .ink-c-js-container-link img {
+  width: 25px;
+  height: 25px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .ink-nav {

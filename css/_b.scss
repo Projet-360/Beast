@@ -21,6 +21,8 @@
 
     .ink-b-js-img {
         max-height: 40vh;
+        width: 100%;
+        height: auto;
     }
     
     .ink-b-js-sell {
@@ -45,7 +47,7 @@
             align-content: center;
             align-items: center;
 
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             .ink-b-js-sell-icon-title {
                 text-align: center;
@@ -60,9 +62,10 @@
             a {
                 text-decoration: none;
                 color: white;
-                svg {
+                img {
                     height: 6vw;
                     width: 6vw;
+                    filter: invert(1);
                 }
             }
         }
