@@ -325,8 +325,8 @@ section {
 
 .ink-a .ink-a-js-enter:hover {
   font-size: 30px;
-  -webkit-transform: translate(0vw, 180px) rotate(45deg);
-          transform: translate(0vw, 180px) rotate(45deg);
+  -webkit-transform: translate(0vw, 150px) rotate(45deg);
+          transform: translate(0vw, 150px) rotate(45deg);
   border-color: #67aeff;
   color: #67aeff;
   background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
