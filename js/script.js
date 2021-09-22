@@ -21,8 +21,8 @@ gsap.utils.toArray(".ink-box").forEach((section, i) => {
     }, "<") // completely overlap with the previous tween
   }
   tl.to(section, {
-    scale: 200,
-    ease: "expoScale(1, 200)"
+    scale: 500,
+    ease: "expoScale(1, 500)"
   });
 });
 
