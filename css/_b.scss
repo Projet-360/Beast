@@ -20,7 +20,7 @@
     padding: 50px;
 
     .ink-b-js-img {
-        max-height: 40vh;
+        max-height: 35vh;
         max-width: 35vh;
         width: 100%;
         height: auto;
@@ -35,9 +35,8 @@
         align-items: center;
         position: relative;
         z-index: 20;
-        position: absolute;
-        bottom: 60px;
-        width: 40vh;
+        width: 35vh;
+        margin-top: 10vh;
 
 
         .ink-b-js-sell-icon {

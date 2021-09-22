@@ -293,8 +293,8 @@ section {
   padding: 10px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-transform: translate(0vw, 180px) rotate(0deg);
-          transform: translate(0vw, 180px) rotate(0deg);
+  -webkit-transform: translate(0vw, 150px) rotate(0deg);
+          transform: translate(0vw, 150px) rotate(0deg);
   font-weight: 400;
   letter-spacing: 2px;
   text-align: center;
@@ -424,7 +424,7 @@ section {
 }
 
 .ink-b-js .ink-b-js-img {
-  max-height: 40vh;
+  max-height: 35vh;
   max-width: 35vh;
   width: 100%;
   height: auto;
@@ -450,9 +450,8 @@ section {
           align-items: center;
   position: relative;
   z-index: 20;
-  position: absolute;
-  bottom: 60px;
-  width: 40vh;
+  width: 35vh;
+  margin-top: 10vh;
 }
 
 .ink-b-js .ink-b-js-sell .ink-b-js-sell-icon {
