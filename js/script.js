@@ -73,3 +73,12 @@ gsap.utils.toArray(".ink-box").forEach((section, i) => {
   });
 });
 
+
+//En dessous de 768, enlever les étoiles pour mobile
+const stars = document.getElementById('stars');
+document.addEventListener("DOMContentLoaded", function(event) { 
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    stars.remove();
+  }
+});
+
