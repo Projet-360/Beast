@@ -82,3 +82,9 @@
         background-position: 5000px 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .stars {
+        display: none;
+    }
+}
