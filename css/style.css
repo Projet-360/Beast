@@ -593,6 +593,13 @@ section {
   letter-spacing: 3px;
 }
 
+@media screen and (max-width: 768px) {
+  .ink-b-js-sell-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .ink-c-js {
   padding: 50px;
 }
