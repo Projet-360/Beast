@@ -1,5 +1,6 @@
 .ink-d-js {
     padding: 50px;
+    flex-direction: column !important;
 
     .ink-d-js-h1 {
         display: flex;
@@ -16,6 +17,7 @@
         color: black;
         margin: 0;
         height: 100px;
+        max-width: 40vh;
     }
     .ink-d-js-container {
         display: flex;
@@ -27,6 +29,7 @@
 
         height: calc(100% - 200px);
         width: 100%;
+        max-width: 40vh;
         //border: 1px solid black;
 
         .ink-d-js-container-item {
@@ -43,6 +46,7 @@
             img {
                 width: 100%;
                 height: auto;
+                max-width: 200px;
             }
 
             &:nth-of-type(1) {
@@ -78,6 +82,7 @@
     
         font-weight: 500;
         width: 100%;
+        max-width: 40vh;
         height: 50px;
         border-image-slice: 1;
         border-width: 2px;

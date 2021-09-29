@@ -1,12 +1,27 @@
+.ink.c  {
+    .ink-a-js-img {
+        opacity: 0 !important;
+        transition: opacity 1s ease .8s !important;
+    }
+    
+    .stars {
+        opacity: 0;
+    }
+
+    transition: background-color .5s ease !important;
+    background-color: #121829 !important;
+}
+
 .ink-c-js {
     padding: 50px;
+    flex-direction: column !important;
 
     .ink-c-js-title {
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         font-weight: 200;
         font-size: 30px;
-        color: black;
+        color: white;
         margin: 0;
     }
 
@@ -57,7 +72,7 @@
             font-family: 'Raleway', sans-serif;
             position: absolute;
             text-transform: uppercase;
-            color: black;
+            color: white;
             font-size: 20px;
             font-weight: 300;
             text-decoration: none;
@@ -73,7 +88,7 @@
         text-transform: uppercase;
         font-weight: 200;
         font-size: 30px;
-        color: black;
+        color: white;
         margin: 50px 0 0 0;
     }
 
@@ -88,6 +103,9 @@
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
+
+        max-width: 40vh;
+        width: 100%;
 
         &:first-child {
             margin-top: 0;

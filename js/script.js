@@ -38,44 +38,50 @@ document.addEventListener("DOMContentLoaded", function() {
   
     ScrollTrigger.create({
       trigger: ".ink-a",
-      start: "top",
+      start: "top-=1px",
       end: "bottom",
-      toggleClass: {targets: main, className: "a"},  
+      markers: true,
+      toggleClass: {targets: main, className: "a"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-b",
-      start: "top",
+      start: "top-=1px",
       end: "bottom",
-      toggleClass: {targets: main, className: "b"},  
+      markers: true,
+      toggleClass: {targets: main, className: "b"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-c",
-      start: "top",
+      start: "top-=1px",
       end: "bottom",
-      toggleClass: {targets: main, className: "c"},  
+      markers: true,
+      toggleClass: {targets: main, className: "c"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-d",
-      start: "top",
+      start: "top-=1px",
       end: "bottom",
-      toggleClass: {targets: main, className: "d"},  
+      markers: true,
+      toggleClass: {targets: main, className: "d"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-e",
-      start: "top",
+      start: "top-=1px",
       end: "bottom",
-      toggleClass: {targets: main, className: "e"},  
+      markers: true,
+      toggleClass: {targets: main, className: "e"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-f",
-      start: "top",
+      start: "top-=1px",
       end: "bottom",
-      toggleClass: {targets: main, className: "f"},  
+      markers: true,
+      toggleClass: {targets: main, className: "f"},        
     });
   });
   
