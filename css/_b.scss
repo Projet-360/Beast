@@ -25,9 +25,11 @@
     .ink-b-js-img {
         max-height: 40vh;
         max-width: 40vh;
-        width: 100% !important;
+        width: 100%;
         height: auto;
     }
+
+
 
     .ink-b-js-whale {
         position: absolute;
@@ -36,13 +38,11 @@
         transform: translate(-50%, -50%);
 
         svg {
-            width: 50px;
-            top: 0;
+            width: 40px;
             filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
         }
 
         .ink-b-js-whale-svg {
-
             fill: url("#whalegradient");
             transition: all 2s ease;
 
@@ -65,6 +65,13 @@
         max-width: 40vh;
         width: 100%;
         margin-top: 15vh;
+
+        .ink-b-js-sell-paragraphe {
+            text-align: justify;
+            font-family: 'Raleway', sans-serif;
+            color: black;
+            font-size: 14px;
+        }
 
         .ink-b-js-sell-icon {
             display: flex;

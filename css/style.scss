@@ -64,3 +64,42 @@ section {
 @import 'e';
 @import 'nav';
 @import 'stars';
+
+
+.ink-b-js-sell-paragraphe {
+    display: none;
+}
+
+@media screen and (min-width: 1450px) {
+    body {
+        background: black;
+    }
+
+    .ink-b-js-img {
+        position: absolute !important;
+        left: 10vw !important;
+        width: 30vw !important;
+        max-height: none !important;
+        max-width: none !important;
+    }
+
+    .ink-b-js-sell {
+        position: absolute !important;
+        right: 20vw !important;
+        margin-top: 0vh !important;
+    }
+
+    .ink-b-js-sell-paragraphe {
+        display: flex !important;
+    }
+
+    .ink-b-js {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-content: stretch !important;
+        align-items: center !important;
+    }
+  }
+
