@@ -71,33 +71,81 @@ section {
 }
 
 @media screen and (min-width: 1450px) {
-
-    .ink-b-js-img {
-        position: absolute !important;
-        left: 10vw !important;
-        width: 30vw !important;
-        height: 30vw !important;
-        max-height: none !important;
-        max-width: none !important;
+    .ink-a {
+        .ink-a-js-enter {
+            transform: translate(0vw, 12vw) rotate(0deg);
+            &:hover {
+                transform: translate(0vw, 12vw) rotate(45deg);
+            }
+        }
     }
+   
 
-    .ink-b-js-sell {
-        position: absolute !important;
-        right: 20vw !important;
-        margin-top: 0vh !important;
+    .ink-b {
+        .ink-b-js-img {
+            position: absolute !important;
+            left: 10vw !important;
+            width: 30vw !important;
+            height: 30vw !important;
+            max-height: none !important;
+            max-width: none !important;
+        }
+    
+        .ink-b-js-sell {
+            position: absolute !important;
+            right: 20vw !important;
+            margin-top: 0vh !important;
+        }
+    
+        .ink-b-js-sell-paragraphe {
+            display: flex !important;
+        }
+    
+        .ink-b-js {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            justify-content: center !important;
+            align-content: stretch !important;
+            align-items: center !important;
+        }
+
+        .ink-b-js-enter {
+            display: flex !important;
+            transform: translate(0vw, 12vw) rotate(0deg);
+            &:hover {
+                transform: translate(0vw, 12vw) rotate(45deg);
+            }
+        }
     }
+    
+    .ink-c {
+        .ink-c-js {
+            display: flex;
+            flex-direction: row !important;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
 
-    .ink-b-js-sell-paragraphe {
-        display: flex !important;
-    }
+            .ink-c-js-container {
+                height: 200px !important;
+                width: 20vw !important;
+                margin: 5vw !important;
+            }
 
-    .ink-b-js {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        justify-content: center !important;
-        align-content: stretch !important;
-        align-items: center !important;
+            .ink-c-js-social {
+                margin-top: 0 !important;
+            }
+        }
+
+        .ink-c-js-enter {
+            display: flex !important;
+            transform: translate(0vw, 12vw) rotate(0deg);
+            &:hover {
+                transform: translate(0vw, 12vw) rotate(45deg);
+            }
+        }
     }
   }
 
