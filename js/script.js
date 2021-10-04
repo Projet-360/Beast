@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ease: "expoScale(0.01, 1)" // or "expoScale(0.01, 1)" but that didn't seem quite as nice because it takes a while to become visible.
       }, "<") // completely overlap with the previous tween
     }
+    
     tl.to(section, {
       scale: 500,
       ease: "expoScale(1, 500)"

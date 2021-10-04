@@ -1,16 +1,8 @@
 .ink.b {
-    .ink-a-js-img {
-        opacity: 0 !important;
-        transition: opacity 0.5s ease 0.8s !important;
-    }
-
     .stars {
         opacity: 0 !important;
         transition: opacity 0.5s ease 0.4s !important;
     }
-
-    transition: background-color 0.5s ease 0.5s !important;
-    background-color: #90a4db !important;
 }
 
 .ink-b-js {
@@ -26,7 +18,50 @@
         max-height: 40vh;
         max-width: 40vh;
         width: 100%;
-        height: auto;
+        height: 100%;
+
+        background-image: url("../icon/cover/cover-X.webp");
+        background-size: cover;
+
+        @media screen and (min-width: 1920px) and (max-width: 2048px) {
+            background-image: url("../icon/cover/cover-X_tablet_2048.webp");
+            background-size: cover;
+        }
+
+        @media screen and (min-width: 1600px) and (max-width: 1920px) {
+            background-image: url("../icon/cover/cover-X_desktop_1920.webp");
+            background-size: cover;
+        }
+
+        @media screen and (min-width: 1280px) and (max-width: 1600px) {
+            background-image: url("../icon/cover/cover-X_desktop_1600.webp");
+            background-size: cover;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1280px) {
+            background-image: url("../icon/cover/cover-X_tablet_1280.webp");
+            background-size: cover;
+        }
+
+        @media screen and (min-width: 640px) and (max-width: 768px) {
+            background-image: url("../icon/cover/cover-X_tablet_768.webp");
+            background-size: cover;
+        }
+
+        @media screen and (min-width: 420px) and (max-width: 640px) {
+            background-image: url("../icon/cover/cover-X_phone_640.webp");
+            background-size: cover;
+        }
+        
+        @media screen and (min-width: 320px) and (max-width: 420px) {
+            background-image: url("../icon/cover/cover-X_phone_420.webp");
+            background-size: cover;
+        }
+
+        @media screen and (min-width: 420px) and (max-width: 320px) {
+            background-image: url("../icon/cover/cover-X_phone_320.webp");
+            background-size: cover;
+        }
     }
 
     .ink-b-js-whale {
@@ -68,7 +103,7 @@
         .ink-b-js-sell-paragraphe {
             text-align: justify;
             font-family: 'Raleway', sans-serif;
-            color: black;
+            color: white;
             font-size: 14px;
         }
 

@@ -71,14 +71,12 @@ section {
 }
 
 @media screen and (min-width: 1450px) {
-    body {
-        background: black;
-    }
 
     .ink-b-js-img {
         position: absolute !important;
         left: 10vw !important;
         width: 30vw !important;
+        height: 30vw !important;
         max-height: none !important;
         max-width: none !important;
     }
