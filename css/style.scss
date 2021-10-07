@@ -147,5 +147,15 @@ section {
             }
         }
     }
+
+    .ink-d {
+        .ink-d-js-enter {
+            display: flex !important;
+            transform: translate(0vw, 12vw) rotate(0deg);
+            &:hover {
+                transform: translate(0vw, 12vw) rotate(45deg);
+            }
+        }
+    }
   }
 
