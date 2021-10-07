@@ -79,7 +79,7 @@ section {
             }
         }
     }
-   
+
 
     .ink-b {
         .ink-b-js-img {
@@ -93,7 +93,7 @@ section {
     
         .ink-b-js-sell {
             position: absolute !important;
-            right: 20vw !important;
+            transform: translateX(300px) !important;
             margin-top: 0vh !important;
         }
     
@@ -141,10 +141,23 @@ section {
 
         .ink-c-js-enter {
             display: flex !important;
-            transform: translate(0vw, 12vw) rotate(0deg);
+            top: 36.5vw !important;
+            right: 50% !important;
+            transform: translate(50%, -50%) !important;
             &:hover {
-                transform: translate(0vw, 12vw) rotate(45deg);
+                transform: translate(50%, -50%) rotate(45deg);
             }
+        }
+
+        .ink-c-js-container-paragraphe {
+            display: flex !important;
+        }
+
+        .ink-c-js-svg {
+            width: 210px !important;
+            top: 50% !important;
+            right: 50% !important;
+            transform: translate(50%, -79%) !important;
         }
     }
 

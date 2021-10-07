@@ -14,7 +14,12 @@
 
 .ink-c-js {
     padding: 50px;
+    display: flex !important;
     flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    align-content: center !important;
+    align-items: center !important;
 
     .ink-c-js-title {
         font-family: 'Raleway', sans-serif;
@@ -94,7 +99,11 @@
 
     .ink-c-js-container {
         width: 100%;
-         
+
+        &:nth-of-type(2) {
+            margin-bottom: 10vh;
+        }
+
         .ink-c-js-container-social {
             display: flex;
             flex-direction: row;
@@ -138,6 +147,7 @@
             font-family: 'Raleway', sans-serif;
             color: black;
             text-align: justify;
+            display: none;
         }
     } 
     
@@ -291,5 +301,13 @@
                 }
             }
         }
+    }
+
+    .ink-c-js-svg {
+        position: absolute;
+        width: 210px;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-0%, -79%);
     }
 }
