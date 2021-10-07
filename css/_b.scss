@@ -97,6 +97,11 @@
         border-color: #24466d;
         display: none;
 
+        img {
+            width: 30px;
+            height: auto;
+        }
+
         .ink-b-js-enter-span {            
             transition: all 0.5s ease;
             position: absolute;
