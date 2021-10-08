@@ -121,12 +121,12 @@ section {
     
     .ink-c {
         .ink-c-js {
-            display: flex;
+            display: flex !important;
             flex-direction: row !important;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: stretch;
-            align-items: center;
+            flex-wrap: nowrap !important;
+            justify-content: center !important;
+            align-content: stretch !important;
+            align-items: center !important;
 
             .ink-c-js-container {
                 height: 200px !important;
@@ -145,7 +145,7 @@ section {
             right: 50% !important;
             transform: translate(50%, -50%) !important;
             &:hover {
-                transform: translate(50%, -50%) rotate(45deg);
+                transform: translate(50%, -50%) rotate(45deg) !important;
             }
         }
 
@@ -153,12 +153,6 @@ section {
             display: flex !important;
         }
 
-        .ink-c-js-svg {
-            width: 210px !important;
-            top: 50% !important;
-            right: 50% !important;
-            transform: translate(50%, -79%) !important;
-        }
     }
 
     .ink-d {

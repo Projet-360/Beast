@@ -14,11 +14,12 @@
 
 .ink-c-js {
     padding: 50px;
+
     display: flex !important;
     flex-direction: column !important;
     flex-wrap: nowrap !important;
     justify-content: space-between !important;
-    align-content: center !important;
+    align-content: stretch !important;
     align-items: center !important;
 
     .ink-c-js-title {
@@ -282,7 +283,7 @@
 
         &:hover {
             font-size: 19px;
-            transform: translate(0vw, 150px) rotate(45deg);
+            transform: translate(0vw, 150px) rotate(45deg) !important;
             border-color: #24466d;
             color: #67aeff;
             background-image: -webkit-linear-gradient(92deg, #031cbf, #5900ff);
@@ -305,9 +306,23 @@
 
     .ink-c-js-svg {
         position: absolute;
-        width: 210px;
+        width: 120px;
         top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-0%, -79%);
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        svg {
+            filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
+        }
+
+        .ink-b-js-whale-svg {
+            fill: url("#facegradient");
+            transition: all 2s ease;
+            color: #2f00ff;
+            stop {
+                -webkit-transition: 2s ease;
+                transition: 2s ease;
+            }
+        }
     }
 }
