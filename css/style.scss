@@ -80,7 +80,6 @@ section {
         }
     }
 
-
     .ink-b {
         .ink-b-js-img {
             position: absolute !important;
@@ -111,6 +110,7 @@ section {
         }
 
         .ink-b-js-enter {
+            font-size: 0px !important;
             display: flex !important;
             transform: translate(0vw, 12vw) rotate(0deg);
             &:hover {
@@ -131,7 +131,7 @@ section {
             .ink-c-js-container {
                 height: 200px !important;
                 width: 20vw !important;
-                margin: 5vw !important;
+                margin: 10vw !important;
             }
 
             .ink-c-js-social {
@@ -140,6 +140,7 @@ section {
         }
 
         .ink-c-js-enter {
+            font-size: 0px !important;
             display: flex !important;
             top: 36.5vw !important;
             right: 50% !important;
@@ -158,6 +159,7 @@ section {
     .ink-d {
         .ink-d-js-enter {
             display: flex !important;
+            font-size: 0px !important;
             transform: translate(0vw, 12vw) rotate(0deg);
             &:hover {
                 transform: translate(0vw, 12vw) rotate(45deg);
