@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let tl = gsap.timeline({
     scrollTrigger: {
       start: 0,
-      end: "bottom",
+      end: "bottom-=1px",
       scrub: 3
     }
   });
@@ -40,42 +40,42 @@ document.addEventListener("DOMContentLoaded", function() {
     ScrollTrigger.create({
       trigger: ".ink-a",
       start: "top-=1px",
-      end: "bottom",      
+      end: "bottom-=1px",      
       toggleClass: {targets: main, className: "a"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-b",
       start: "top-=1px",
-      end: "bottom",      
+      end: "bottom-=1px",      
       toggleClass: {targets: main, className: "b"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-c",
       start: "top-=1px",
-      end: "bottom",      
+      end: "bottom-=1px",      
       toggleClass: {targets: main, className: "c"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-d",
       start: "top-=1px",
-      end: "bottom",      
+      end: "bottom-=1px",      
       toggleClass: {targets: main, className: "d"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-e",
       start: "top-=1px",
-      end: "bottom",      
+      end: "bottom-=1px",      
       toggleClass: {targets: main, className: "e"},        
     });
     
     ScrollTrigger.create({
       trigger: ".ink-f",
       start: "top-=1px",
-      end: "bottom",      
+      end: "bottom-=1px",      
       toggleClass: {targets: main, className: "f"},        
     });
   });

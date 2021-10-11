@@ -1,3 +1,27 @@
+.ink.d  {
+    .ink-a-js-img-logo {
+        opacity: 0 !important;
+        transition: opacity 0s ease !important;
+    }
+
+    .ink-b-js-whale {
+        opacity: 0 !important;
+        transition: opacity 0s ease !important;
+    }
+
+    .ink-c-js-svg {
+        opacity: 0 !important;
+        transition: opacity 2s ease !important;
+    }
+    
+    .stars {
+        opacity: 1;
+        transition: opacity 0s ease !important;
+    }
+
+    transition: background-color .5s ease !important;
+}
+
 .ink-d-js {
     padding: 50px;
     flex-direction: column !important;
