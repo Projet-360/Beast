@@ -1,9 +1,10 @@
 .ink-nav {
     position: fixed;
     bottom: 0px;
-    width: 250px;
+    width: 200px;
     height: 20px;
     z-index: 1000;
+    transition: all .5s ease;
 
     .ink-nav-ul {
         display: flex;
@@ -21,6 +22,7 @@
             height: 10px;
             border-radius: 50%;
             background-color: white;
+            transition: all .5s ease;
 
             a {
                 width: 10px;
@@ -31,5 +33,65 @@
                 font-size: 0px;
             }
         }
+    }
+}
+
+.a {
+    .ink-nav {
+        bottom: -25px !important;
+    }
+}
+
+.b,.c,.d,.e,.f {
+    .ink-nav {
+        bottom: -0px !important;
+    }
+}
+
+.b {
+    .ink-nav-ul-li {
+        bottom: -0px !important;
+        background: white !important;
+
+        &:nth-of-type(2) {            
+            background: #210c76 !important;
+            transform: translateY(-10px) !important;
+        }        
+    }
+}
+
+.c {
+    .ink-nav-ul-li {
+        &:nth-of-type(3) {            
+            background: #210c76 !important;
+            transform: translateY(-10px) !important;
+        }        
+    }
+}
+
+.d {
+    .ink-nav-ul-li {
+        &:nth-of-type(4) {            
+            background: #210c76 !important;
+            transform: translateY(-10px) !important;
+        }        
+    }
+}
+
+.e {
+    .ink-nav-ul-li {
+        &:nth-of-type(5) {            
+            background: #210c76 !important;
+            transform: translateY(-10px) !important;
+        }        
+    }
+}
+
+.f {
+    .ink-nav-ul-li {
+        &:nth-of-type(6) {            
+            background: #210c76 !important;
+            transform: translateY(-10px) !important;
+        }        
     }
 }
