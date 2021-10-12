@@ -8,7 +8,7 @@
         opacity: 0;
     }
 
-    .ink-b-js-whale { 
+    .ink-b-js-svg { 
         opacity: 1;
         
     }
@@ -234,7 +234,7 @@
             }
 
             .ink-c-js-sell-texte-bouton-href {
-                color: rgb(4, 19, 68);
+                color: white;
                 filter: drop-shadow(5px 5px 4px #000000);
                 letter-spacing: 3px;
             }
@@ -331,16 +331,6 @@
 
         svg {
             filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
-        }
-
-        .ink-b-js-whale-svg {
-            fill: url("#doorgradient");
-            transition: all 2s ease;
-            color: #2f00ff;
-            stop {
-                -webkit-transition: 2s ease;
-                transition: 2s ease;
-            }
         }
     }
 }

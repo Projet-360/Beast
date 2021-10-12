@@ -4,7 +4,7 @@
         transition: opacity 0s ease !important;
     }
 
-    .ink-b-js-whale {
+    .ink-b-js-svg {
         opacity: 0 !important;
     }
 
@@ -221,6 +221,34 @@
                 &.two {
                     transform: rotate(0deg) !important;
                 }
+            }
+        }
+    }
+
+    .ink-d-js-svg {
+        position: absolute;
+        width: 150px;
+
+        svg {
+            filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
+        }
+
+        
+        .ink-d-js-svg-path {
+            fill: url("#facebottom") !important;
+            transition: all 2s ease !important;
+
+            stop {
+                -webkit-transition: 2s ease;
+                transition: 2s ease;
+            }
+        }
+        .ink-d-js-svg-path-jupiter {
+            fill: url("#facejupiter") !important;
+            transition: all 2s ease !important;
+            stop {
+                -webkit-transition: 2s ease;
+                transition: 2s ease;
             }
         }
     }
