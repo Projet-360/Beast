@@ -6,17 +6,15 @@
 
     .ink-b-js-whale {
         opacity: 0 !important;
-        transition: opacity 0s ease !important;
     }
 
     .ink-c-js-svg {
         opacity: 0 !important;
-        transition: opacity 2s ease !important;
     }
     
     .stars {
         opacity: 1;
-        transition: opacity 0s ease !important;
+        transition: opacity 2s ease !important;
     }
 
     transition: background-color .5s ease !important;

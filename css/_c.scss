@@ -8,6 +8,21 @@
         opacity: 0;
     }
 
+    .ink-b-js-whale { 
+        opacity: 1;
+        
+    }
+
+    .ink-c-js-svg { 
+        opacity: 1;
+        transition: opacity 2s ease !important;
+    }
+
+    .stars {
+        opacity: 0 !important;
+        transition: opacity 5s ease !important;
+    }
+
     transition: background-color .5s ease !important;
 }
 
@@ -26,7 +41,7 @@
         text-transform: uppercase;
         font-weight: 200;
         font-size: 30px;
-        color: #041344;
+        color: rgb(4, 19, 68);
         margin: 0;
     }
 
@@ -305,11 +320,14 @@
 
     .ink-c-js-svg {
         position: absolute;
-        width: 200px;
+        width: 330px;
         color: #ffffff;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+                
+        opacity: 1 !important;
+        transition: opacity 2s ease !important;
 
         svg {
             filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
