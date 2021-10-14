@@ -36,11 +36,12 @@
         text-transform: uppercase;
         font-weight: 200;
         font-size: 30px;
-        color: black;
+        color: white;
         margin: 0;
         height: 100px;
         max-width: 40vh;
     }
+
     .ink-d-js-container {
         display: flex;
         flex-direction: row;
@@ -51,7 +52,7 @@
 
         height: calc(100% - 200px);
         width: 100%;
-        max-width: 40vh;
+        max-width: 50vw;
         //border: 1px solid black;
 
         .ink-d-js-container-item {
@@ -137,7 +138,7 @@
             font-family: 'Raleway', sans-serif;
             position: absolute;
             text-transform: uppercase;
-            color: black;
+            color: white;
             font-size: 20px;
             font-weight: 300;
             text-decoration: none;
@@ -184,6 +185,7 @@
         img {
             width: 30px;
             height: auto;
+            filter: invert(1);
         }
 
         .ink-d-js-enter-span {            
