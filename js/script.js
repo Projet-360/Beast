@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollTrigger: {
       start: 0,
       end: "bottom-=1px",
-      scrub: 3
+      scrub: 4
     }
   });
   
