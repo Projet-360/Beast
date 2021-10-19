@@ -14,7 +14,7 @@ main {
     display: flex;
     position: relative;
     width: 100%;
-    
+
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -50,7 +50,7 @@ section {
     bottom: 0;
     right: 0;
     left: 0;
-    
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -76,6 +76,7 @@ section {
     .ink-a {
         .ink-a-js-enter {
             transform: translate(0vw, 12vw) rotate(0deg);
+
             &:hover {
                 transform: translate(0vw, 12vw) rotate(45deg);
             }
@@ -91,17 +92,17 @@ section {
             max-height: none !important;
             max-width: none !important;
         }
-    
+
         .ink-b-js-sell {
             position: absolute !important;
             transform: translateX(25vw) !important;
             margin-top: 0vh !important;
         }
-    
+
         .ink-b-js-sell-paragraphe {
             display: flex !important;
         }
-    
+
         .ink-b-js {
             display: flex !important;
             flex-direction: row !important;
@@ -111,16 +112,21 @@ section {
             align-items: center !important;
         }
 
+        .ink-b-js-sell-icon-ep {
+            display: block !important;
+        }
+
         .ink-b-js-enter {
             font-size: 0px !important;
             display: flex !important;
             transform: translate(0vw, 12vw) rotate(0deg);
+
             &:hover {
                 transform: translate(0vw, 12vw) rotate(45deg);
             }
         }
     }
-    
+
     .ink-c {
         .ink-c-js {
             display: flex !important;
@@ -137,7 +143,7 @@ section {
                 &:nth-of-type(1) {
                     transform: translateX(-10vw);
                 }
-                
+
                 &:nth-of-type(2) {
                     transform: translateX(10vw);
                     margin-bottom: 0 !important;
@@ -155,6 +161,7 @@ section {
             top: 36.5vw !important;
             right: 50% !important;
             transform: translate(50%, -50%) !important;
+
             &:hover {
                 transform: translate(50%, -50%) rotate(45deg) !important;
             }
@@ -171,10 +178,10 @@ section {
             display: flex !important;
             font-size: 0px !important;
             transform: translate(0vw, 12vw) rotate(0deg);
+
             &:hover {
                 transform: translate(0vw, 12vw) rotate(45deg);
             }
         }
     }
-  }
-
+}
