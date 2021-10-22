@@ -138,6 +138,10 @@
             bottom: 60px;
             border: 1px solid white;
             padding: 10px;
+
+            path {
+                fill: white;
+            }
         }
 
         @media screen and (max-width: 760px) {

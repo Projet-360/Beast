@@ -115,10 +115,6 @@
     .ink-c-js-container {
         width: 100%;
 
-        &:nth-of-type(2) {
-            margin-bottom: 10vh;
-        }
-
         .ink-c-js-container-social {
             display: flex;
             flex-direction: row;
@@ -127,7 +123,8 @@
             align-content: center;
             align-items: center;
     
-            margin: 15px 0px;  
+            margin: 15px 0px; 
+            margin-bottom: 23px; 
             width: 100%;
     
             &:first-child {
@@ -149,9 +146,8 @@
                 color: rgb(4, 19, 68);
                 font-size: 0px;
 
-                margin-top: 15px;
                 background-color: unset;
-                padding: 10px 20px;
+                padding: 10px 10px;
                 position: relative;
             
                 font-weight: 500;
@@ -181,7 +177,6 @@
 
                     .ink-c-js-sell-texte-bouton-href {
                         color: white;
-                        filter: drop-shadow(5px 5px 4px #000000);
                         letter-spacing: 3px;
                     }
                 }
@@ -271,7 +266,6 @@
 
             .ink-c-js-sell-texte-bouton-href {
                 color: white;
-                filter: drop-shadow(5px 5px 4px #000000);
                 letter-spacing: 3px;
             }
         }
@@ -356,7 +350,7 @@
 
     .ink-c-js-svg {
         position: absolute;
-        width: 270px;
+        width: 100px;
         color: #ffffff;
         top: 50%;
         left: 50%;

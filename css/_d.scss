@@ -1,4 +1,4 @@
-.ink.d  {
+.ink.d {
     .ink-a-js-img-logo {
         opacity: 0 !important;
         transition: opacity 0s ease !important;
@@ -11,7 +11,7 @@
     .ink-c-js-svg {
         opacity: 0 !important;
     }
-    
+
     .stars {
         opacity: 1;
         transition: opacity 2s ease !important;
@@ -40,6 +40,8 @@
         margin: 0;
         height: 100px;
         max-width: 40vh;
+        position: absolute;
+        top: 5vh;
     }
 
     .ink-d-js-container {
@@ -54,40 +56,6 @@
         width: 100%;
         max-width: 50vw;
         //border: 1px solid black;
-
-        .ink-d-js-container-item {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-
-            width: 48%;
-            height: 50%;
-
-            img {
-                width: 100%;
-                height: auto;
-                max-width: 200px;
-            }
-
-            &:nth-of-type(1) {
-                
-            }
-            
-            &:nth-of-type(2) {
-                
-            }
-
-            &:nth-of-type(3) {
-                
-            }
-            
-            &:nth-of-type(4) {
-                
-            }
-        }
     }
 
     .ink-d-js-more {
@@ -97,12 +65,13 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-    
-        margin-top: 50px;
+
         background-color: unset;
         padding: 10px 20px;
         position: relative;
-    
+        position: absolute;
+        bottom: 10vh;
+
         font-weight: 500;
         width: 100%;
         max-width: 40vh;
@@ -110,7 +79,7 @@
         border-image-slice: 1;
         border-width: 2px;
         border-image-source: linear-gradient(to left, #67aeff, #153aa0);
-    
+
         &:before {
             content: "";
             background: linear-gradient(to left, #67aeff, #153aa0);
@@ -122,7 +91,7 @@
             transition: all .5s ease;
             z-index: 0;
         }
-    
+
         .ink-d-js-more-href {
             display: flex;
             flex-direction: row;
@@ -130,11 +99,11 @@
             justify-content: center;
             align-content: center;
             align-items: center;
-    
+
             width: 250px;
             height: 51px;
             margin-top: 22px;
-    
+
             font-family: 'Raleway', sans-serif;
             position: absolute;
             text-transform: uppercase;
@@ -188,7 +157,7 @@
             filter: invert(1);
         }
 
-        .ink-d-js-enter-span {            
+        .ink-d-js-enter-span {
             transition: all 0.5s ease;
             position: absolute;
             content: "enter";
@@ -230,12 +199,13 @@
     .ink-d-js-svg {
         position: absolute;
         width: 150px;
+        z-index: 100;
 
         svg {
             filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
         }
 
-        
+
         .ink-d-js-svg-path {
             fill: url("#facebottom") !important;
             transition: all 2s ease !important;
@@ -245,14 +215,130 @@
                 transition: 2s ease;
             }
         }
-        
+
         .ink-d-js-svg-path-jupiter {
             fill: url("#facejupiter") !important;
             transition: all 2s ease !important;
+
+            stop {
+                -webkit-transition: 2s ease;
+                transition: 2s ease;
+            }
+        }
+
+        .ink-d-js-svg-path-saturn {
+            fill: url("#facesaturn") !important;
+            transition: all 2s ease !important;
+
+            stop {
+                -webkit-transition: 2s ease;
+                transition: 2s ease;
+            }
+        }
+
+        .ink-d-js-svg-path-meteor {
+            fill: url("#facemeteor") !important;
+            transition: all 2s ease !important;
+
             stop {
                 -webkit-transition: 2s ease;
                 transition: 2s ease;
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .ink-d-js-svg {
+            width: 100px;
+        }
+    }
+
+
+    .ink-d-js-shirt-left {
+        height: 80vh;
+        width: auto;
+        position: absolute;
+        transform: translateX(30vw);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        p {
+            transform: translateY(-12vh);
+            font-size: 26px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            color: red;
+        }
+    }
+
+    .ink-d-js-shirt-right {
+        height: 80vh;
+        width: auto;
+        position: absolute;
+        transform: translateX(-30vw);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        p {
+            transform: translateY(-12vh);
+            font-size: 26px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;    
+            color: red !important;        
+        }
+    }
+
+    @media screen and (max-width: 1500px) {
+        .ink-d-js-shirt-left {
+            height: 60vh;
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .ink-d-js-shirt-right {
+            height: 60vh;
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        .ink-d-js-shirt-left {
+            height: 40vh;
+            transform: translate(20vw, -14vh);
+
+            p {
+                font-size: 15px;
+                display: none;
+            }
+        }
+
+        .ink-d-js-shirt-right {
+            width: 80vw;
+            height: fit-content;
+            transform: translate(-31vw, 14vh);
+
+            p {
+                font-size: 15px;
+                display: none;
+            }
+        }
+    }
+    color: #24466d;
 }
