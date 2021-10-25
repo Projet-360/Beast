@@ -799,20 +799,8 @@
             <div class="ink-box ink-f-js">O </div>
         </section>
     </main>
-    <script src="./js/js.js"></script>
-    <script>
-        // Load GTM for everyone except PageSpeed Insight Tool 😉
-        if(navigator.userAgent.indexOf("Chrome-Lighthouse") == -1) { 
-        
-        // Google Tag Manager as Payload for all 3rd-party JS
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-XXXXXXXXXX');
-        // please replace GTM-XXXXXXXXXX with own GTM ID
-         }
-        </script>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
