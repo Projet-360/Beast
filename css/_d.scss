@@ -169,7 +169,7 @@
     }
 
 
-    .ink-d-js-shirt-left {
+    .ink-d-js-shirt-text {
         width: auto;
         position: absolute;
         transform: translateX(25vw) !important;
@@ -189,7 +189,7 @@
         }
     }
 
-    .ink-d-js-shirt-right {
+    .ink-d-js-shirt-img {
         height: 80vh;
         width: auto;
         position: absolute;
@@ -199,15 +199,6 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-        }
-
-        p {
-            font-size: 26px;
-            text-align: center;
-            font-weight: bold;
-            font-family: 'Raleway', sans-serif;
-            text-transform: uppercase;    
-            color: red !important;        
         }
     }
 
@@ -354,8 +345,26 @@
         }
     }
 
+
+    
+    @media screen and (max-width: 1450px) {
+        .ink-d-js-shirt-text {
+            transform: translateY(20vw) !important;
+        }
+        .ink-d-js-sell-icon {
+            display: none !important;
+        }
+        .ink-d-js-shirt-img {
+            transform: translate(0vw, -28vh);
+            height: 40vh !important;
+        }
+        .ink-d-js-sell-paragraphe {
+            display: none;
+        }
+    }
+
     @media screen and (max-width: 1500px) {
-        .ink-d-js-shirt-right {
+        .ink-d-js-shirt-img {
             height: 60vh;
 
             p {
