@@ -1,5 +1,5 @@
-main section:nth-of-type(1) {
-    & > div {
+.ink-a {
+    .ink-a-js{
         top: 0;
         z-index: 0;
 
@@ -262,7 +262,7 @@ main section:nth-of-type(1) {
 }
 
 @media screen and (min-width: 1450px) {
-    main section:nth-of-type(1) {
+    .ink-a {
         .ink-a-js-enter {
             transform: translate(0vw, 30vh) rotate(0deg);
 

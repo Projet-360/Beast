@@ -1,11 +1,11 @@
-main section:nth-of-type(2) {
+.ink-b {
     .stars {
         opacity: 0 !important;
         transition: opacity 0.5s ease 0.4s !important;
     }
 }
 
-main section:nth-of-type(2) > div {
+.ink-b-js {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -188,6 +188,12 @@ main section:nth-of-type(2) > div {
             }
         }
     }
+
+    .next-button {            
+        border-color: #031fbf !important;
+        background-image: -webkit-linear-gradient( 92deg, #031fbf, #ffffff) !important;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -201,7 +207,7 @@ main section:nth-of-type(2) > div {
 
 
 @media screen and (min-width: 1450px) {
-    main section:nth-of-type(2) {
+    .ink-b {
         .ink-b-js-img {
             position: absolute !important;
             left: 10vw !important;
@@ -221,7 +227,7 @@ main section:nth-of-type(2) > div {
             display: flex !important;
         }
 
-        & > div {
+        .ink-b-js {
             display: flex !important;
             flex-direction: row !important;
             flex-wrap: nowrap !important;

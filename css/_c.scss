@@ -26,7 +26,7 @@
     transition: background-color .5s ease !important;
 }
 
-main section:nth-of-type(3) > div {
+.ink-c-js{
     padding: 50px;
 
     display: flex !important;
@@ -279,11 +279,16 @@ main section:nth-of-type(3) > div {
             filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
         }
     }
+
+    .next-button {            
+        border-color: #031fbf !important;
+        background-image: -webkit-linear-gradient( 92deg, #031fbf, #ffffff) !important;
+    }
 }
 
 
 @media screen and (min-width: 1450px) {
-        main section:nth-of-type(3) > div {
+        .ink-c-js {
             display: flex !important;
             flex-direction: row !important;
             flex-wrap: nowrap !important;
@@ -292,7 +297,7 @@ main section:nth-of-type(3) > div {
             align-items: center !important;
 
             .ink-c-js-container {
-                height: 30vh !important;
+                height: 45vh !important;
                 width: 20vw !important;
 
                 &:nth-of-type(1) {
