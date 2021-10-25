@@ -1,63 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:wght@600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-html {
-    overflow-x: hidden;
-    color: red !important;
-}
-
-body {
-    margin: 0;
-    height: 600vh;
-}
-
-main {
-    display: flex;
-    position: relative;
-    width: 100%;
-
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-
-    overflow: hidden;
-    background-color: black;
-}
-
-/*  BALISE SECTION PREMIER CONTENANT */
-section {
-    //height: 83vh;
-    height: 100vh;
-    width: 100%;
-}
-
-/*  FIN BALISE SECTION PREMIER CONTENANT */
-/*  GSAP ACTIF DEUXIEME CONTENANT */
-.ink-a-js,
-.ink-b-js,
-.ink-c-js,
-.ink-e-js,
-.ink-d-js,
-.ink-e-js,
-.ink-f-js {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    box-sizing: border-box;
-
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
+@import 'Base';
 
 @import 'a';
 @import 'b';
@@ -68,124 +9,174 @@ section {
 @import 'stars';
 
 
-.ink-b-js-sell-paragraphe {
-    display: none;
+//BOUTTON SUIVANT
+.next-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    z-index: 100;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    font-size: 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Raleway";
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    transition: all 0.5s ease;
+    transform: translate(0vw, 30vh) rotate(0deg);
+
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #00c8ff;
+    background-image: -webkit-linear-gradient(92deg, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 20s infinite linear;
+    border-color: #67aeff;
+
+    span {
+        transition: all 0.5s ease;
+        position: absolute;
+        content: "enter";
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #00c8ff;
+        background-image: -webkit-linear-gradient(92deg, #ffffff, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 20s infinite linear;
+        border-color: #67aeff;
+    }
+
+    &:after {
+        content: "";
+        background-image: url(../icon/mouse.gif);
+        height: 55px;
+        width: 55px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+    }
+    
+    &:before {
+        content: "";
+        background-image: url(../icon/mouse.gif);
+        height: 55px;
+        width: 55px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        transition: all .5s ease;
+    }
+
+    &:hover {
+        font-size: 0px;
+        transform: translate(0vw, 30vh) rotate(45deg);
+        border-color: #67aeff;
+        color: #67aeff;
+        background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
+
+        span {
+            font-size: 0px;
+            transform: rotate(-90deg);
+            background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 20s infinite linear;
+            border-color: #67aeff;
+        }
+
+        &:before {
+            transform: rotate(-90deg);
+        }
+    }
 }
 
-@media screen and (min-width: 1450px) {
-    .ink-a {
-        .ink-a-js-enter {
-            transform: translate(0vw, 12vw) rotate(0deg);
 
-            &:hover {
-                transform: translate(0vw, 12vw) rotate(45deg);
-            }
-        }
+
+
+//BOUTTON ACTION
+.action-bouton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    margin-top: 15px;
+    background-color: unset;
+    padding: 10px 20px;
+    position: relative;
+
+    font-weight: 500;
+    width: 100%;
+    height: 51px;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #67aeff, #153aa0);
+
+    &:last-child {
+        margin-bottom: 0 !important;
     }
 
-    .ink-b {
-        .ink-b-js-img {
-            position: absolute !important;
-            left: 10vw !important;
-            width: 30vw !important;
-            height: 30vw !important;
-            max-height: none !important;
-            max-width: none !important;
-        }
-
-        .ink-b-js-sell {
-            position: absolute !important;
-            transform: translateX(25vw) !important;
-            margin-top: 0vh !important;
-        }
-
-        .ink-b-js-sell-paragraphe {
-            display: flex !important;
-        }
-
-        .ink-b-js {
-            display: flex !important;
-            flex-direction: row !important;
-            flex-wrap: nowrap !important;
-            justify-content: center !important;
-            align-content: stretch !important;
-            align-items: center !important;
-        }
-
-        .ink-b-js-sell-icon-ep {
-            display: block !important;
-        }
-
-        .ink-b-js-enter {
-            font-size: 0px !important;
-            display: flex !important;
-            transform: translate(0vw, 12vw) rotate(0deg);
-
-            &:hover {
-                transform: translate(0vw, 12vw) rotate(45deg);
-            }
-        }
+    &:before {
+        content: "";
+        background: linear-gradient(to left, #67aeff, #153aa0);
+        width: 0;
+        height: 48px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.5s ease;
+        z-index: 0;
     }
 
-    .ink-c {
-        .ink-c-js {
-            display: flex !important;
-            flex-direction: row !important;
-            flex-wrap: nowrap !important;
-            justify-content: center !important;
-            align-content: stretch !important;
-            align-items: center !important;
+    a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
 
-            .ink-c-js-container {
-                height: 30vh !important;
-                width: 20vw !important;
+        width: 250px;
+        height: 51px;
+        margin-top: 22px;
 
-                &:nth-of-type(1) {
-                    transform: translateX(-10vw);
-                }
-
-                &:nth-of-type(2) {
-                    transform: translateX(10vw);
-                    margin-bottom: 0 !important;
-                }
-            }
-
-            .ink-c-js-social {
-                margin-top: 0 !important;
-            }
-
-            .ink-c-js-svg {
-                width: 270px;
-            }
-        }
-
-        .ink-c-js-enter {
-            font-size: 0px !important;
-            display: flex !important;
-            top: 36.5vw !important;
-            right: 50% !important;
-            transform: translate(50%, -50%) !important;
-
-            &:hover {
-                transform: translate(50%, -50%) rotate(45deg) !important;
-            }
-        }
-
-        .ink-c-js-container-paragraphe {
-            display: flex !important;
-        }
-
+        font-family: 'Raleway', sans-serif;
+        position: absolute;
+        text-transform: uppercase;
+        color: #061a31;
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+        display: block;
+        transition: all 0.5s ease;
+        z-index: 10;
+        letter-spacing: 0;
     }
 
-    .ink-d {
-        .ink-d-js-enter {
-            display: flex !important;
-            font-size: 0px !important;
-            transform: translate(0vw, 12vw) rotate(0deg);
+    &:hover {
+        &::before {
+            width: 100%;
+        }
 
-            &:hover {
-                transform: translate(0vw, 12vw) rotate(45deg);
-            }
+        a {
+            color: white;
+            letter-spacing: 3px;
         }
     }
 }

@@ -20,9 +20,24 @@
     transition: background-color .5s ease !important;
 }
 
-.ink-d-js {
+main section:nth-of-type(4) > div {
     padding: 50px;
     flex-direction: column !important;
+
+    .action-bouton {
+        a {
+            color: white !important;
+        }
+    }
+
+    .next-button {
+        &:before {
+            filter: invert(1) !important;
+        }
+        &:after {
+            filter: invert(1) !important;
+        }
+    }
 
     .ink-d-js-container {
         display: flex;
@@ -35,80 +50,6 @@
         height: calc(100% - 200px);
         width: 100%;
         max-width: 50vw;
-        //border: 1px solid black;
-    }
-
-    .ink-d-js-enter {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-
-        z-index: 100;
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        font-size: 20px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: "Raleway";
-        color: white;
-        border: 1px solid white;
-        padding: 10px;
-        transition: all 0.5s ease;
-        transform: translate(0vw, 150px) rotate(0deg);
-
-        font-weight: 400;
-        letter-spacing: 2px;
-        text-align: center;
-        color: #24466d;
-        background-image: -webkit-linear-gradient(92deg, #ffffff, #ffffff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-animation: hue 20s infinite linear;
-        border-color: #24466d;
-        display: none;
-        
-        &:after {
-            content: "";
-            background-image: url(../icon/mouse.gif);
-            height: 55px;
-            width: 55px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            position: absolute;
-            filter: invert(1);
-        }
-        &:before {
-            content: "";
-            background-image: url(../icon/mouse.gif);
-            height: 55px;
-            width: 55px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            position: absolute;
-            transition: all .5s ease;
-            filter: invert(1);
-        }
-
-        &:hover {
-            &:before {
-                transform: rotate(-90deg);
-            }
-        }
-        
-
-        &:hover {
-            font-size: 19px;
-            transform: translate(0vw, 150px) rotate(45deg);
-            border-color: #24466d;
-            color: #67aeff;
-            background-image: -webkit-linear-gradient(92deg, #031cbf, #5900ff);
-        }
     }
 
     .ink-d-js-svg {
@@ -222,7 +163,7 @@
             color: white;
             font-size: 14px;
             text-transform: none !important;
-            font-weight: normal;
+            font-weight: 100;
         }
 
         .ink-d-js-sell-icon {

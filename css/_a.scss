@@ -1,5 +1,5 @@
-.ink-a {
-    .ink-a-js {
+main section:nth-of-type(1) {
+    & > div {
         top: 0;
         z-index: 0;
 
@@ -171,7 +171,7 @@
         border: 1px solid white;
         padding: 10px;
         transition: all 0.5s ease;
-        transform: translate(0vw, 150px) rotate(0deg);
+        transform: translate(0vw, 30vh) rotate(0deg);
 
         font-weight: 400;
         letter-spacing: 2px;
@@ -201,7 +201,7 @@
 
         &:hover {
             font-size: 30px;
-            transform: translate(0vw, 150px) rotate(45deg);
+            transform: translate(0vw, 30vh) rotate(45deg);
             border-color: #67aeff;
             color: #67aeff;
             background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
@@ -259,4 +259,16 @@
     to {
         -webkit-filter: hue-rotate(-30deg);
     }
+}
+
+@media screen and (min-width: 1450px) {
+    main section:nth-of-type(1) {
+        .ink-a-js-enter {
+            transform: translate(0vw, 30vh) rotate(0deg);
+
+            &:hover {
+                transform: translate(0vw, 30vh) rotate(45deg);
+            }
+        }
+    }    
 }
