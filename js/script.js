@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   let main = document.getElementById('ink');
-
   const sectionLetter = ['a', 'b', 'c', 'd', 'e', 'f'];
 
   sectionLetter.forEach(element => {

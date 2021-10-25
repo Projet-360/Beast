@@ -18,6 +18,7 @@
     align-content: center;
     align-items: center;
 
+    display: none;
     z-index: 100;
     position: absolute;
     width: 80px;
@@ -102,6 +103,9 @@
             transform: rotate(-90deg);
         }
     }
+    @media screen and (min-width: 1450px) {
+        display: flex !important;
+    }
 }
 
 //BOUTTON ACTION
@@ -175,5 +179,62 @@
             color: white;
             letter-spacing: 3px;
         }
+    }
+}
+
+.ink-c-js-container-social-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    height: 47px;
+    border: 2px solid white;
+    color: rgb(4, 19, 68);
+    font-size: 0px;
+
+    background-color: unset;
+    padding: 10px 10px;
+    position: relative;
+
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #67aeff, #153aa0);
+
+    &:before {
+        content: "";
+        background: linear-gradient(to left, #67aeff, #153aa0);
+        width: 0px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all .5s ease;
+        z-index: 0;
+    }
+                
+            
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+
+        .ink-c-js-sell-texte-bouton-href {
+            color: white;
+            letter-spacing: 3px;
+        }
+    }
+
+    img {                
+        width: 20px;
+        height: 20px;
+        filter: invert(1);
     }
 }
