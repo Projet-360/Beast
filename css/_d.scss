@@ -24,26 +24,6 @@
     padding: 50px;
     flex-direction: column !important;
 
-    .ink-d-js-h1 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-
-        font-family: 'Raleway', sans-serif;
-        text-transform: uppercase;
-        font-weight: 200;
-        font-size: 30px;
-        color: white;
-        margin: 0;
-        height: 100px;
-        max-width: 40vh;
-        position: absolute;
-        top: 5vh;
-    }
-
     .ink-d-js-container {
         display: flex;
         flex-direction: row;
@@ -56,66 +36,6 @@
         width: 100%;
         max-width: 50vw;
         //border: 1px solid black;
-    }
-
-    .ink-d-js-more {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-
-        background-color: unset;
-        padding: 10px 20px;
-        position: relative;
-        position: absolute;
-        bottom: 10vh;
-
-        font-weight: 500;
-        width: 100%;
-        max-width: 40vh;
-        height: 50px;
-        border-image-slice: 1;
-        border-width: 2px;
-        border-image-source: linear-gradient(to left, #67aeff, #153aa0);
-
-        &:before {
-            content: "";
-            background: linear-gradient(to left, #67aeff, #153aa0);
-            width: 0px;
-            height: 48px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transition: all .5s ease;
-            z-index: 0;
-        }
-
-        .ink-d-js-more-href {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-
-            width: 250px;
-            height: 51px;
-            margin-top: 22px;
-
-            font-family: 'Raleway', sans-serif;
-            position: absolute;
-            text-transform: uppercase;
-            color: white;
-            font-size: 20px;
-            font-weight: 300;
-            text-decoration: none;
-            display: block;
-            transition: all .5s ease;
-            z-index: 10;
-            letter-spacing: 0px;
-        }
     }
 
     .ink-d-js-enter {
@@ -150,28 +70,37 @@
         -webkit-animation: hue 20s infinite linear;
         border-color: #24466d;
         display: none;
-
-        img {
-            width: 30px;
-            height: auto;
+        
+        &:after {
+            content: "";
+            background-image: url(../icon/mouse.gif);
+            height: 55px;
+            width: 55px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            filter: invert(1);
+        }
+        &:before {
+            content: "";
+            background-image: url(../icon/mouse.gif);
+            height: 55px;
+            width: 55px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            transition: all .5s ease;
             filter: invert(1);
         }
 
-        .ink-d-js-enter-span {
-            transition: all 0.5s ease;
-            position: absolute;
-            content: "enter";
-            font-weight: 400;
-            font-size: 14px;
-            letter-spacing: 2px;
-            text-align: center;
-            color: #00c8ff;
-            background-image: -webkit-linear-gradient(92deg, #ffffff, #ffffff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-animation: hue 20s infinite linear;
-            border-color: #24466d;
+        &:hover {
+            &:before {
+                transform: rotate(-90deg);
+            }
         }
+        
 
         &:hover {
             font-size: 19px;
@@ -179,20 +108,6 @@
             border-color: #24466d;
             color: #67aeff;
             background-image: -webkit-linear-gradient(92deg, #031cbf, #5900ff);
-
-            .ink-d-js-enter-span {
-                font-size: 19px;
-                transform: rotate(-90deg);
-                background-image: -webkit-linear-gradient(92deg, #031cbf, #5900ff);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -webkit-animation: hue 20s infinite linear;
-                border-color: #24466d;
-
-                &.two {
-                    transform: rotate(0deg) !important;
-                }
-            }
         }
     }
 
@@ -255,11 +170,9 @@
 
 
     .ink-d-js-shirt-left {
-        height: 80vh;
         width: auto;
         position: absolute;
-        transform: translateX(30vw);
-
+        transform: translateX(25vw) !important;
         img {
             width: 100%;
             height: 100%;
@@ -267,7 +180,6 @@
         }
 
         p {
-            transform: translateY(-12vh);
             font-size: 26px;
             text-align: center;
             font-weight: bold;
@@ -281,7 +193,7 @@
         height: 80vh;
         width: auto;
         position: absolute;
-        transform: translateX(-30vw);
+        transform: translateX(-25vw);
 
         img {
             width: 100%;
@@ -290,7 +202,6 @@
         }
 
         p {
-            transform: translateY(-12vh);
             font-size: 26px;
             text-align: center;
             font-weight: bold;
@@ -300,15 +211,150 @@
         }
     }
 
+    
+    .ink-d-js-sell {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        position: relative;
+
+        z-index: 20;
+        max-width: 40vh;
+        width: 100%;
+
+        .ink-d-js-sell-paragraphe {
+            text-align: justify;
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            font-size: 14px;
+            text-transform: none !important;
+            font-weight: normal;
+        }
+
+        .ink-d-js-sell-icon {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            color: white !important;
+
+            margin-bottom: 10px;
+
+            .ink-d-js-sell-icon-ep {
+                font-size: 150px;
+                font-family: 'Playfair Display', serif;
+                color: white !important;
+                text-align: center;
+                width: 100%;
+                font-weight: 100;
+                margin: 0;
+                display: none;
+            }
+
+            .ink-d-js-sell-icon-title {
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                width: 100%;
+                margin: 0 0 5px;
+                color: white !important;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 0;
+                img {
+                    height: 6vw;
+                    width: 6vw;
+                    filter: invert(1);
+                }
+            }
+        }
+
+        .ink-d-js-sell-texte-bouton {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            margin-top: 15px;
+            background-color: unset;
+            padding: 10px 20px;
+            position: relative;
+            margin: 10px 115px;
+
+            font-weight: 500;
+            width: 100%;
+            height: 51px;
+            border-image-slice: 1;
+            border-width: 2px;
+            border-image-source: linear-gradient(to left, #67aeff, #153aa0);
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            &:before {
+                content: "";
+                background: linear-gradient(to left, #67aeff, #153aa0);
+                width: 0;
+                height: 48px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: all 0.5s ease;
+                z-index: 0;
+            }
+
+            .ink-d-js-sell-texte-bouton-href {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                width: 250px;
+                height: 51px;
+                margin-top: 22px;
+
+                font-family: 'Raleway', sans-serif;
+                position: absolute;
+                text-transform: uppercase;
+                color: white;
+                font-size: 20px;
+                font-weight: 300;
+                text-decoration: none;
+                display: block;
+                transition: all 0.5s ease;
+                z-index: 10;
+                letter-spacing: 0;
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+
+                .ink-d-js-sell-texte-bouton-href {
+                    color: white;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+
     @media screen and (max-width: 1500px) {
-        .ink-d-js-shirt-left {
-            height: 60vh;
-
-            p {
-                font-size: 15px;
-            }
-        }
-
         .ink-d-js-shirt-right {
             height: 60vh;
 
@@ -317,28 +363,4 @@
             }
         }
     }
-
-    @media screen and (max-width: 960px) {
-        .ink-d-js-shirt-left {
-            height: 40vh;
-            transform: translate(20vw, -14vh);
-
-            p {
-                font-size: 15px;
-                display: none;
-            }
-        }
-
-        .ink-d-js-shirt-right {
-            width: 80vw;
-            height: fit-content;
-            transform: translate(-31vw, 14vh);
-
-            p {
-                font-size: 15px;
-                display: none;
-            }
-        }
-    }
-    color: #24466d;
 }

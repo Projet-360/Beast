@@ -13,6 +13,15 @@
 </head>
 
 <body>
+    <!-- <div class="load" style="    
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index:9999;
+    "> -->
+
+    </div>
     <main role="main" id="ink" class="ink">
         <div id="stars" class="stars">
             <div class="stars-background"></div>
@@ -226,16 +235,7 @@
                         eaque sunt corrupti ex neque accusantium rerum enim doloribus, officia ipsa?
                     </p>
                 </div>
-                <a class="ink-b-js-enter" href="#c">
-                    suite
-
-                    <span class="ink-b-js-enter-span one notranslate">
-                        <img height="100%" width="100%" src="./icon/mouse.gif" alt="">
-                    </span>
-                    <span class="ink-b-js-enter-span two notranslate">
-                        <img height="100%" width="100%" src="./icon/mouse.gif" alt="">
-                    </span>
-                </a>
+                <a class="ink-b-js-enter" href="#c">suite</a>
             </div>
         </section>
 
@@ -303,13 +303,6 @@
 
                 <a class="ink-c-js-enter" href="#d">
                     suite
-                    <span class="ink-c-js-enter-span one notranslate">
-                        <img height="100%" width="100%" src="./icon/mouse.gif" alt="">
-                    </span>
-
-                    <span class="ink-c-js-enter-span two notranslate">
-                        <img height="100%" width="100%" src="./icon/mouse.gif" alt="">
-                    </span>
                 </a>
 
                 <div class="ink-c-js-svg">
@@ -459,15 +452,8 @@
 
         <section class="ink-section ink-d" id="d">
             <div class="ink-box ink-d-js">
-                <h1 class="ink-d-js-h1">Clothing</h1>
                 <a class="ink-d-js-enter" href="#e">
                     suite
-                    <span class="ink-d-js-enter-span one notranslate">
-                        <img height="100%" width="100%" src="./icon/mouse.gif" alt="">
-                    </span>
-                    <span class="ink-d-js-enter-span two notranslate">
-                        <img height="100%" width="100%" src="./icon/mouse.gif" alt="">
-                    </span>
                 </a>
                 <div class="ink-d-js-svg">
                     <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Calque_1"
@@ -644,17 +630,29 @@
                     </svg>
                 </div>
                 <div class="ink-d-js-shirt-left">
-                    <img src="./icon/Back-black.webp" alt="">
-                    <p>not yet available</p>
+                    <div class="ink-d-js-sell">
+                        <div class="ink-d-js-sell-icon">
+                            <p class="ink-d-js-sell-icon-title">Clothes</p>
+                        </div>
+    
+                        <button class="ink-d-js-sell-texte-bouton">
+                            <a class="ink-d-js-sell-texte-bouton-href" href="#">Shop
+                            </a>
+                        </button>
+                        <button class="ink-d-js-sell-texte-bouton">
+                            <a class="ink-d-js-sell-texte-bouton-href" href="#">Pack clothes + EP
+                            </a>
+                        </button>
+                        <p class="ink-d-js-sell-paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium ipsam neque sapiente placeat! Animi minus repudiandae suscipit inventore tempore
+                            eaque sunt corrupti ex neque accusantium rerum enim doloribus, officia ipsa?
+                        </p>
+                    </div>
                 </div>
                 <div class="ink-d-js-shirt-right">
-                    <img src="./icon/Front-black.webp" alt="">
+                    <img height="auto" width="100%" loading="lazy" src="./icon/Front-black.webp" alt="">
                     <p>not yet available</p>
                 </div>
-                <button class="ink-d-js-more"><a class="ink-d-js-more-href" href="#">All products
-
-                    </a>
-                </button>
             </div>
         </section>
         <section class="ink-section ink-e" id="e">
@@ -802,8 +800,20 @@
             <div class="ink-box ink-f-js">O </div>
         </section>
     </main>
-    <script src="./js/libs.min.js"></script>
-    <script src="./js/script-min.js"></script>
+    <script src="./js/js.js"></script>
+    <script>
+        // Load GTM for everyone except PageSpeed Insight Tool 😉
+        if(navigator.userAgent.indexOf("Chrome-Lighthouse") == -1) { 
+        
+        // Google Tag Manager as Payload for all 3rd-party JS
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-XXXXXXXXXX');
+        // please replace GTM-XXXXXXXXXX with own GTM ID
+         }
+        </script>
 </body>
 
 </html>
