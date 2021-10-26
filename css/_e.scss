@@ -202,7 +202,7 @@
         margin: 0;
         background-size: cover;
         transform: translate3d(-100%, 0, 0);
-        height: 45vh !important;
+        height: 38vh !important;
         width: 100% !important;
         max-width: 680px !important;
 
@@ -212,6 +212,10 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+
+        svg {
+            height: 100%;
+        }
     }
 
     .ink-e-js-carousel-container-item-text {
@@ -227,7 +231,7 @@
         display: flex !important;
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-content: center;
         align-items: center;
 
@@ -338,7 +342,7 @@
             height: 30vh;
         }
         .ink-e-js-carousel-container-item-logo {
-            height: 50vh;
+            height: 38vh !important;
         }
       }
 

@@ -89,7 +89,6 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
         }
     }
 
@@ -172,8 +171,14 @@
             display: none !important;
         }
         .ink-d-js-shirt-img {
-            transform: translate(0vw, 25vh);
-            height: 40vh !important;
+            transform: translate(1vw, 28vh);    
+            height: 43vh !important;
+            width: 43vh !important;;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
         .ink-d-js-sell-paragraphe {
             display: none;
@@ -200,8 +205,9 @@
             width: 90px;
         }
         .ink-d-js-shirt-img {
-            transform: translate(1.1vw, 19.2vh) !important;
-            height: 31vh !important;
+            transform: translate(2vw, 20vh) !important;
+            height: 30vh !important;
+            width: 30vh !important;
         }
     }
 
