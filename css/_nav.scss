@@ -5,6 +5,7 @@
     height: 20px;
     z-index: 1000;
     transition: all 3s ease;
+    bottom: -25px !important;
 
     .ink-nav-ul {
         display: flex;
@@ -18,25 +19,19 @@
         list-style: none;
 
         .ink-nav-ul-li {
-            width: 20px;
-            height: 4px;
+            width: 50px;
+            height: 5px;
             background-color: white;
             transition: all .5s ease;
 
             a {
-                width: 20px;
-                height: 4px;
+                width: 50px;
+                height: 5px;
                 position: relative;
                 display: flex;
                 font-size: 0px;
             }
         }
-    }
-}
-
-.a {
-    .ink-nav {
-        bottom: -25px !important;
     }
 }
 
@@ -51,7 +46,7 @@
         &:nth-of-type(2) {            
             background: #210c76 !important;            
             width: 25px;
-            height: 1px;
+            height: 2px;
             transform: rotate(90deg);
         }
     }
@@ -62,7 +57,7 @@
         &:nth-of-type(3) {            
             background: #210c76 !important;            
             width: 25px;
-            height: 1px;
+            height: 2px;
             transform: rotate(90deg);
         }
     }
@@ -73,7 +68,7 @@
         &:nth-of-type(4) {            
             background: #210c76 !important;            
             width: 25px;
-            height: 1px;
+            height: 2px;
             transform: rotate(90deg);
         }
     }
@@ -84,7 +79,7 @@
         &:nth-of-type(5) {            
             background: #210c76 !important;            
             width: 25px;
-            height: 1px;
+            height: 2px;
             transform: rotate(90deg);
         }
     }
@@ -95,7 +90,7 @@
         &:nth-of-type(6) {            
             background: #210c76 !important;            
             width: 25px;
-            height: 1px;
+            height: 2px;
             transform: rotate(90deg);
         }
     }
