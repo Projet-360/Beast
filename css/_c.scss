@@ -1,7 +1,7 @@
 .ink.c  {
     .ink-a-js-img {
         opacity: 0 !important;
-        transition: opacity 1s ease .8s !important;
+        transition: opacity 5s ease !important;
     }
     
     .stars {
@@ -10,7 +10,7 @@
 
     .ink-b-js-svg { 
         opacity: 1;
-        
+        transition: opacity 0s ease !important;        
     }
 
     .ink-c-js-svg { 
