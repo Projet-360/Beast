@@ -56,51 +56,6 @@
         position: absolute;
         width: 100px;
         z-index: 100;
-
-        svg {
-            filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
-        }
-
-
-        .ink-d-js-svg-path {
-            fill: url("#facebottom") !important;
-            transition: all 2s ease !important;
-
-            stop {
-                -webkit-transition: 2s ease;
-                transition: 2s ease;
-            }
-        }
-
-        .ink-d-js-svg-path-jupiter {
-            fill: url("#facejupiter") !important;
-            transition: all 2s ease !important;
-
-            stop {
-                -webkit-transition: 2s ease;
-                transition: 2s ease;
-            }
-        }
-
-        .ink-d-js-svg-path-saturn {
-            fill: url("#facesaturn") !important;
-            transition: all 2s ease !important;
-
-            stop {
-                -webkit-transition: 2s ease;
-                transition: 2s ease;
-            }
-        }
-
-        .ink-d-js-svg-path-meteor {
-            fill: url("#facemeteor") !important;
-            transition: all 2s ease !important;
-
-            stop {
-                -webkit-transition: 2s ease;
-                transition: 2s ease;
-            }
-        }
     }
 
     .ink-d-js-sell {

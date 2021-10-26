@@ -31,21 +31,6 @@
         left: 50%;
         transform: translate(-51%, -50%);
         transition: opacity 2s ease !important;
-
-        svg {
-            width: 40px;
-            filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
-        }
-
-        .ink-b-js-whale-svg {
-            fill: url("#whalegradient");
-            transition: all 2s ease;
-
-            stop {
-                -webkit-transition: 2s ease;
-                transition: 2s ease;
-            }
-        }
     }
 
     .ink-b-js-sell {
