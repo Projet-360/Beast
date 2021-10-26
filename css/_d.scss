@@ -54,8 +54,8 @@
 
     .ink-d-js-svg {
         position: absolute;
-        width: 100px;
-        z-index: 100;
+        width: 120px;
+        z-index: 9;
     }
 
     .ink-d-js-sell {
@@ -82,6 +82,7 @@
         height: 80vh;
         width: auto;
         position: absolute;
+        z-index: 10;
         transform: translateX(-25vw);
 
         img {
@@ -195,12 +196,11 @@
 
     @media screen and (max-width: 768px) {
         .ink-d-js-svg {
-            width: 80px;
+            width: 90px;
         }
         .ink-d-js-shirt-img {
-            -webkit-transform: translate(0vw, 25vh) !important;
-            transform: translate(0vw, 19vh) !important;
-            height: 30vh !important;
+            transform: translate(1.1vw, 19.2vh) !important;
+            height: 31vh !important;
         }
     }
 

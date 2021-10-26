@@ -31,6 +31,14 @@
         left: 50%;
         transform: translate(-51%, -50%);
         transition: opacity 2s ease !important;
+        width: 50px;
+        height: auto;
+
+        svg {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
     }
 
     .ink-b-js-sell {
