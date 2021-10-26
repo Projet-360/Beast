@@ -54,7 +54,7 @@
 
     .ink-d-js-svg {
         position: absolute;
-        width: 150px;
+        width: 100px;
         z-index: 100;
 
         svg {
@@ -102,13 +102,6 @@
             }
         }
     }
-
-    @media screen and (max-width: 768px) {
-        .ink-d-js-svg {
-            width: 100px;
-        }
-    }
-
 
     .ink-d-js-sell {
         width: auto;
@@ -222,11 +215,16 @@
             display: none !important;
         }
         .ink-d-js-shirt-img {
-            transform: translate(0vw, -28vh);
+            transform: translate(0vw, 25vh);
             height: 40vh !important;
         }
         .ink-d-js-sell-paragraphe {
             display: none;
+        }
+        .ink-d-js-sell {
+            top: 50px;
+            position: absolute !important;
+            transform: none !important;
         }
     }
 
@@ -239,4 +237,16 @@
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .ink-d-js-svg {
+            width: 80px;
+        }
+        .ink-d-js-shirt-img {
+            -webkit-transform: translate(0vw, 25vh) !important;
+            transform: translate(0vw, 19vh) !important;
+            height: 30vh !important;
+        }
+    }
+
 }

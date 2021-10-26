@@ -226,7 +226,7 @@
         color: black;
         display: flex !important;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-content: center;
         align-items: center;
@@ -240,7 +240,7 @@
         }
 
         .story__title {
-            margin-top: 0;
+            margin: 0 !important;
             font-size: 50px;
             font-family: 'Raleway', sans-serif;
             font-weight: 100;
@@ -264,7 +264,7 @@
         top: 50%;
         width: 60px;
 
-        transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(15%, -50%, 0);
         background: transparent;
 
         &:before {
@@ -277,7 +277,7 @@
         }
 
         &:hover {
-            transform: translate3d(-65%, -50%, 0);
+            transform: translate3d(0%, -50%, 0);
         }
     }
 
