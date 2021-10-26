@@ -1,3 +1,27 @@
+.ink.e {
+
+    .ink-a-js-img {
+        opacity: 0 !important;
+        transition: opacity 0s ease !important;
+    }
+
+    .ink-b-js-svg {
+        opacity: 0 !important;
+    }
+
+    .ink-c-js-svg {
+        opacity: 0 !important;
+    }
+
+    .stars {
+        opacity: 1;
+        transition: opacity 2s ease !important;
+    }
+
+    transition: background-color .5s ease !important;
+}
+
+
 .ink-e-js {
     display: flex;
     flex-direction: column;
