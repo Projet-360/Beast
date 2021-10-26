@@ -1,3 +1,9 @@
+.ink.a {
+    .ink-a-js-img {
+        opacity: 1 !important;
+    }
+}
+
 .ink-a {
     .ink-a-js{
         top: 0;
@@ -79,6 +85,7 @@
             width: 270px;
             z-index: 10;
             position: absolute;
+            opacity: 0;
         }
 
         .ink-a-js-link {

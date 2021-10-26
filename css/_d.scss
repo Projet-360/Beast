@@ -2,7 +2,7 @@
 
     .ink-a-js-img {
         opacity: 0 !important;
-        transition: opacity 0s ease !important;
+        transition: opacity 0s ease 0s !important;
     }
 
     .ink-b-js-svg {
@@ -171,9 +171,9 @@
             display: none !important;
         }
         .ink-d-js-shirt-img {
-            transform: translate(.5vw, 28vh);    
-            height: 43vh !important;
-            width: 43vh !important;;
+            transform: translate(.5vw, 29.5vh);    
+            height: 45vh !important;
+            width: 45vh !important;;
 
             img {
                 width: 100%;

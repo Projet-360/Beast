@@ -1,9 +1,13 @@
 .ink.b {
     .stars {
         opacity: 0 !important;
-        transition: opacity 0.5s ease 0.4s !important;
+        transition: opacity 3s ease !important;
+    }
+    .ink-a-js-img {
+        opacity: 1 !important;
     }
 }
+
 
 .ink-b-js {
     display: flex;
