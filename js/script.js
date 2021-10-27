@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         targets: main,
         className: element
       },
+      markers: true
     });
   });
 });

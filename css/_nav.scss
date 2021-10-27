@@ -1,10 +1,10 @@
 .ink-nav {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     width: 300px;
     height: 40px;
-    z-index: 1000;
-    transition: all 3s ease;
+    z-index: 10000;
+    transition: all 1.2s ease;
     bottom: -45px !important;
 
     .ink-nav-ul {
@@ -17,29 +17,52 @@
         padding: 0;
         margin: 0;
         list-style: none;
+        height: 100%;
 
         .ink-nav-ul-li {
             width: 50px;
-            height: 0px;
+            height: 0;
             background-color: white;
             border: 1px solid white;
-            box-sizing:border-box;
+            box-sizing: border-box;
             background: none;
-            transition: all .5s ease;
+            transition: width 1s ease , height 0s ease;
+
+            .ink-nav-ul-li-font {
+                width: 50px;
+                height: 33px;
+            }
 
             a {
                 width: 50px;
-                height: 25px;
+                height: 33px;
                 position: absolute;
                 display: flex;
-                font-size: 0px;
-                bottom: 15px;
+                font-size: 0;
+                bottom: 5px;
+            }
+
+            p {
+                position: absolute;
+                top: 0;
+                margin: 0;
+                font-family: 'Raleway';
+                opacity: 0;
+                font-size: 12px;
+                text-transform: uppercase;
+                transition: all 0.5s ease 0.2s;
+                letter-spacing: -2px;
+                width: fit-content;
             }
         }
     }
 }
 
-.b,.c,.d,.e,.f {
+.b,
+.c,
+.d,
+.e,
+.f {
     .ink-nav {
         bottom: -0px !important;
     }
@@ -47,33 +70,62 @@
 
 .b {
     .ink-nav-ul-li {
-        &:nth-of-type(2) {            
+        &:nth-of-type(2) {
             width: 20px;
             height: 35px;
             border: 2px solid #140942 !important;
             background: none;
+            transition: width 0.5s ease, height 0.2s ease;
+
+            .ink-nav-ul-li-font {
+
+                p {
+                    opacity: 1 !important;
+                    transform: translate(23px, 0px) !important;
+                    letter-spacing: 1px;
+                }
+            }
         }
     }
 }
 
 .c {
     .ink-nav-ul-li {
-        &:nth-of-type(3) {            
+        &:nth-of-type(3) {
             width: 20px;
             height: 35px;
             border: 2px solid #140942 !important;
             background: none;
+            transition: width 0.5s ease, height 0.2s ease;
+
+            .ink-nav-ul-li-font {
+                p {
+                    opacity: 1 !important;
+                    transform: translate(23px, 0px);
+                    letter-spacing: 1px;
+                }
+            }
         }
     }
 }
 
 .d {
     .ink-nav-ul-li {
-        &:nth-of-type(4) {            
+        &:nth-of-type(4) {
             width: 20px;
             height: 35px;
             border: 2px solid #9b85f1 !important;
             background: none;
+            transition: width 0.5s ease, height 0.2s ease;
+
+            .ink-nav-ul-li-font {
+                p {
+                    opacity: 1 !important;
+                    transform: translate(23px, 0px);
+                    letter-spacing: 1px;
+                    color: white !important;
+                }
+            }
 
         }
     }
@@ -81,22 +133,42 @@
 
 .e {
     .ink-nav-ul-li {
-        &:nth-of-type(5) {            
+        &:nth-of-type(5) {
             width: 20px;
             height: 35px;
             border: 2px solid #140942 !important;
             background: none;
+            transition: width 0.5s ease, height 0.2s ease;
+
+            .ink-nav-ul-li-font {
+
+                p {
+                    opacity: 1 !important;
+                    transform: translate(23px, 0px);
+                    letter-spacing: 1px;
+                }
+            }
         }
     }
 }
 
 .f {
     .ink-nav-ul-li {
-        &:nth-of-type(6) {            
+        &:nth-of-type(6) {
             width: 20px;
             height: 35px;
             border: 2px solid #140942 !important;
             background: none;
+            transition: width 0.5s ease, height 0.2s ease;
+
+            .ink-nav-ul-li-font {
+
+                p {
+                    opacity: 1 !important;
+                    transform: translate(23px, 0px);
+                    letter-spacing: 1px;
+                }
+            }
         }
     }
 }
