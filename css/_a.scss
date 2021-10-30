@@ -230,20 +230,6 @@
     }   
 }
 
-@-webkit-keyframes hue {
-    from {
-        -webkit-filter: hue-rotate(-30deg);
-    }
-
-    50% {
-        -webkit-filter: hue-rotate(30deg);
-    }
-
-    to {
-        -webkit-filter: hue-rotate(-30deg);
-    }
-}
-
 @media screen and (min-width: 1450px) {
     .ink-a {
         .ink-a-js-enter {
