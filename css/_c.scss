@@ -1,4 +1,4 @@
-.ink-c-js{
+.ink-c-js {
     padding: 50px;
 
     display: flex !important;
@@ -27,15 +27,14 @@
             justify-content: space-between;
             align-content: center;
             align-items: center;
-    
-            margin: 15px 0px; 
-            margin-bottom: 23px; 
+
+            margin: 15px 0 23px;
             width: 100%;
-    
+
             &:first-child {
                 margin-top: 0;
             }
-    
+
             .ink-c-js-container-social-link {
                 display: flex;
                 flex-direction: row;
@@ -43,38 +42,37 @@
                 justify-content: center;
                 align-content: center;
                 align-items: center;
-    
+
                 width: 40px;
                 height: 40px;
                 height: 47px;
                 border: 2px solid white;
                 color: rgb(4, 19, 68);
-                font-size: 0px;
+                font-size: 0;
 
                 background-color: unset;
-                padding: 10px 10px;
+                padding: 10px;
                 position: relative;
-            
+
                 font-weight: 500;
                 width: 20px;
                 height: 20px;
                 border-image-slice: 1;
                 border-width: 2px;
                 border-image-source: linear-gradient(to left, #67aeff, #153aa0);
-            
+
                 &:before {
                     content: "";
                     background: linear-gradient(to left, #67aeff, #153aa0);
-                    width: 0px;
+                    width: 0;
                     height: 100%;
                     position: absolute;
                     left: 0;
                     top: 0;
-                    transition: all .5s ease;
+                    transition: all 0.5s ease;
                     z-index: 0;
                 }
-                            
-                        
+
                 &:hover {
                     &::before {
                         width: 100%;
@@ -85,11 +83,21 @@
                         letter-spacing: 3px;
                     }
                 }
-    
-                img {                
+
+                #icon {
                     width: 20px;
                     height: 20px;
-                    filter: invert(1);
+                    z-index: 100;
+
+                    svg {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+
+                    path {
+                        fill: white !important;
+                    }
                 }
             }
         }
@@ -100,8 +108,7 @@
             text-align: justify;
             display: none;
         }
-    } 
-    
+    }
 
     .ink-c-js-svg {
         position: absolute;
@@ -110,7 +117,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-                
+
         opacity: 1 !important;
         transition: opacity 2s ease !important;
 
@@ -119,43 +126,42 @@
         }
     }
 
-    .next-button {            
+    .next-button {
         border-color: #031fbf !important;
-        background-image: -webkit-linear-gradient( 92deg, #031fbf, #ffffff) !important;
+        background-image: -webkit-linear-gradient(92deg, #031fbf, #ffffff) !important;
     }
 }
 
-
 @media screen and (min-width: 1450px) {
-        .ink-c-js {
-            display: flex !important;
-            flex-direction: row !important;
-            flex-wrap: nowrap !important;
-            justify-content: center !important;
-            align-content: stretch !important;
-            align-items: center !important;
+    .ink-c-js {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-content: stretch !important;
+        align-items: center !important;
 
-            .ink-c-js-container {
-                height: 45vh !important;
-                width: 20vw !important;
+        .ink-c-js-container {
+            height: 45vh !important;
+            width: 20vw !important;
 
-                &:nth-of-type(1) {
-                    transform: translateX(-10vw);
-                }
-
-                &:nth-of-type(2) {
-                    transform: translateX(10vw);
-                    margin-bottom: 0 !important;
-                }
+            &:nth-of-type(1) {
+                transform: translateX(-10vw);
             }
 
-            .ink-c-js-svg {
-                width: 270px;
+            &:nth-of-type(2) {
+                transform: translateX(10vw);
+                margin-bottom: 0 !important;
             }
         }
 
-        .ink-c-js-container-paragraphe {
-            display: flex !important;
+        .ink-c-js-svg {
+            width: 270px;
         }
+    }
+
+    .ink-c-js-container-paragraphe {
+        display: flex !important;
+    }
 
 }
