@@ -9,6 +9,33 @@
 @import 'stars';
 
 
+@mixin hue {
+    -webkit-animation: hue 12s infinite linear;
+    border-color: #0064cf;
+    border-style: solid;
+
+    &:before {
+        content: "";
+        background: linear-gradient(to left, #67aeff, #082e97);
+        transition: all 0.5s ease;
+
+    }
+
+    @-webkit-keyframes hue {
+        from {
+            -webkit-filter: hue-rotate(-40deg);
+        }
+
+        50% {
+            -webkit-filter: hue-rotate(40deg);
+        }
+
+        to {
+            -webkit-filter: hue-rotate(-40deg);
+        }
+    }
+}
+
 //BOUTTON SUIVANT
 .next-button {
     display: flex;
@@ -23,7 +50,7 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    font-size: 0px;
+    font-size: 0;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Raleway";
@@ -37,11 +64,8 @@
     letter-spacing: 2px;
     text-align: center;
 
-    color: #00c8ff;
-    
     -webkit-background-clip: text;
-    -webkit-animation: hue 12s infinite linear;
-    border-color: #67b1ff;
+    @include hue;
 
     span {
         transition: all 0.5s ease;
@@ -51,51 +75,40 @@
         font-size: 20px;
         letter-spacing: 2px;
         text-align: center;
-        color: #00c8ff;
-        
         -webkit-background-clip: text;
-        -webkit-animation: hue 12s infinite linear;
-        border-color: #67b1ff;
     }
 
     &:after {
         content: "";
-        background-image: url(../icon/mouse.svg);
-        height: 55px;
-        width: 55px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;        
-    }
-    
-    &:before {
-        content: "";
-        background-image: url(../icon/mouse.svg);
+        background-image: url("../icon/mouse.svg");
         height: 55px;
         width: 55px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
-        transition: opacity 0s linear, all .5s ease ;
+    }
+
+    &:before {
+        content: "";
+        background-image: url("../icon/mouse.svg");
+        height: 55px;
+        width: 55px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        transition: opacity 0s linear, all 0.5s ease;
         opacity: 0;
     }
 
     &:hover {
-        font-size: 0px;
+        font-size: 0;
         transform: translate(0vw, 30vh) rotate(45deg);
-        border-color: #67b1ff;
-        color: #67b1ff;
-        background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
 
         span {
-            font-size: 0px;
-            transform: rotate(-90deg);
-            background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
-            -webkit-background-clip: text;
-            -webkit-animation: hue 12s infinite linear;
-            border-color: #67b1ff;
+            font-size: 0;
+            transform: rotate(-90deg);          
         }
 
         &:before {
@@ -125,25 +138,16 @@
     font-weight: 500;
     width: 100%;
     height: 51px;
-    
-    
-    
-    -webkit-animation: hue 12s infinite linear;
-    border-color: #0064cf;
 
-    &:last-child {
-        margin-bottom: 0 !important;
-    }
-
+    @include hue;
+    
     &:before {
         content: "";
-        background: linear-gradient(to left, #67b1ff, #153aa0);
         width: 0;
-        height: 48px;
+        height: 48.5px;
         position: absolute;
         left: 0;
         top: 0;
-        transition: all 0.5s ease;
         z-index: 0;
     }
 
@@ -184,6 +188,7 @@
     }
 }
 
+//BOUTTON SOCIAL
 .ink-c-js-container-social-link {
     display: flex;
     flex-direction: row;
@@ -195,37 +200,30 @@
     width: 40px;
     height: 40px;
     height: 47px;
-    border: 2px solid white;
+    border: 1px solid white;
     color: rgb(4, 19, 68);
-    font-size: 0px;
+    font-size: 0;
 
     background-color: unset;
-    padding: 10px 10px;
+    padding: 10px;
     position: relative;
 
     font-weight: 500;
     width: 20px;
     height: 20px;
-    
-    color: #00c8ff;
-    
-    
-    -webkit-animation: hue 12s infinite linear;
-    border-color: #67b1ff;
+
+    @include hue;
 
     &:before {
         content: "";
-        background: linear-gradient(to left, #67b1ff, #153aa0);
-        width: 0px;
+        width: 0;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        transition: all .5s ease;
         z-index: 0;
     }
-                
-            
+
     &:hover {
         &::before {
             width: 100%;
@@ -237,23 +235,12 @@
         }
     }
 
-    img {                
+    img {
         width: 20px;
         height: 20px;
         filter: invert(1);
     }
 }
 
-@-webkit-keyframes hue {
-    from {
-        -webkit-filter: hue-rotate(-25deg);
-    }
 
-    50% {
-        -webkit-filter: hue-rotate(25deg);
-    }
 
-    to {
-        -webkit-filter: hue-rotate(-25deg);
-    }
-}

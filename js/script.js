@@ -71,3 +71,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     stars.remove();
   }
 });
+
+
+
+console.log(gsap)

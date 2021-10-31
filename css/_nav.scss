@@ -35,19 +35,19 @@
             .border {
                 width: 45px;
                 height: 2px;
-                border: 0px solid #ffffff;
-                background-color: #ffffff;
-                position: absolute;
-                transition: width .4s ease .6s, height 0.5s ease, all .5s ease;
-            }
+                border: 0 solid #000000;
+                background-color: #000000;
 
+                position: absolute;
+                transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
+            }
 
             .ink-nav-ul-li-font {
                 width: 70px;
                 height: 13px;
                 position: absolute;
                 right: -20px;
-                top: 0px;
+                top: 0;
                 transition: all 1s ease;
             }
 
@@ -58,7 +58,6 @@
                 justify-content: center;
                 align-content: center;
                 align-items: center;
-            
 
                 width: 40px;
                 height: 40px;
@@ -74,13 +73,13 @@
                 margin: 0;
                 font-family: 'Raleway';
                 opacity: 0;
-                color: #ffffff;
+                color: #000000;
                 font-size: 12px;
                 text-transform: uppercase;
-                transition: all .9s ease 0s;
+                transition: all 0.9s ease 0s;
                 width: fit-content;
                 transform: translateY(22px);
-                
+
             }
 
             &:hover {
@@ -107,20 +106,24 @@
     .ink-nav-ul-li {
         &:nth-of-type(2) {
             .border {
-            width: 20px;
-            height: 30px;
-            border: 2px solid #f8f0ff !important;
-            background: #ffffff00;
-            transition: width .4s ease .6s, height 0.5s ease, all .5s ease;
+                width: 20px;
+                height: 30px;
+                background: #ffffff00;
+                border: 2px solid white;
+                transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
+
+                -webkit-background-clip: text;
+                -webkit-animation: hue 12s infinite linear;
+                border-color: #7e67ff;
             }
 
             .ink-nav-ul-li-font {
-                transition: all .5s ease;
+                transition: all 0.5s ease;
                 right: -70px;
                 top: 0;
 
                 p {
-                    opacity: 1 !important;                    
+                    opacity: 1 !important;
                     transition: all 0.9s ease 0.9;
                 }
             }
@@ -132,19 +135,23 @@
     .ink-nav-ul-li {
         &:nth-of-type(3) {
             .border {
-            width: 20px;
-            height: 30px;
-            border: 2px solid #f8f0ff !important;
-            background: #ffffff00;
-            transition: width .4s ease .6s, height 0.5s ease, all .5s ease;
+                width: 20px;
+                height: 30px;
+                background: #ffffff00;
+                border: 2px solid white;
+                transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
+
+                -webkit-background-clip: text;
+                -webkit-animation: hue 12s infinite linear;
+                border-color: #7e67ff;
             }
 
             .ink-nav-ul-li-font {
-                transition: all .5s ease;
+                transition: all 0.5s ease;
                 right: -70px;
                 top: 0;
                 p {
-                    opacity: 1 !important;                    
+                    opacity: 1 !important;
                     transition: all 0.8s ease 0.8s;
                 }
             }
@@ -158,18 +165,21 @@
             .border {
                 width: 20px;
                 height: 30px;
-                border: 2px solid #f8f0ff !important;
                 background: #ffffff00;
-                transition: width .4s ease .6s, height 0.5s ease, all .5s ease;
-                }
-    
+                border: 2px solid white;
+                transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
+
+                -webkit-background-clip: text;
+                -webkit-animation: hue 12s infinite linear;
+                border-color: #7e67ff;
+            }
 
             .ink-nav-ul-li-font {
-                transition: all .5s ease;
+                transition: all 0.5s ease;
                 right: -70px;
                 top: 0;
                 p {
-                    opacity: 1 !important;                    
+                    opacity: 1 !important;
                     transition: all 0.8s ease 0.8s;
                     color: white !important;
                 }
@@ -183,20 +193,24 @@
     .ink-nav-ul-li {
         &:nth-of-type(5) {
             .border {
-            width: 20px;
-            height: 30px;
-            border: 2px solid #f8f0ff !important;
-            background: #ffffff00;
-            transition: width .4s ease .6s, height 0.5s ease, all .5s ease;
+                width: 20px;
+                height: 30px;
+                background: #ffffff00;
+                border: 2px solid white;
+                transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
+
+                -webkit-background-clip: text;
+                -webkit-animation: hue 12s infinite linear;
+                border-color: #7e67ff;
             }
 
             .ink-nav-ul-li-font {
-                transition: all .5s ease;
+                transition: all 0.5s ease;
                 right: -70px;
                 top: 0;
 
                 p {
-                    opacity: 1 !important;                    
+                    opacity: 1 !important;
                     transition: all 0.8s ease 0.8s;
                 }
             }
@@ -208,20 +222,24 @@
     .ink-nav-ul-li {
         &:nth-of-type(6) {
             .border {
-            width: 20px;
-            height: 30px;
-            border: 2px solid #f8f0ff !important;
-            background: #ffffff00;
-            transition: width .4s ease .6s, height 0.5s ease, all .5s ease;
+                width: 20px;
+                height: 30px;
+                background: #ffffff00;
+                border: 2px solid white;
+                transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
+
+                -webkit-background-clip: text;
+                -webkit-animation: hue 12s infinite linear;
+                border-color: #7e67ff;
             }
 
             .ink-nav-ul-li-font {
-                transition: all .5s ease;
+                transition: all 0.5s ease;
                 right: -70px;
                 top: 0;
 
                 p {
-                    opacity: 1 !important;                    
+                    opacity: 1 !important;
                     transition: all 0.8s ease 0.8s;
                 }
             }
