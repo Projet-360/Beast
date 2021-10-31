@@ -1,4 +1,4 @@
-import './import-svg.js'
+import './module/import-svg.js'
 
 var options = {
   "animate": true,
