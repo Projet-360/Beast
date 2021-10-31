@@ -196,7 +196,20 @@ fetch('../icon/brands/tiktok-brands.svg')
 });
 
 
-fetch('../icon/brands/tiktok-brands.svg')
+
+
+
+
+
+
+
+
+
+
+
+
+
+fetch('../icon/logo/x.svg')
   .then(response => response.text())
   .then(data => {
     let element = document.querySelectorAll('.ink-e-js-carousel-container-item-logo')[0];    
@@ -204,8 +217,29 @@ fetch('../icon/brands/tiktok-brands.svg')
     element.innerHTML =  `${data}`;
 });
 
+fetch('../icon/logo/modern.svg')
+  .then(response => response.text())
+  .then(data => {
+    let element = document.querySelectorAll('.ink-e-js-carousel-container-item-logo')[1];    
+    console.log(element)
+    element.innerHTML =  `${data}`;
+});
 
+fetch('../icon/logo/square.svg')
+  .then(response => response.text())
+  .then(data => {
+    let element = document.querySelectorAll('.ink-e-js-carousel-container-item-logo')[2];    
+    console.log(element)
+    element.innerHTML =  `${data}`;
+});
 
+fetch('../icon/logo/modern.svg')
+  .then(response => response.text())
+  .then(data => {
+    let element = document.querySelectorAll('.ink-e-js-carousel-container-item-logo')[3];    
+    console.log(element)
+    element.innerHTML =  `${data}`;
+});
 
 
 });
