@@ -7,6 +7,7 @@
 @import 'e';
 @import 'nav';
 @import 'stars';
+@import 'transition';
 
 
 @mixin hue {
@@ -198,10 +199,8 @@
     align-items: center;
 
     width: 40px;
-    height: 40px;
     height: 47px;
-    border: 1px solid white;
-    color: rgb(4, 19, 68);
+
     font-size: 0;
 
     background-color: unset;

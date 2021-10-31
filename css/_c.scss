@@ -1,31 +1,3 @@
-.ink.c  {
-    .ink-a-js-img {
-        opacity: 0 !important;
-        transition: opacity 1s ease .8s !important;
-    }
-
-    .stars {
-        opacity: 0 !important;
-    }
-
-    .ink-b-js-svg { 
-        opacity: 1 !important;
-        
-    }
-
-    .ink-c-js-svg { 
-        opacity: 1 !important;
-        transition: opacity 2s ease !important;
-    }
-
-    .stars {
-        opacity: 0 !important;
-        transition: opacity 5s ease !important;
-    }
-
-    transition: background-color .5s ease !important;
-}
-
 .ink-c-js{
     padding: 50px;
 
