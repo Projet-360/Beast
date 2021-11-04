@@ -51,7 +51,7 @@
         .ink-b-js-sell-paragraphe {
             text-align: justify;
             font-family: 'Raleway', sans-serif;
-            color: white;
+            color: #061a31;
             font-size: 14px;
             display: none;
         }
@@ -74,6 +74,7 @@
                 width: 100%;
                 font-weight: 100;
                 margin: 0;
+                margin-bottom: 20px;
                 display: none;
                 line-height: 140px;
             }
@@ -101,8 +102,8 @@
                     align-content: center;
                     align-items: center;
                     
-                    height: 3vw;
-                    width: 3vw;
+                    height: 35px;
+                    width: 35px;
                 }
             }
         }

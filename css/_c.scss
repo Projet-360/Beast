@@ -82,12 +82,18 @@
                         color: white;
                         letter-spacing: 3px;
                     }
+
+                    #icon {
+                        filter: invert(0);
+                    }
                 }
 
                 #icon {
                     width: 20px;
                     height: 20px;
                     z-index: 100;
+                    filter: invert(1);
+                    transition: filter .5s ease;
 
                     svg {
                         height: 100%;

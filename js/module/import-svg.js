@@ -31,6 +31,16 @@ const socialArr = [
     ],
     [
         "../icon/brands/instagram-brands.svg", ".ink-c-js-container-social-link:nth-of-type(4) #icon"
+    ],
+
+    [
+        "../icon/brands/spotify-brands.svg", ".ink-b-js-sell-icon a:nth-of-type(1) #icon"
+    ],
+    [
+        "../icon/brands/soundcloud-brands.svg", ".ink-b-js-sell-icon a:nth-of-type(2) #icon"
+    ],
+    [
+        "../icon/brands/youtube-brands.svg", ".ink-b-js-sell-icon a:nth-of-type(3) #icon"
     ]
 ]
 
