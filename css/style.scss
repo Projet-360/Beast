@@ -1,4 +1,5 @@
 @import 'Base';
+@import 'load';
 
 @import 'a';
 @import 'b';
@@ -9,6 +10,32 @@
 @import 'stars';
 @import 'transition';
 
+@mixin huebutton {
+    -webkit-animation: huebutton 6s infinite linear;
+    border-color: #0064cf;
+    border-style: solid;
+
+    &:before {
+        content: "";
+        background: linear-gradient(to left, #67aeff, #082e97);
+        transition: all 0.5s ease;
+
+    }
+
+    @-webkit-keyframes huebutton {
+        from {
+            -webkit-filter: hue-rotate(-15deg);
+        }
+
+        50% {
+            -webkit-filter: hue-rotate(40deg);
+        }
+
+        to {
+            -webkit-filter: hue-rotate(-15deg);
+        }
+    }
+}
 
 @mixin hue {
     -webkit-animation: hue 12s infinite linear;
@@ -66,7 +93,7 @@
     text-align: center;
 
     -webkit-background-clip: text;
-    @include hue;
+    @include huebutton;
 
     span {
         transition: all 0.5s ease;
@@ -169,7 +196,7 @@
         position: absolute;
         text-transform: uppercase;
         color: #061a31;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 300;
         text-decoration: none;
         display: block;

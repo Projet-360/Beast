@@ -1,0 +1,142 @@
+.load {
+    overflow-y:scroll;
+
+    #ink-a-js-ticket-svg {
+        margin-top: 40px;
+        filter: invert(1);
+        border: 3px solid rgb(0, 0, 0);
+        padding: 20px;
+    }
+
+    .load-container {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        height: 1450px;
+        width: 100vw;
+        margin-top: 50px;
+
+
+        svg {
+            width: 280px;
+            height: auto;
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            font-weight: 100;
+            margin-bottom: 0px;
+            margin-top: 20px;
+        }
+
+    
+        p {
+            color: white;
+            width: 280px;
+            text-align: justify;
+            margin-top: 20px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        button {
+            background: rgb(12, 137, 255);
+            color: white;
+            padding: 10px 30px;
+            margin: 15px 0px;
+            border: 1px solid white;
+            letter-spacing: 2px;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-family: 'Raleway', sans-serif;
+        }
+    
+        h4 {
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            font-size: 20px;
+            text-transform: uppercase;
+            
+        }
+
+        .load-container-box {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            width: 280px;
+
+            a {
+                text-transform: uppercase;
+                color: white;
+                font-family: 'Raleway', sans-serif;
+                text-decoration: none;
+                font-size: 11px;
+                height: 110px;
+                width: 80px;
+                text-align: center;
+
+                #icon {
+                    transform: translateY(7px);
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-flex-wrap: nowrap;
+                    -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                    -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    -webkit-align-content: center;
+                    -ms-flex-line-pack: center;
+                    align-content: center;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }    
+}

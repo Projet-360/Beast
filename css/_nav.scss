@@ -1,9 +1,36 @@
+@mixin huebutton {
+    -webkit-animation: huebutton 6s infinite linear;
+    border-color: #0064cf;
+    border-style: solid;
+
+    &:before {
+        content: "";
+        background: linear-gradient(to left, #67aeff, #082e97);
+        transition: all 0.5s ease;
+
+    }
+
+    @-webkit-keyframes huebutton {
+        from {
+            -webkit-filter: hue-rotate(-15deg);
+        }
+
+        50% {
+            -webkit-filter: hue-rotate(40deg);
+        }
+
+        to {
+            -webkit-filter: hue-rotate(-15deg);
+        }
+    }
+}
+
 .ink-nav {
     position: fixed;
     bottom: 0;
     width: 300px;
     height: 40px;
-    z-index: 10000;
+    z-index: 100;
     transition: all 1.2s ease;
     bottom: -45px !important;
 
@@ -116,7 +143,7 @@
                     transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
 
                     -webkit-background-clip: text;
-                    -webkit-animation: hue 12s infinite linear;
+                    -webkit-animation: huebutton 12s infinite linear;
                     border-color: #7e67ff;
                 }
 
