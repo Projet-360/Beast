@@ -1,23 +1,22 @@
-.ink.a {
+.ink.a  {
     .ink-a-js-img {
         opacity: 1 !important;
     }
 }
-
 .ink.b {
+    .ink-a-js-img {
+        opacity: 1 !important;
+    }
+
     .stars {
         opacity: 0 !important;
         transition: opacity 3s ease !important;
-    }
-    .ink-a-js-img {
-        opacity: 1 !important;
     }
 }
 
 .ink.c  {
     .ink-a-js-img {
-        opacity: 0 !important;
-        transition: opacity 1s ease .8s !important;
+        opacity: 1 !important;
     }
 
     .stars {
@@ -45,7 +44,7 @@
 .ink.d {
     .ink-a-js-img {
         opacity: 0 !important;
-        transition: none !important;
+        transition: opacity 0s ease 0s !important;
     }
 
     .ink-b-js-svg {

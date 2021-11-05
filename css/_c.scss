@@ -20,6 +20,16 @@
     .ink-c-js-container {
         width: 100%;
 
+        &:nth-last-of-type(2) {
+            margin-bottom: 5vh;
+        }
+
+        @media screen and (min-width: 1500px) {
+            &:nth-last-of-type(2) {
+                margin-bottom: 0vh !important;
+            }
+          }
+
         .ink-c-js-container-social {
             display: flex;
             flex-direction: row;
