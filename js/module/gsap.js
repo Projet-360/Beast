@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         start: 0,
         end: "bottom-=1px",
-        scrub: 4
+        scrub: 4,        
       }
     });
   
@@ -49,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ScrollTrigger.create({
         trigger: ".ink-" + element,
         start: "top-=1px",
-        end: "bottom-=1px",
+        end: "bottom-=0px",
+        markers: true,
         toggleClass: {
           targets: main,
           className: element

@@ -1,3 +1,30 @@
+@mixin huebutton {
+    -webkit-animation: huebutton 6s infinite linear;
+    border-color: #0064cf;
+    border-style: solid;
+
+    &:before {
+        content: "";
+        background: linear-gradient(to left, #67aeff, #082e97);
+        transition: all 0.5s ease;
+
+    }
+
+    @-webkit-keyframes huebutton {
+        from {
+            -webkit-filter: hue-rotate(-15deg);
+        }
+
+        50% {
+            -webkit-filter: hue-rotate(40deg);
+        }
+
+        to {
+            -webkit-filter: hue-rotate(-15deg);
+        }
+    }
+}
+
 .ink-c-js {
     padding: 50px;
 
@@ -28,7 +55,7 @@
             &:nth-last-of-type(2) {
                 margin-bottom: 0vh !important;
             }
-          }
+        }
 
         .ink-c-js-container-social {
             display: flex;
@@ -44,6 +71,59 @@
             &:first-child {
                 margin-top: 0;
             }
+
+            //BOUTTON SOCIAL
+            .ink-c-js-container-social-link {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                width: 40px;
+                height: 47px;
+
+                font-size: 0;
+
+                background-color: unset;
+                padding: 10px;
+                position: relative;
+
+                font-weight: 500;
+                width: 20px;
+                height: 20px;
+
+                @include huebutton;
+
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 0;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+
+                    .ink-c-js-sell-texte-bouton-href {
+                        color: white;
+                        letter-spacing: 3px;
+                    }
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    filter: invert(1);
+                }
+            }
+
 
             .ink-c-js-container-social-link {
                 display: flex;
@@ -147,6 +227,8 @@
         background-image: -webkit-linear-gradient(92deg, #031fbf, #ffffff) !important;
     }
 }
+
+
 
 @media screen and (min-width: 1450px) {
     .ink-c-js {

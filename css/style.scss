@@ -56,7 +56,7 @@
     text-decoration: none;
     font-family: "Raleway";
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     padding: 10px;
     transition: all 0.5s ease;
     transform: translate(0vw, 30vh) rotate(0deg);
@@ -122,59 +122,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@mixin huebutton {
-    -webkit-animation: huebutton 6s infinite linear;
-    border-color: #0064cf;
-    border-style: solid;
-
-    &:before {
-        content: "";
-        background: linear-gradient(to left, #67aeff, #082e97);
-        transition: all 0.5s ease;
-
-    }
-
-    @-webkit-keyframes huebutton {
-        from {
-            -webkit-filter: hue-rotate(-15deg);
-        }
-
-        50% {
-            -webkit-filter: hue-rotate(40deg);
-        }
-
-        to {
-            -webkit-filter: hue-rotate(-15deg);
-        }
-    }
-}
 //BOUTTON ACTION
 .action-bouton {
     display: flex;
@@ -242,57 +189,6 @@
     }
 }
 
-//BOUTTON SOCIAL
-.ink-c-js-container-social-link {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
-    width: 40px;
-    height: 47px;
-
-    font-size: 0;
-
-    background-color: unset;
-    padding: 10px;
-    position: relative;
-
-    font-weight: 500;
-    width: 20px;
-    height: 20px;
-
-    @include huebutton;
-
-    &:before {
-        content: "";
-        width: 0;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 0;
-    }
-
-    &:hover {
-        &::before {
-            width: 100%;
-        }
-
-        .ink-c-js-sell-texte-bouton-href {
-            color: white;
-            letter-spacing: 3px;
-        }
-    }
-
-    img {
-        width: 20px;
-        height: 20px;
-        filter: invert(1);
-    }
-}
 
 
 
