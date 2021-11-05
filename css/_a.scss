@@ -18,7 +18,7 @@
             color: white;
 
             &::after {
-                content: "Multidimensional composer";
+                content: "# Multidimensional composer";
                 transform: rotate(90deg);
                 position: absolute;
                 right: 20px;
@@ -26,6 +26,10 @@
                 width: 350px;
                 font-weight: 100;
             }
+        }
+
+        .ink-a-js-seo {
+            display: none;
         }
 
         .ink-a-js-leftbottom {
