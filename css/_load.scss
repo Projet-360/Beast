@@ -1,5 +1,6 @@
-.load {
+.disclaimer_mobile {
     overflow-y:scroll;
+    transition: visibility 0s ease 1s, opacity 1s ease;
 
     #ink-a-js-ticket-svg {
         margin-top: 40px;
@@ -8,7 +9,7 @@
         padding: 20px;
     }
 
-    .load-container {
+    .disclaimer_mobile-container {
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
@@ -32,6 +33,12 @@
         width: 100vw;
         margin-top: 50px;
 
+        .disclaimer_mobile-ticket_svg {
+            filter: invert(1);
+            border: 1px solid black;
+            padding: 30px;
+            width: 220px;
+        }
 
         svg {
             width: 280px;
@@ -78,7 +85,7 @@
             
         }
 
-        .load-container-box {
+        .disclaimer_mobile-container-box {
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
