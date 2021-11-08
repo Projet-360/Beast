@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main {
+    opacity: 1;
+    transition: opacity .5s ease;
+    z-index: 800;
+}
+
+.header {
+    z-index: 900;
+}
+
+.main.is-story {
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+    .pin-spacer {
+        height: 100vh !important;
+    }
+    .third,
+    .second {
+        display: none !important;
+    }
+}
+
+@import 'font',
+'load',
+'scrollBar',
+'header',
+'menu',
+'modal',
+'accueil/accueil'
+;

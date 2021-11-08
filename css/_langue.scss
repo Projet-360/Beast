@@ -1,0 +1,92 @@
+.langue {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+
+    background: linear-gradient(0deg, rgba(0, 8, 24, 1) 0%, rgba(4, 38, 79, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+
+    .langue-titre {
+        color: white;
+        text-align: center;
+        font-weight: 100;
+        font-family: "FontExtraLight";
+        font-size: large;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: all 3s ease; 
+    }
+
+    .langue-svg {
+        width: 150px;
+        height: auto;
+        border: 1px solid white;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        transform: skewY(10deg);
+        opacity: 0;
+        transition: all 3s ease;        
+    }
+
+    .langue-language {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+
+        width: 136px;
+        opacity: 0;
+        transition: all 3s ease; 
+
+        .nturl {
+            color: white;
+            width: 48px;
+            height: 48px;
+            margin: 10px;
+        }
+    }
+
+    .langue-svg.is-enter {
+        transform: skewY(0deg);
+        opacity: 1;
+    }
+
+    .langue-language.is-enter {
+        opacity: 1;
+    }
+
+    .langue-titre.is-enter {
+        opacity: 1;
+    }    
+}
+
+.langue.is-leaving {
+    opacity: 0 !important;
+    transition: all 2s ease .5s;
+    .langue-svg {
+        transform: skewY(-10deg) !important;
+        opacity: 0 !important;
+    }
+}
+
+body.langue {
+    overflow-y: hidden !important;
+}
+
+.is-langue {
+    visibility: hidden !important;
+    display: none;
+}
+
+.ink.is-load {
+    display: none;
+}

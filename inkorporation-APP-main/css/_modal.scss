@@ -1,0 +1,111 @@
+.modal-newsletter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+
+    &.is-active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 200;
+
+        .modal-newsletter-container {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-newsletter-overlay {
+            opacity: 1;
+            visibility: visible;
+            top: 0;
+        }
+    }
+
+    .modal-newsletter-overlay {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease;
+        z-index: 100;
+    }
+
+    .modal-newsletter-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 400px;
+        padding: 30px 0px;
+        background: rgb(22, 22, 22);
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 0px 17px 5px #000000;
+        box-shadow: 0px 0px 17px 5px #000000;
+
+        z-index: 200;
+
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease;
+
+        z-index: 200;
+
+        .modal-newsletter-container-titre {
+            color: white;
+            font-size: 40px;
+            font-family: "FontLight";
+            font-weight: normal;
+            margin: 20px 0px;
+        }
+
+        .modal-newsletter-container-texte {
+            color: white;
+            font-family: "FontLight";
+            font-weight: normal;
+            padding: 30px;
+        }
+
+        .modal-newsletter-container-texte-input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0px;
+            font-size: 25px;
+            font-family: "FontLight";
+            font-weight: normal;
+        }
+
+        .modal-newsletter-container-texte-submit {
+            font-size: 20px;
+            font-family: "FontLight";
+            font-weight: normal;
+            text-transform: uppercase;
+            margin: 20px;
+            padding: 15px 30px;
+            -webkit-box-shadow: 0px 0px 17px 5px #000000;
+            box-shadow: 0px 0px 17px 5px #000000;
+            background: unset;
+            color: #67aeff;
+
+            border-image-slice: 1;
+            border-width: 2px;
+            border-image-source: linear-gradient(to left, #67aeff, #153aa0);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
