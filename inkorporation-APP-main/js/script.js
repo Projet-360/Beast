@@ -1,6 +1,0 @@
-import './adders/load.js'
-import './adders/gsap.js'
-import './adders/mediaQueries.js'
-import './adders/menu.js'
-import './adders/newsletter.js'
-import './adders/story.js'
