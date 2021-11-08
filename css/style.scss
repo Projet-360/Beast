@@ -1,5 +1,5 @@
 @import 'Base';
-@import 'load';
+@import 'disclaimer_mobile';
 
 @import 'a';
 @import 'b';
@@ -136,7 +136,7 @@
 
         span {
             font-size: 0;
-            transform: rotate(-90deg);          
+            transform: rotate(-90deg);
         }
 
         &:before {
@@ -144,6 +144,7 @@
             opacity: 1;
         }
     }
+
     @media screen and (min-width: 1450px) {
         display: flex !important;
     }
@@ -169,7 +170,7 @@
     height: 51px;
 
     @include huebutton;
-    
+
     &:before {
         content: "";
         width: 0;
@@ -216,7 +217,5 @@
         }
     }
 }
-
-
 
 

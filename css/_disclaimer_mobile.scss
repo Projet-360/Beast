@@ -1,5 +1,8 @@
 .disclaimer_mobile {
     overflow-y:scroll;
+    visibility: hidden;
+    opacity: 0;
+    
     transition: visibility 0s ease 1s, opacity 1s ease;
 
     #ink-a-js-ticket-svg {
@@ -29,7 +32,7 @@
         -ms-flex-align: center;
         align-items: center;
 
-        height: 1450px;
+        height: 1150px;
         width: 100vw;
         margin-top: 50px;
 
@@ -41,7 +44,7 @@
         }
 
         svg {
-            width: 280px;
+            width: 100px;
             height: auto;
         }
 
@@ -62,6 +65,7 @@
             text-align: justify;
             margin-top: 20px;
             font-family: 'Raleway', sans-serif;
+            text-align-last: center;
         }
 
         button {
