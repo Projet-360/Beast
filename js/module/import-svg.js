@@ -16,6 +16,9 @@ const variableArr = [
     ],
     [
         "../icon/template/face.svg", "ink-d-js-svg"
+    ],
+    [
+        "../icon/template/jukebox.svg", "ink-e-js-svg"
     ]
 ];
 
