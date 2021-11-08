@@ -1,6 +1,8 @@
 const main = document.querySelector('.ink');
 
-const load = document.querySelector('.langue');
+const langue = document.querySelector('.langue');
+const load = document.querySelector('.load');
+
 const svg = document.querySelector('.langue-svg');
 const loadTitre = document.querySelector('.langue-titre');
 const loadlang = document.querySelector('.langue-language');
@@ -21,10 +23,12 @@ window.addEventListener('load', function(event) {
 
 selectLang.onclick = function () {
     main.classList.remove('is-load');
+    body.classList.remove('langue');
 
-    load.classList.add('is-leaving');
+    langue.classList.add('is-leaving');
     body.classList.remove('load');
     setTimeout(function () {
+        langue.parentNode.removeChild(langue);
         load.parentNode.removeChild(load);
       }, 2500);
 }
