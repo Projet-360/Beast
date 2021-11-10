@@ -20,7 +20,7 @@
         font-size: large;
         margin-bottom: 20px;
         opacity: 0;
-        transition: all 3s ease; 
+        transition: transform 3s ease,  opacity 3s ease; 
     }
 
     .langue-svg {
@@ -32,7 +32,7 @@
 
         transform: skewY(10deg);
         opacity: 0;
-        transition: all 3s ease;        
+        transition: transform 3s ease,  opacity 3s ease;        
     }
 
     .langue-language {
@@ -45,7 +45,7 @@
 
         width: 136px;
         opacity: 0;
-        transition: all 3s ease; 
+        transition: transform 3s ease,  opacity 3s ease; 
 
         .nturl {
             color: white;
@@ -71,7 +71,7 @@
 
 .langue.is-leaving {
     opacity: 0 !important;
-    transition: all 2s ease .5s;
+    transition: transform 2s ease,  opacity 2s ease .5s;
     .langue-svg {
         transform: skewY(-10deg) !important;
         opacity: 0 !important;

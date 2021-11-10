@@ -1,0 +1,29 @@
+
+<html>
+    <body>
+    <select id="langselector" onchange="loadlang()">
+      <option value="en">English</option>
+      <option value="fr">French</option>
+    </select>
+    <p></p>
+
+      <p id="contents" >Your browser does not support iframes.</p>
+
+    <script>
+    function loadlang()
+      {
+      var lng = document.getElementById("langselector").value;
+      var cnt = document.getElementById("contents");
+      switch (lng)
+        {
+        case "en":
+          cnt.innerHTML = "Your browser does not support iframes";
+        break;
+        case "fr":
+          cnt.innerHTML = "ton fucking browser";
+        break;
+        }
+      }
+    </script>
+    </body>
+    </html>

@@ -86,55 +86,6 @@
             opacity: 0;
         }
 
-        .ink-a-js-link {
-            font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-            transform: translate(0px, 36vh);
-            text-transform: uppercase;
-            z-index: 5;
-
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: stretch;
-            align-items: center;
-
-            .ink-a-js-link-a {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: center;
-                align-content: stretch;
-                align-items: center;
-
-                color: rgb(255, 255, 255);
-                font-size: 40px;
-                font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
-                text-shadow: -1px 5px 3px #00000080;
-                text-transform: uppercase;
-                text-decoration: none;
-                font-weight: 100;
-                z-index: 5;
-
-                padding: 0;
-                border: 2px solid #fff;
-                padding: 0;
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
-                transition: all 0.8s ease;
-
-                &:hover {
-                    width: 70px;
-                    height: 70px;
-                    transform: rotate(90deg);
-                    color: rgb(0, 0, 0);
-                    font-size: 25px;
-                    border: 6px solid rgb(0, 0, 0);
-                }
-            }
-        }
 
         .ink-a-js-ticket {
             position: absolute;
@@ -175,7 +126,7 @@
         color: white;
         border: 1px solid white;
         padding: 10px;
-        transition: all 0.5s ease;
+        transition: transform 0.5s ease;
         transform: translate(0vw, 30vh) rotate(0deg);
 
         font-weight: 400;
@@ -189,7 +140,7 @@
         border-color: #67aeff;
 
         .ink-a-js-enter-span {
-            transition: all 0.5s ease;
+            transition: transform 0.5s ease;
             position: absolute;
             content: "enter";
             font-weight: 400;
@@ -205,21 +156,13 @@
         }
 
         &:hover {
-            font-size: 30px;
             transform: translate(0vw, 30vh) rotate(45deg);
             border-color: #67aeff;
             color: #67aeff;
             background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
 
             .ink-a-js-enter-span {
-                font-size: 30px;
                 transform: rotate(-90deg);
-                background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -webkit-animation: hue 20s infinite linear;
-                border-color: #67aeff;
-
                 &.two {
                     transform: rotate(0deg) !important;
                 }
