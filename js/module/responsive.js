@@ -18,3 +18,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     disclaimer_mobile.style.opacity = "1";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    disclaimer_mobile.remove();      
+  }
+});
