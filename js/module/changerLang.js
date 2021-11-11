@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
       action_bouton_pack:"Pack",
       ink_d_js_sell_paragraphe:"",
     },
+
+
+
     fr: {
       //Navigation
       menuone: "Home",
@@ -54,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
       action_bouton_pack:"Pack",
       ink_d_js_sell_paragraphe:"",
     },
+
+
+
     de: {
       //Navigation
       menuone: "Home DE",
@@ -79,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
       action_bouton_pack:"",
       ink_d_js_sell_paragraphe:"",
     },
+
+
+    
     es: {      
       //Navigation
       menuone: "Home ES",
