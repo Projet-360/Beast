@@ -1,17 +1,12 @@
 .ink-a {
     .ink-a-js{
-        top: 0;
         z-index: 0;
-
         .ink-a-js-lefttop {
-            position: absolute;
-            text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
-            font-size: 20px;
             width: 200px;
-            left: 20px;
-            top: 20px;
+            transform: translate(calc(-50vw - -120px), calc(-50vh - -30px));
+            position: absolute;
+            font-size: 20px;
             margin: 0;
-            transform: rotate(0deg);
             text-transform: capitalize;
             font-family: 'Raleway', sans-serif;
             font-weight: bold;
@@ -19,10 +14,8 @@
 
             &::after {
                 content: "# Multidimensional composer";
-                transform: rotate(90deg);
+                transform: rotate(90deg) translate(190px, 295px);
                 position: absolute;
-                right: 20px;
-                top: 189px;
                 width: 350px;
                 font-weight: 100;
             }
@@ -36,10 +29,8 @@
             position: absolute;
             text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
             font-size: 20px;
-            left: 20px;
-            bottom: 20px;
+            transform: rotate(0deg) translate(calc(-50vw - -83px), calc(50vh - 20px));
             margin: 0;
-            transform: rotate(0deg);
             text-transform: capitalize;
             font-family: 'Raleway', sans-serif;
             font-weight: bold;
@@ -47,11 +38,9 @@
 
             &::after {
                 content: "2021";
-                transform: rotate(90deg);
+                transform: rotate(90deg) translate(115px, 292px);
                 position: absolute;
-                right: -17px;
-                top: 80px;
-                width: 270px;
+                width: 350px;
                 font-weight: 100;
             }
 
@@ -90,8 +79,7 @@
         .ink-a-js-ticket {
             position: absolute;
             width: 65px;
-            left: 60px;
-            bottom: 60px;
+            transform: translate(calc(-50vw - -100px), calc(50vh - 100px));
             border: 1px solid white;
             padding: 10px;
 

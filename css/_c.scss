@@ -28,12 +28,12 @@
 .ink-c-js {
     padding: 50px;
 
-    display: flex !important;
-    flex-direction: column !important;
-    flex-wrap: nowrap !important;
-    justify-content: space-between !important;
-    align-content: stretch !important;
-    align-items: center !important;
+    display: flex ;
+    flex-direction: column ;
+    flex-wrap: nowrap ;
+    justify-content: center;
+    align-content: stretch ;
+    align-items: center ;
 
     .ink-c-js-title {
         font-family: 'Raleway', sans-serif;
@@ -47,8 +47,14 @@
     .ink-c-js-container {
         width: 100%;
 
+        &:nth-child(1) {            
+            transform: translateY(-130px);
+        }
+
+
         &:nth-last-of-type(2) {
             margin-bottom: 5vh;
+            transform: translateY(50px);
         }
 
         @media screen and (min-width: 800px) {
@@ -210,12 +216,13 @@
         position: absolute;
         width: 100px;
         color: #ffffff;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+        transform: rotate(2deg) translateY(0px);
         opacity: 1 !important;
         transition: opacity 2s ease !important;
+
+        @media screen and (min-width: 1450px) {
+            transform: rotate(2deg) translateY(-35px);
+        }
 
         svg {
             filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
@@ -232,13 +239,7 @@
 
 @media screen and (min-width: 1450px) {
     .ink-c-js {
-        display: flex !important;
         flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        justify-content: center !important;
-        align-content: stretch !important;
-        align-items: center !important;
-
         .ink-c-js-container {
             height: 45vh !important;
             width: 20vw !important;

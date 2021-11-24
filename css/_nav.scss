@@ -26,6 +26,13 @@
 }
 
 .ink-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
     position: fixed;
     bottom: 0;
     width: 300px;
@@ -45,6 +52,7 @@
         margin: 0;
         list-style: none;
         height: 100%;
+        width: 100%;
 
         .ink-nav-ul-li {
             display: flex;
