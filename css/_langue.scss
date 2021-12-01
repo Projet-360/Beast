@@ -19,6 +19,7 @@
         font-family: 'Raleway', sans-serif;
         font-size: large;
         margin-bottom: 20px;
+        transform: translateY(-5vh);
         opacity: 0;
         transition: transform 3s ease,  opacity 3s ease; 
     }
@@ -30,7 +31,7 @@
         padding: 10px;
         margin-bottom: 20px;
 
-        transform: skewY(10deg);
+        transform: skewY(10deg) translateY(-5vh);
         opacity: 0;
         transition: transform 3s ease,  opacity 3s ease;        
     }
@@ -79,7 +80,7 @@
     }
 
     .langue-svg.is-enter {
-        transform: skewY(0deg);
+        transform: skewY(0deg) translateY(-5vh);
         opacity: 1;
     }
 

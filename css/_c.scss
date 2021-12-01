@@ -32,7 +32,7 @@
     flex-direction: column ;
     flex-wrap: nowrap ;
     justify-content: center;
-    align-content: stretch ;
+    align-content: center ;
     align-items: center ;
 
     .ink-c-js-title {
@@ -53,8 +53,7 @@
 
 
         &:nth-last-of-type(2) {
-            margin-bottom: 5vh;
-            transform: translateY(50px);
+            transform: translateY(100px);
         }
 
         @media screen and (min-width: 800px) {
