@@ -43,9 +43,12 @@
         align-content: stretch;
         align-items: center;
 
-        width: 136px;
+        width: 102px;
         opacity: 0;
         transition: transform 3s ease,  opacity 3s ease; 
+
+        position: absolute;
+        transform: translate(0vw, 30vh);
 
         .nturl {
             display: flex;
@@ -56,9 +59,9 @@
             align-items: center;
 
             color: white;
-            width: 48px;
-            height: 48px;
-            margin: 10px;
+            width: 36px;
+            height: 36px;
+            margin: 5px;
             transform: scale(1);
             transition: all .5s ease;
 
