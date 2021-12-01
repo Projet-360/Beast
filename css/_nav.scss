@@ -1,3 +1,4 @@
+
 @mixin huebutton {
     -webkit-animation: huebutton 6s infinite linear;
     border-color: #0064cf;
@@ -24,6 +25,7 @@
         }
     }
 }
+
 
 .ink-nav {
     display: flex;
@@ -152,7 +154,7 @@
 
                     -webkit-background-clip: text;
                     -webkit-animation: huebutton 12s infinite linear;
-                    border-color: #7e67ff;
+                    border-color: #6797ff;
                 }
 
                 .ink-nav-ul-li-font {

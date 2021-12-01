@@ -1,0 +1,47 @@
+.ink-f-js {
+    flex-direction: column;
+
+    .ink-f-js-container {
+        width: 200px;
+        padding: 15px;
+        border: 1px solid black;
+
+        .ink-f-js-container-thanks {
+            font-size: 35px;
+            text-align: center;
+            font-weight: 200;
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    
+        .ink-f-js-container-subtitle {
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+            font-style: italic;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    
+        .ink-f-js-container-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            margin: 0;
+            text-align: justify;
+            text-align-last: center;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+
+            li {
+                list-style: none;
+                text-align: center;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+    }
+}
