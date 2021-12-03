@@ -25,8 +25,8 @@
     }
 
     .langue-svg {
-        width: 150px;
-        height: auto;
+        width: auto;
+        height: 35vh;
         border: 1px solid white;
         padding: 10px;
         margin-bottom: 20px;
@@ -96,6 +96,7 @@
 .langue.is-leaving {
     opacity: 0 !important;
     transition: transform 2s ease,  opacity 2s ease .5s;
+
     .langue-svg {
         transform: skewY(-10deg) !important;
         opacity: 0 !important;

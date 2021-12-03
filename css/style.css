@@ -42,7 +42,7 @@ section > div { height: 100vh; width: 100vw; position: fixed; -webkit-box-sizing
 
 .langue .langue-titre { color: white; text-align: center; font-weight: 100; font-family: 'Raleway', sans-serif; font-size: large; margin-bottom: 20px; -webkit-transform: translateY(-5vh); transform: translateY(-5vh); opacity: 0; -webkit-transition: opacity 3s ease,  -webkit-transform 3s ease; transition: opacity 3s ease,  -webkit-transform 3s ease; transition: transform 3s ease,  opacity 3s ease; transition: transform 3s ease,  opacity 3s ease,  -webkit-transform 3s ease; }
 
-.langue .langue-svg { width: 150px; height: auto; border: 1px solid white; padding: 10px; margin-bottom: 20px; -webkit-transform: skewY(10deg) translateY(-5vh); transform: skewY(10deg) translateY(-5vh); opacity: 0; -webkit-transition: opacity 3s ease,  -webkit-transform 3s ease; transition: opacity 3s ease,  -webkit-transform 3s ease; transition: transform 3s ease,  opacity 3s ease; transition: transform 3s ease,  opacity 3s ease,  -webkit-transform 3s ease; }
+.langue .langue-svg { width: auto; height: 35vh; border: 1px solid white; padding: 10px; margin-bottom: 20px; -webkit-transform: skewY(10deg) translateY(-5vh); transform: skewY(10deg) translateY(-5vh); opacity: 0; -webkit-transition: opacity 3s ease,  -webkit-transform 3s ease; transition: opacity 3s ease,  -webkit-transform 3s ease; transition: transform 3s ease,  opacity 3s ease; transition: transform 3s ease,  opacity 3s ease,  -webkit-transform 3s ease; }
 
 .langue .langue-language { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-line-pack: stretch; align-content: stretch; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 102px; opacity: 0; -webkit-transition: opacity 3s ease,  -webkit-transform 3s ease; transition: opacity 3s ease,  -webkit-transform 3s ease; transition: transform 3s ease,  opacity 3s ease; transition: transform 3s ease,  opacity 3s ease,  -webkit-transform 3s ease; position: absolute; -webkit-transform: translate(0vw, 30vh); transform: translate(0vw, 30vh); }
 
@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb { background-color: #005fb8; border-radius: 10px; 
 
 .ink-a .ink-a-js .ink-a-js-leftbottom { position: absolute; text-shadow: -1px 5px 3px black; font-size: 20px; -webkit-transform: rotate(0deg) translate(calc(-50vw - -83px), calc(50vh - 20px)); transform: rotate(0deg) translate(calc(-50vw - -83px), calc(50vh - 20px)); margin: 0; text-transform: capitalize; font-family: 'Raleway', sans-serif; font-weight: bold; color: white; }
 
-.ink-a .ink-a-js .ink-a-js-leftbottom::after { content: "2021"; -webkit-transform: rotate(90deg) translate(115px, 292px); transform: rotate(90deg) translate(115px, 292px); position: absolute; width: 350px; font-weight: 100; }
+.ink-a .ink-a-js .ink-a-js-leftbottom::after { content: "2022"; -webkit-transform: rotate(90deg) translate(115px, 292px); transform: rotate(90deg) translate(115px, 292px); position: absolute; width: 350px; font-weight: 100; }
 
 @media screen and (max-width: 760px) { .ink-a .ink-a-js .ink-a-js-leftbottom { display: none; } }
 
@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb { background-color: #005fb8; border-radius: 10px; 
 
 .ink-d-js .ink-d-js-sell .ink-d-js-sell-icon a img { height: 6vw; width: 6vw; -webkit-filter: invert(1); filter: invert(1); }
 
-@media screen and (max-width: 1455px) { .ink-d-js .ink-d-js-shirt-text { -webkit-transform: translateY(20vw) !important; transform: translateY(20vw) !important; }
+@media screen and (max-width: 800px) { .ink-d-js .ink-d-js-shirt-text { -webkit-transform: translateY(20vw) !important; transform: translateY(20vw) !important; }
   .ink-d-js .ink-d-js-sell-icon { display: none !important; }
   .ink-d-js .ink-d-js-shirt-img { -webkit-transform: translate(4px, 198px); transform: translate(4px, 198px); height: auto !important; width: 250px !important; }
   .ink-d-js .ink-d-js-shirt-img img { width: 100%; height: 100%; }
@@ -321,6 +321,8 @@ body::-webkit-scrollbar-thumb { background-color: #005fb8; border-radius: 10px; 
 .ink-e-js .ink-e-js-carousel .ink-e-js-carousel-container .ink-e-js-carousel-container-item-text .story__summary { width: 100%; max-width: 500px; margin-right: auto; margin-left: auto; text-align: justify; line-height: 14px; font-size: 15px; }
 
 .ink-e-js .ink-e-js-carousel .ink-e-js-carousel-container .ink-e-js-carousel-container-item-text .story__title { margin: 0 !important; font-size: 50px; font-family: 'Raleway', sans-serif; font-weight: 100; }
+
+.ink-e-js .ink-e-js-carousel .ink-e-js-carousel-container .ink-e-js-carousel-container-item-text .story__date { margin: 0 !important; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 300; }
 
 @media screen and (max-width: 1960px) { .ink-e-js .ink-e-js-carousel-container-item-text { height: 40vh; width: 100%; }
   .ink-e-js .ink-e-js-carousel-container-item-logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-line-pack: center; align-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 38vh !important; width: 100%; } }
