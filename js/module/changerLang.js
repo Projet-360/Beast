@@ -2,53 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
   // Define the language reload anchors
   var language = {
-    en: {
-      //Navigation  
-      menuone: "en",
-      menutwo: "en",
-      menuthree: "en",
-      menufour: "en",      
-      menufive: "en",        
-      menusix: "en",  
-
-      // A propos de X
-      ink_b_js_sell_icon_title: "en",
-      action_bouton_precommander: "en",
-      action_bouton_vetement: "en",
-      ink_b_js_sell_paragraphe: "en",  
-
-      //Social
-      ink_c_js_titleNews: "en",
-      ink_c_js_titleNet: "en",
-      action_bouton_souscrire: "en",
-      action_bouton_remind: "en",
-      ink_c_js_container_paragrapheNews: "en",
-      ink_c_js_container_paragrapheNet: "en",              
-
-      //Vêtements
-      ink_d_js_sell_icon_title:"en",
-      action_bouton_boutique:"en",
-      action_bouton_pack:"en",
-      ink_d_js_sell_paragraphe:"en",
-
-      //Autre EP
-      article_ep:"en",
-      article_button:"en",
-      article_one_story__title:"en",
-      article_two_story__title:"en",
-      article_three_story__title:"en",
-      article_four_story__title:"en",
-      article_one_story__summary:"en",
-      article_two_story__summary:"en",
-      article_three_story__summary:"en",
-      article_four_story__summary:"en",
-
-      //Merci
-      ink_f_js_container_thanks:"en",
-      ink_f_js_container_subtitle:"en",
-      ink_f_js_container_title:"en",
-    },
-
     fr: {
       //Navigation  
       menuone: "Accueil",
@@ -83,6 +36,53 @@ document.addEventListener("DOMContentLoaded", function () {
       article_button:"Précommander",
       article_one_story__title:"X",
       article_two_story__title:"Xplorer",
+      article_three_story__title:"en",
+      article_four_story__title:"en",
+      article_one_story__summary:"en",
+      article_two_story__summary:"en",
+      article_three_story__summary:"en",
+      article_four_story__summary:"en",
+
+      //Merci
+      ink_f_js_container_thanks:"Merci",
+      ink_f_js_container_subtitle:"pour votre visite &<br> votre soutient",
+      ink_f_js_container_title:"Je tiens à remiercier tous ceux qui m'ont accompagnés dans cette aventure :",
+    },
+
+    en: {
+      //Navigation  
+      menuone: "en",
+      menutwo: "en",
+      menuthree: "en",
+      menufour: "en",      
+      menufive: "en",        
+      menusix: "en",  
+
+      // A propos de X
+      ink_b_js_sell_icon_title: "en",
+      action_bouton_precommander: "en",
+      action_bouton_vetement: "en",
+      ink_b_js_sell_paragraphe: "en",  
+
+      //Social
+      ink_c_js_titleNews: "en",
+      ink_c_js_titleNet: "en",
+      action_bouton_souscrire: "en",
+      action_bouton_remind: "en",
+      ink_c_js_container_paragrapheNews: "en",
+      ink_c_js_container_paragrapheNet: "en",              
+
+      //Vêtements
+      ink_d_js_sell_icon_title:"en",
+      action_bouton_boutique:"en",
+      action_bouton_pack:"en",
+      ink_d_js_sell_paragraphe:"en",
+
+      //Autre EP
+      article_ep:"en",
+      article_button:"en",
+      article_one_story__title:"en",
+      article_two_story__title:"en",
       article_three_story__title:"en",
       article_four_story__title:"en",
       article_one_story__summary:"en",
