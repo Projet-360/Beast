@@ -36,6 +36,6 @@ selectLang.forEach(element => {
         setTimeout(function () {
             langue.parentNode.removeChild(langue);
             load.parentNode.removeChild(load);
-        }, 2500);
+        }, 1500);
     }
 });

@@ -210,8 +210,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const dd = document.querySelector('.next-button')
   // SOCIAL
-  const ink_c_js_titleNews = document.querySelector('.ink-c-js-title:nth-of-type(1)')
-  const ink_c_js_titleNet = document.querySelector('.ink-c-js-title:nth-of-type(2)')
+  const ink_c_js_titleNews = document.querySelector('.ink-c-js-title:nth-of-type(1) ')
+  const ink_c_js_titleNet = document.querySelector('.ink-c-js-container:nth-of-type(2) .ink-c-js-title')
   const action_bouton_souscrire = document.querySelector('.action-bouton-souscrire')
   const action_bouton_remind = document.querySelector('.action-bouton-remind')
   const ink_c_js_container_paragrapheNews = document.querySelector('.ink-c-js-container:nth-of-type(1) .ink-c-js-container-paragraphe')
