@@ -47,6 +47,12 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .stars {
+      display:none !important;
+    }
+}
+
 @keyframes move-twink-back {
     from {
         background-position: 0 0;
@@ -82,3 +88,5 @@
         background-position: 5000px 0;
     }
 }
+
+

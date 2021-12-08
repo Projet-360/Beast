@@ -32,10 +32,5 @@ selectLang.forEach(element => {
 
         langue.classList.add('is-leaving');
         body.classList.remove('load');
-
-        setTimeout(function () {
-            langue.parentNode.removeChild(langue);
-            load.parentNode.removeChild(load);
-        }, 1500);
     }
 });
