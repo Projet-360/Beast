@@ -1,0 +1,117 @@
+.langue {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch; 
+    align-items: center;
+
+    background: linear-gradient(0deg, rgba(0, 8, 24, 1) 0%, rgba(4, 38, 79, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+
+    .langue-titre {
+        color: white;
+        text-align: center;
+        font-weight: 100;
+        font-family: 'Raleway', sans-serif;
+        font-size: large;
+        margin-bottom: 20px;
+        transform: translateY(-5vh);
+        opacity: 0;
+        transition: transform 3s ease,  opacity 3s ease; 
+    }
+
+    .langue-svg {
+        width: auto;
+        height: 35vh;
+        border: 1px solid white;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        transform: skewY(10deg) translateY(-5vh);
+        opacity: 0;
+        transition: transform 3s ease,  opacity 3s ease;        
+    }
+
+    .langue-language {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+
+        width: 102px;
+        opacity: 0;
+        transition: transform 3s ease,  opacity 3s ease; 
+
+        position: absolute;
+        transform: translate(0vw, 30vh);
+
+        .nturl {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            width: 36px;
+            height: 36px;
+            margin: 5px;
+            transform: scale(1);
+            transition: all .5s ease;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.4);
+            }
+        }
+    }
+
+    .langue-svg.is-enter {
+        transform: skewY(0deg) translateY(-5vh);
+        opacity: 1;
+    }
+
+    .langue-language.is-enter {
+        opacity: 1;
+    }
+
+    .langue-titre.is-enter {
+        opacity: 1;
+    }    
+}
+
+.langue.is-leaving {
+    opacity: 0 !important;
+    visibility: hidden;
+    transition: transform 2s ease, opacity 2s ease .5s, visibility 1s ease .5s ;
+
+    .langue-svg {
+        transform: skewY(-10deg) !important;
+        opacity: 0 !important;
+    }
+}
+
+body.langue {
+    overflow-y: hidden !important;
+}
+
+.is-langue {
+    visibility: hidden !important;
+    display: none;
+}
+
+.ink.is-load {
+    display: none;
+}
