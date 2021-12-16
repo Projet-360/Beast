@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb { background-color: #005fb8; border-radius: 10px; 
 
 .ink-b-js { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-line-pack: center; align-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 50px; }
 
-.ink-b-js .ink-b-js-img { max-height: 40vh; max-width: 40vh; width: 100%; height: 100%; -webkit-transform: translateY(-8vh); transform: translateY(-8vh); background-image: url("../icon/img/cover-X.webp"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+.ink-b-js .ink-b-js-img { max-height: 40vh; max-width: 40vh; width: 100%; height: 100%; -webkit-transform: translateY(-5vh); transform: translateY(-5vh); background-image: url("../icon/img/cover-X.webp"); background-size: contain; background-repeat: no-repeat; background-position: center; }
 
 .ink-b-js .ink-b-js-svg { position: absolute; -webkit-transition: opacity 2s ease !important; transition: opacity 2s ease !important; width: 50px; height: auto; }
 
