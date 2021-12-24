@@ -135,160 +135,160 @@ document.addEventListener("DOMContentLoaded", function () {
         article_ep:"EP",
         article_button:"Précommander",
         article_one_story__title:"X",
-        article_two_story__title:"Xplorer",
-        article_three_story__title:"en",
-        article_four_story__title:"en",
-        article_one_story__summary:"en",
-        article_two_story__summary:"en",
-        article_three_story__summary:"en",
-        article_four_story__summary:"en",
+        article_two_story__title:"Delisioza",
+        article_three_story__title:"NoWay",
+        article_four_story__title:"Room",
+        article_one_story__summary:"le 22.02.2022 à 20h02 sortira X. Mon premier EP. Cet espace-temps sera exceptionnel, il se reproduira que très rarement. Le style de cet EP est de la musique électronique. Respirez un bon coup le moment venu et rejoignez moi sur les plateformes pour écouter X.",
+        article_two_story__summary:"Un EP prévu pour la fin de l'année 2022. Son style sera un mélange de Hip-hop, RnB de nos jours, ainsi que de l'électronique. Une musique qui se rapproche de Kaytranada qui prend une grande place dans mes inspirations.",
+        article_three_story__summary:"Un EP prévu pour l'année 2023. NoWay est un concept expérimental. Les séquences rythmiques sont désordonnées, imprévisibles. Ce style ne sera pas l'un des plus conventionnels !",
+        article_four_story__summary:"Room est un EP pour la fin d'année 2023. Cet EP est un concept aux musiques intimistes. Elles seront disposées à créer un moment pour soi, pour l'autre, quelque chose à l'extérieur de ce monde. Votre espace à vous.",
   
         //Merci
         ink_f_js_container_thanks:"Merci",
-        ink_f_js_container_subtitle:"pour votre visite &<br> votre soutient",
+        ink_f_js_container_subtitle:"pour votre visite & votre soutient",
         ink_f_js_container_title:"Je tiens à remiercier tous ceux qui m'ont accompagnés dans cette aventure :",
       },
   
       en: {
         //Navigation  
-        menuone: "en",
-        menutwo: "en",
-        menuthree: "en",
-        menufour: "en",      
-        menufive: "en",        
-        menusix: "en",  
+        menuone: "Home",
+        menutwo: "About X",
+        menuthree: "Social",
+        menufour: "Clothes",      
+        menufive: "Other EP",        
+        menusix: "Thank you",  
   
         // A propos de X
-        ink_b_js_sell_icon_title: "en",
-        action_bouton_precommander: "en",
-        action_bouton_vetement: "en",
-        ink_b_js_sell_paragraphe: "en",  
+        ink_b_js_sell_icon_title: "listen",
+        action_bouton_precommander: "pre order",
+        action_bouton_vetement: "clothes",
+        ink_b_js_sell_paragraphe: "This EP symbolises the end of one thing and the beginning of another. X is the crossroads. I am proud to present you with my EP X on an equally symbolic date 22.02.2022 my EP X.",  
   
         //Social
-        ink_c_js_titleNews: "en",
-        ink_c_js_titleNet: "en",
-        action_bouton_souscrire: "en",
-        action_bouton_remind: "en",
-        ink_c_js_container_paragrapheNews: "en",
-        ink_c_js_container_paragrapheNet: "en",              
+        ink_c_js_titleNews: "Newsletter",
+        ink_c_js_titleNet: "Newsletter",
+        action_bouton_souscrire: "Subscribe",
+        action_bouton_remind: "Remind me for X",
+        ink_c_js_container_paragrapheNews: "you have the possibility to subscribe to my newsletter. I would also like to send you a to send you a message to remind you of the release of X",
+        ink_c_js_container_paragrapheNet: "Here are some social networks where I am present. Let's connect!",                        
   
         //Vêtements
-        ink_d_js_sell_icon_title:"en",
-        action_bouton_boutique:"en",
-        action_bouton_pack:"en",
-        ink_d_js_sell_paragraphe:"en",
+        ink_d_js_sell_icon_title:"Clothes",
+        action_bouton_boutique:"Shop",
+        action_bouton_pack:"Pack",
+        ink_d_js_sell_paragraphe:"You have the possibility to buy a garment with the EP. There are packages offered that make the audios free. ",
   
         //Autre EP
-        article_ep:"en",
-        article_button:"en",
-        article_one_story__title:"en",
-        article_two_story__title:"en",
-        article_three_story__title:"en",
-        article_four_story__title:"en",
-        article_one_story__summary:"en",
-        article_two_story__summary:"en",
-        article_three_story__summary:"en",
-        article_four_story__summary:"en",
+        article_ep:"EP",
+        article_button:"Pre-order",
+        article_one_story__title:"X",
+        article_two_story__title:"Delisioza",
+        article_three_story__title:"NoWay",
+        article_four_story__title:"Room",
+        article_one_story__summary:"On 22.02.2022 at 20:02 will be released X. My first EP. This will be an exceptional time-space, it will happen very rarely. The style of this EP is electronic music. Take a deep breath when the time comes and join me on the platforms to listen to X.",
+        article_two_story__summary:"An EP planned for the end of 2022. His style will be a mix of Hip-hop, modern day RnB, as well as electronic. A music that is close to Kaytranada who takes a big place in my inspirations.",
+        article_three_story__summary:"An EP planned for the year 2023. NoWay is an experimental concept. The rhythmic sequences are disordered, unpredictable. This style will not be one of the most conventional!",
+        article_four_story__summary:"Room is an EP for the end of 2023. This EP is a concept with intimate music. They will be willing to create a moment for yourself, for each other, something outside this world. Your own space.",
   
         //Merci
-        ink_f_js_container_thanks:"en",
-        ink_f_js_container_subtitle:"en",
-        ink_f_js_container_title:"en",
+        ink_f_js_container_thanks:"Thank you",
+        ink_f_js_container_subtitle:"for your visit & support",
+        ink_f_js_container_title:"I would like to thank all those who have accompanied me in this adventure:",
       },
   
       de: {
         //Navigation  
-        menuone: "Home",
-        menutwo: "About X",
-        menuthree: "Social",
-        menufour: "Clothes",      
-        menufive: "Other EP",        
-        menusix: "Know",  
+        menuone: "Startseite",
+        menutwo: "über X",
+        menuthree: "Soziales",
+        menufour: "Kleidung",      
+        menufive: "Andere EP",        
+        menusix: "Dankeschön",  
   
         // A propos de X
-        ink_b_js_sell_icon_title: "listen",
-        action_bouton_precommander: "pre order",
-        action_bouton_vetement: "clothes",
-        ink_b_js_sell_paragraphe: "This EP symbolises the end of one thing and the beginning of another. X is the crossroads. I am proud to present you with my EP X on an equally symbolic date 22.02.2022 my EP X.",  
+        ink_b_js_sell_icon_title: "hören.",
+        action_bouton_precommander: "Vorbestellung",
+        action_bouton_vetement: "Kleidungsstücke",
+        ink_b_js_sell_paragraphe: "Dieses EP symbolisiert das Ende einer Sache und den Beginn einer anderen. X ist der Scheideweg. Ich bin stolz, Ihnen an einem ebenso symbolträchtigen Datum, dem 22.02.2022, meine EP X zu präsentieren.",  
   
         //Social
         ink_c_js_titleNews: "Newsletter",
         ink_c_js_titleNet: "Newsletter",
-        action_bouton_souscrire: "Subscribe",
-        action_bouton_remind: "Remind me for X",
-        ink_c_js_container_paragrapheNews: "you have the possibility to subscribe to my newsletter. I would also like to send you a to send you a message to remind you of the release of X",
-        ink_c_js_container_paragrapheNet: "Here are some social networks where I am present. Let's connect!",              
+        action_bouton_souscrire: "Abonnieren",
+        action_bouton_remind: "Erinnern Sie mich für X",
+        ink_c_js_container_paragrapheNews: "haben Sie die Möglichkeit, meinen Newsletter zu abonnieren. Ich möchte Ihnen auch eine Nachricht schicken, um Sie an die Veröffentlichung von X zu erinnern",
+        ink_c_js_container_paragrapheNet: "Hier sind einige soziale Netzwerke, in denen ich präsent bin. Lassen Sie uns verbinden!",              
   
         //Vêtements
-        ink_d_js_sell_icon_title:"Vêtements",
+        ink_d_js_sell_icon_title:"Kleidungsstücke",
         action_bouton_boutique:"Shop",
-        action_bouton_pack:"Pack",
-        ink_d_js_sell_paragraphe:"Vous avez la possibilité d'acheter un vêtement avec l'EP. Il existe des forfaits proposés qui rendent les audios gratuits. ",
+        action_bouton_pack:"Packen Sie",
+        ink_d_js_sell_paragraphe:"Sie haben die Möglichkeit, ein Kleidungsstück mit der EP zu kaufen. Es werden Pakete angeboten, bei denen die Audios kostenlos sind. ",
   
         //Autre EP
-        article_ep:"en",
-        article_button:"en",
-        article_one_story__title:"en",
-        article_two_story__title:"en",
-        article_three_story__title:"en",
-        article_four_story__title:"en",
-        article_one_story__summary:"en",
-        article_two_story__summary:"en",
-        article_three_story__summary:"en",
-        article_four_story__summary:"en",
+        article_ep:"EP",
+        article_button:"Vorbestellung",
+        article_one_story__title:"X",
+        article_two_story__title:"Delisioza",
+        article_three_story__title:"NoWay",
+        article_four_story__title:"Room",
+        article_one_story__summary:"Am 22.02.2022 um 20:02 wird X. Meine erste EP veröffentlicht. Dies wird eine außergewöhnliche Zeitspanne sein, es wird sehr selten passieren. Der Stil dieser EP ist elektronische Musik. Atmet tief durch, wenn es soweit ist, und besucht mich auf den Plattformen, um X zu hören.",
+        article_two_story__summary:"An EP planned for the end of 2022. His style will be a mix of Hip-hop, modern day RnB, as well as electronic. A music that is close to Kaytranada who takes a big place in my inspirations.",
+        article_three_story__summary:"Eine EP geplant für das Jahr 2023. NoWay ist ein experimentelles Konzept. Die rhythmischen Sequenzen sind ungeordnet, unvorhersehbar. Dieser Stil wird nicht einer der konventionellsten sein!",
+        article_four_story__summary:"Room ist eine EP für das Ende des Jahres 2023. Diese EP ist ein Konzept mit intimer Musik. Sie werden bereit sein, einen Moment für sich selbst, für einander, etwas außerhalb dieser Welt zu schaffen. Ihr eigener Raum.",
   
         //Merci
-        ink_f_js_container_thanks:"en",
-        ink_f_js_container_subtitle:"en",
-        ink_f_js_container_title:"en",
+        ink_f_js_container_thanks:"Dankeschön",
+        ink_f_js_container_subtitle:"für Ihren Besuch und Ihre Unterstützung",
+        ink_f_js_container_title:"Ich möchte mich bei allen bedanken, die mich bei diesem Abenteuer begleitet haben:",
       },
   
-      es: {      
+      es:  {
         //Navigation  
-        menuone: "Home",
-        menutwo: "About X",
+        menuone: "Inicio",
+        menutwo: "Sobre X",
         menuthree: "Social",
-        menufour: "Clothes",      
-        menufive: "Other EP",        
-        menusix: "Know",  
+        menufour: "Ropa",      
+        menufive: "Otro EP",        
+        menusix: "Gracias",  
   
         // A propos de X
-        ink_b_js_sell_icon_title: "listen",
-        action_bouton_precommander: "pre order",
-        action_bouton_vetement: "clothes",
-        ink_b_js_sell_paragraphe: "This EP symbolises the end of one thing and the beginning of another. X is the crossroads. I am proud to present you with my EP X on an equally symbolic date 22.02.2022 my EP X.",  
+        ink_b_js_sell_icon_title: "Escuchar",
+        action_bouton_precommander: "Previo pedido",
+        action_bouton_vetement: "ropa",
+        ink_b_js_sell_paragraphe: "Este EP simboliza el final de una cosa y el comienzo de otra. X es la encrucijada. Estoy orgulloso de presentarles mi EP X en una fecha igualmente simbólica 22.02.2022 mi EP X.",  
   
         //Social
         ink_c_js_titleNews: "Newsletter",
         ink_c_js_titleNet: "Newsletter",
-        action_bouton_souscrire: "Subscribe",
-        action_bouton_remind: "Remind me for X",
-        ink_c_js_container_paragrapheNews: "you have the possibility to subscribe to my newsletter. I would also like to send you a to send you a message to remind you of the release of X",
-        ink_c_js_container_paragrapheNet: "Here are some social networks where I am present. Let's connect!",              
+        action_bouton_souscrire: "Suscríbase a",
+        action_bouton_remind: "Recuérdame para X",
+        ink_c_js_container_paragrapheNews: "Tienes la posibilidad de suscribirte a mi boletín de noticias. También me gustaría enviarle un mensaje para recordarle el lanzamiento de X",
+        ink_c_js_container_paragrapheNet: "Estas son algunas de las redes sociales en las que estoy presente. ¡Conectémonos!",                        
   
         //Vêtements
-        ink_d_js_sell_icon_title:"Vêtements",
-        action_bouton_boutique:"Shop",
+        ink_d_js_sell_icon_title:"Ropa",
+        action_bouton_boutique:"Tienda",
         action_bouton_pack:"Pack",
-        ink_d_js_sell_paragraphe:"Vous avez la possibilité d'acheter un vêtement avec l'EP. Il existe des forfaits proposés qui rendent les audios gratuits. ",
+        ink_d_js_sell_paragraphe:"Tienes la posibilidad de comprar una prenda con el EP. Se ofrecen paquetes que hacen que los audios sean gratuitos.",
   
         //Autre EP
-        article_ep:"en",
-        article_button:"en",
-        article_one_story__title:"en",
-        article_two_story__title:"en",
-        article_three_story__title:"en",
-        article_four_story__title:"en",
-        article_one_story__summary:"en",
-        article_two_story__summary:"en",
-        article_three_story__summary:"en",
-        article_four_story__summary:"en",
+        article_ep:"EP",
+        article_button:"Previo pedido",
+        article_one_story__title:"X",
+        article_two_story__title:"Delisioza",
+        article_three_story__title:"NoWay",
+        article_four_story__title:"Room",
+        article_one_story__summary:"El 22.02.2022 a las 20:02 saldrá X. Mi primer EP. Este será un espacio de tiempo excepcional, ocurrirá muy raramente. El estilo de este EP es la música electrónica. Respira profundamente cuando llegue el momento y acompáñame en las plataformas para escuchar X.",
+        article_two_story__summary:"Un EP previsto para finales de 2022. Su estilo será una mezcla de Hip-hop, RnB actual, así como de electrónica. Una música cercana a Kaytranada que ocupa un lugar importante en mis inspiraciones.",
+        article_three_story__summary:"Un EP previsto para el año 2023. NoWay es un concepto experimental. Las secuencias rítmicas son desordenadas, imprevisibles. ¡Este estilo no será uno de los más convencionales!",
+        article_four_story__summary:"Room es un EP para finales de 2023. Este EP es un concepto con música íntima. Estarán dispuestos a crear un momento para ti, para el otro, algo fuera de este mundo. Su propio espacio.",
   
         //Merci
-        ink_f_js_container_thanks:"en",
-        ink_f_js_container_subtitle:"en",
-        ink_f_js_container_title:"en",
-    }
+        ink_f_js_container_thanks:"Gracias",
+        ink_f_js_container_subtitle:"por su visita y apoyo",
+        ink_f_js_container_title:"Me gustaría dar las gracias a todos los que me han acompañado en esta aventura:",
+      }
   };
   
     //Navigation
@@ -320,12 +320,12 @@ document.addEventListener("DOMContentLoaded", function () {
     //VETEMENTS
     const ink_d_js_sell_icon_title = document.querySelector('.ink-d-js-sell-icon-title')
     const action_bouton_boutique = document.querySelector('.action-bouton-boutique')
-    const action_bouton_pack = document.querySelector('.action-bouton-pack')
+    const action_bouton_pack = document.querySelectorAll('.action-bouton-pack')
     const ink_d_js_sell_paragraphe = document.querySelector('.ink-d-js-sell-paragraphe')
   
     //AUTRE EP
     const article_ep = document.querySelector('.ink-e-js-carousel-container-item .story__category')
-    const article_button = document.querySelector('.ink-e-js-carousel-container-item .action-bouton')
+    const article_button = document.querySelector('.ink-e-js-carousel-container-item .action-bouton .action-bouton-pack')
   
     const article_one_story__title = document.querySelector('.ink-e-js-carousel-container-item:nth-of-type(1) .story__title')
     const article_two_story__title = document.querySelector('.ink-e-js-carousel-container-item:nth-of-type(2) .story__title')

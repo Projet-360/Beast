@@ -219,7 +219,7 @@
         opacity: 1 !important;
         transition: opacity 2s ease !important;
 
-        @media screen and (min-width: 1450px) {
+        @media screen and (min-width: 800px) {
             transform: rotate(2deg) translateY(-35px);
         }
 
@@ -236,19 +236,19 @@
 
 
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 800px) {
     .ink-c-js {
         flex-direction: row !important;
         .ink-c-js-container {
             height: 45vh !important;
-            width: 20vw !important;
+            width: 250px !important;
 
             &:nth-of-type(1) {
-                transform: translateX(-10vw);
+                transform: translateX(-20vw);
             }
 
             &:nth-of-type(2) {
-                transform: translateX(10vw);
+                transform: translateX(20vw);
                 margin-bottom: 0 !important;
             }
         }

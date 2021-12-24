@@ -8,7 +8,6 @@
         content: "";
         background: linear-gradient(to left, #67aeff, #082e97);
         transition: all 0.5s ease;
-
     }
 
     @-webkit-keyframes huebutton {
@@ -154,7 +153,7 @@
 
                     -webkit-background-clip: text;
                     -webkit-animation: huebutton 12s infinite linear;
-                    border-color: #6797ff;
+                    border-color: #9ebdff;
                 }
 
                 .ink-nav-ul-li-font {
