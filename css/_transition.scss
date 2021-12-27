@@ -1,13 +1,24 @@
+.ink.a {
+    .ink-a-js-img {
+        opacity: 1 !important;
+    }
+
+}
+
 .ink.b {
     .stars {
         opacity: 0 !important;
         transition: opacity 3s ease !important;
     }
+    .ink-a-js-img {
+        opacity: 1 !important;        
+    }
 }
 
 .ink.c  {
     .ink-a-js-img {
-        opacity: 1 !important;
+        opacity: 0 !important;
+        transition: opacity 1s ease !important;
     }
 
     .stars {
@@ -58,7 +69,7 @@
 
     .ink-a-js-img {
         opacity: 0 !important;
-        transition: opacity 0s ease !important;
+        transition: opacity 0s ease 0s !important;
     }
 
     .ink-b-js-svg {
@@ -75,4 +86,13 @@
     }
 
     transition: background-color 0.5s ease !important;
+}
+
+
+.ink.f {
+
+    .ink-a-js-img {
+        opacity: 0 !important;
+        transition: opacity 0s ease 0s !important;
+    }
 }
