@@ -12,7 +12,7 @@
         max-width: 40vh;
         width: 100%;
         height: 100%;
-        transform: translateY(-8vh);
+        //transform: translateY(-8vh);
 
         background-image: url("../icon/img/cover-X.webp");
         background-size: contain;
@@ -123,8 +123,10 @@
     }    
 }
 
-@media screen and (max-width:800px) {
-
+@media screen and (min-height:620px) {
+    .ink-b-js-img {
+        max-height: 30vh !important;
+    }
 }
 
 
@@ -153,6 +155,8 @@
                 position: absolute !important;
                 transform: translateX(25vw) !important;
                 margin-top: 0vh !important;
+                width: 25vw !important;
+                max-width: max-content !important;
             }
     
             .ink-b-js-sell-paragraphe {

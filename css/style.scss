@@ -224,3 +224,10 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+    .ink-e-js {
+    .next-button {
+        display: none !important;
+    }
+}
+}

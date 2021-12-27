@@ -48,12 +48,12 @@
         width: 100%;
 
         &:nth-child(1) {            
-            transform: translateY(-130px);
+            transform: translateY(-70px);
         }
 
 
         &:nth-last-of-type(2) {
-            transform: translateY(100px);
+            transform: translateY(70px);
         }
 
         @media screen and (min-width: 800px) {
