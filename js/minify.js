@@ -103,6 +103,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Define the language reload anchors
     var language = {
       fr: {
+        // Mobile Disclaimer
+        disclaimer_mobile_h3: "Bienvenue",
+        disclaimer_mobile_p1: "Ce site web n'est pas fontionnel sur les téléphones mobiles à basses performances. Si vous désirez tout de même continuer cliquez sur le bouton en-dessous.",
+        disclaimer_mobile_b1: "Continuer",
+        disclaimer_mobile_p2: "Vous pouvez accéder à la boutique en cliquant en-dessous.",
+        disclaimer_mobile_b2: "Boutique",
+        disclaimer_mobile_h4: "Liens principaux",
+
         //Navigation  
         menuone: "Accueil",
         menutwo: "à propos de X",
@@ -150,6 +158,14 @@ document.addEventListener("DOMContentLoaded", function () {
       },
   
       en: {
+        // Mobile Disclaimer
+        disclaimer_mobile_h3: "Welcome",
+        disclaimer_mobile_p1: "This website is not functional on low performance mobile phones. If you still wish to continue, click on the button below.",
+        disclaimer_mobile_b1: "Continue",
+        disclaimer_mobile_p2: "You can access the shop by clicking below.",
+        disclaimer_mobile_b2: "Shop",
+        disclaimer_mobile_h4: "Main links",
+        
         //Navigation  
         menuone: "Home",
         menutwo: "About X",
@@ -197,6 +213,14 @@ document.addEventListener("DOMContentLoaded", function () {
       },
   
       de: {
+        // Mobile Disclaimer
+        disclaimer_mobile_h3: "Willkommen",
+        disclaimer_mobile_p1: "Diese Website funktioniert nicht auf Mobiltelefonen mit geringer Leistung. Wenn Sie trotzdem fortfahren möchten, klicken Sie bitte auf die Schaltfläche unten.",
+        disclaimer_mobile_b1: "Weiter",
+        disclaimer_mobile_p2: "Sie können auf den Shop zugreifen, indem Sie unten klicken.",
+        disclaimer_mobile_b2: "Shop",
+        disclaimer_mobile_h4: "Hauptlinks",
+
         //Navigation  
         menuone: "Startseite",
         menutwo: "über X",
@@ -244,6 +268,14 @@ document.addEventListener("DOMContentLoaded", function () {
       },
   
       es:  {
+        // Mobile Disclaimer
+        disclaimer_mobile_h3: "Bienvenido",
+        disclaimer_mobile_p1: "Este sitio web no es funcional en teléfonos móviles de bajo rendimiento. Si aún desea continuar, haga clic en el botón de abajo.",
+        disclaimer_mobile_b1: "Continuar",
+        disclaimer_mobile_p2: "Puede acceder a la tienda haciendo clic a continuación.",
+        disclaimer_mobile_b2: "Tienda",
+        disclaimer_mobile_h4: "Principales enlaces",
+
         //Navigation  
         menuone: "Inicio",
         menutwo: "Sobre X",
@@ -290,7 +322,15 @@ document.addEventListener("DOMContentLoaded", function () {
         ink_f_js_container_title:"Me gustaría dar las gracias a todos los que me han acompañado en esta aventura:",
       }
   };
-  
+    // Mobile Disclaimer
+    const disclaimer_mobile_h3 = document.querySelector('.disclaimer_mobile h3')
+    const disclaimer_mobile_p1 = document.querySelector('.disclaimer_mobile p:nth-of-type(1)')
+    const disclaimer_mobile_b1 = document.querySelector('.disclaimer_mobile button:nth-of-type(1)')
+    const disclaimer_mobile_p2 = document.querySelector('.disclaimer_mobile p:nth-of-type(2)')
+    const disclaimer_mobile_b2 = document.querySelector('.disclaimer_mobile a button')
+    const disclaimer_mobile_h4 = document.querySelector('.disclaimer_mobile h4')
+    
+
     //Navigation
     const menuone = document.querySelector('.ink-nav-ul-li:nth-of-type(1) p')
     const menutwo = document.querySelector('.ink-nav-ul-li:nth-of-type(2) p')
@@ -348,6 +388,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttonslang = document.querySelectorAll('.nturl')
       buttonslang.forEach(element => {
         element.addEventListener('click', function (event) { 
+            disclaimer_mobile_h3.textContent = language[element.id].disclaimer_mobile_h3;
+            disclaimer_mobile_p1.textContent = language[element.id].disclaimer_mobile_p1;
+            disclaimer_mobile_b1.textContent = language[element.id].disclaimer_mobile_b1;
+            disclaimer_mobile_p2.textContent = language[element.id].disclaimer_mobile_p2;
+            disclaimer_mobile_b2.textContent = language[element.id].disclaimer_mobile_b2;
+            disclaimer_mobile_h4.textContent = language[element.id].disclaimer_mobile_h4;
+
             menuone.textContent = language[element.id].menuone;
             menutwo.textContent = language[element.id].menutwo;
             menuthree.textContent = language[element.id].menuthree;
