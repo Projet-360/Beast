@@ -51,6 +51,19 @@
         position: absolute;
         transform: translate(0vw, 30vh);
 
+
+        .shop-bouton {
+            margin: 10px 0px;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 0px;
+            min-width: 128px;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            text-decoration: none;
+        }
+
         .nturl {
             display: flex;
             flex-direction: column;
@@ -90,6 +103,25 @@
     .langue-titre.is-enter {
         opacity: 1;
     }    
+}
+
+@media screen and (max-width: 960px) {    
+    .langue {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        align-content: center !important;
+        align-items: center !important;
+
+        .langue-titre {
+            margin-top: 100px !important;
+        }
+
+        .langue-language {
+            transform: translate(0vw, 60vh) !important;
+        }
+    }
 }
 
 .langue.is-leaving {
