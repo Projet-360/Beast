@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  const main = document.querySelector('.ink');
+const main = document.querySelector('.ink');
 
 const langue = document.querySelector('.langue');
 
@@ -74,7 +74,6 @@ window.addEventListener('load', function (event) {
 
     setTimeout(function () {
         main.classList.add('is-load');
-
         svg.classList.toggle('is-enter');
         loadTitre.classList.toggle('is-enter');
         loadlang.classList.toggle('is-enter');
@@ -83,17 +82,13 @@ window.addEventListener('load', function (event) {
 
 // Boucle sur les bouton pour changer les textes en function de la value de l'element
 selectLang.forEach(element => {
-
     // opacity a 0 lors du click pour le container langue
     element.onclick = function () {
-
         main.classList.remove('is-load');
         body.classList.remove('langue');
 
         langue.classList.add('is-leaving');
         body.classList.remove('load');
-
-
     }
 });
 
@@ -103,14 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Define the language reload anchors
     var language = {
       fr: {
-        // Mobile Disclaimer
-        disclaimer_mobile_h3: "Bienvenue",
-        disclaimer_mobile_p1: "Ce site web n'est pas fontionnel sur les téléphones mobiles à basses performances. Si vous désirez tout de même continuer cliquez sur le bouton en-dessous.",
-        disclaimer_mobile_b1: "Continuer",
-        disclaimer_mobile_p2: "Vous pouvez accéder à la boutique en cliquant en-dessous.",
-        disclaimer_mobile_b2: "Boutique",
-        disclaimer_mobile_h4: "Liens principaux",
-
         //Navigation  
         menuone: "Accueil",
         menutwo: "à propos de X",
@@ -158,14 +145,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
   
       en: {
-        // Mobile Disclaimer
-        disclaimer_mobile_h3: "Welcome",
-        disclaimer_mobile_p1: "This website is not functional on low performance mobile phones. If you still wish to continue, click on the button below.",
-        disclaimer_mobile_b1: "Continue",
-        disclaimer_mobile_p2: "You can access the shop by clicking below.",
-        disclaimer_mobile_b2: "Shop",
-        disclaimer_mobile_h4: "Main links",
-        
         //Navigation  
         menuone: "Home",
         menutwo: "About X",
@@ -213,14 +192,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
   
       de: {
-        // Mobile Disclaimer
-        disclaimer_mobile_h3: "Willkommen",
-        disclaimer_mobile_p1: "Diese Website funktioniert nicht auf Mobiltelefonen mit geringer Leistung. Wenn Sie trotzdem fortfahren möchten, klicken Sie bitte auf die Schaltfläche unten.",
-        disclaimer_mobile_b1: "Weiter",
-        disclaimer_mobile_p2: "Sie können auf den Shop zugreifen, indem Sie unten klicken.",
-        disclaimer_mobile_b2: "Shop",
-        disclaimer_mobile_h4: "Hauptlinks",
-
         //Navigation  
         menuone: "Startseite",
         menutwo: "über X",
@@ -269,12 +240,12 @@ document.addEventListener("DOMContentLoaded", function () {
   
       es:  {
         // Mobile Disclaimer
-        disclaimer_mobile_h3: "Bienvenido",
-        disclaimer_mobile_p1: "Este sitio web no es funcional en teléfonos móviles de bajo rendimiento. Si aún desea continuar, haga clic en el botón de abajo.",
+        disclaimer_mobile_h3: "Bienvenido/a",
+        disclaimer_mobile_p1: "Esta página web no es funcional en móviles de bajo rendimiento. Si deseas continuar, pincha el botón de abajo.",
         disclaimer_mobile_b1: "Continuar",
-        disclaimer_mobile_p2: "Puede acceder a la tienda haciendo clic a continuación.",
+        disclaimer_mobile_p2: "Puedes acceder a la tienda pinchando el botón siguiente.",
         disclaimer_mobile_b2: "Tienda",
-        disclaimer_mobile_h4: "Principales enlaces",
+        disclaimer_mobile_h4: "Enlaces principales",
 
         //Navigation  
         menuone: "Inicio",
@@ -286,23 +257,23 @@ document.addEventListener("DOMContentLoaded", function () {
   
         // A propos de X
         ink_b_js_sell_icon_title: "Escuchar",
-        action_bouton_precommander: "Previo pedido",
+        action_bouton_precommander: "Preventa",
         action_bouton_vetement: "ropa",
-        ink_b_js_sell_paragraphe: "Este EP simboliza el final de una cosa y el comienzo de otra. X es la encrucijada. Estoy orgulloso de presentarles mi EP X en una fecha igualmente simbólica 22.02.2022 mi EP X.",  
+        ink_b_js_sell_paragraphe: "Este EP simboliza el final de una cosa y el comienzo de otra. X es el cruce. Estoy orgulloso de presentarte mi EP X en una fecha tán simbólica como el 22.02.2022.",  
   
         //Social
         ink_c_js_titleNews: "Newsletter",
         ink_c_js_titleNet: "Newsletter",
-        action_bouton_souscrire: "Suscríbase a",
-        action_bouton_remind: "Recuérdame para X",
-        ink_c_js_container_paragrapheNews: "Tienes la posibilidad de suscribirte a mi boletín de noticias. También me gustaría enviarle un mensaje para recordarle el lanzamiento de X",
+        action_bouton_souscrire: "Suscríbete a",
+        action_bouton_remind: "Recuerdo fecha de salida",
+        ink_c_js_container_paragrapheNews: "Tienes la posibilidad de suscribirte a mi boletín de noticias. También me gustaría enviarte un mensaje para recordarte el lanzamiento de X",
         ink_c_js_container_paragrapheNet: "Estas son algunas de las redes sociales en las que estoy presente. ¡Conectémonos!",                        
   
         //Vêtements
         ink_d_js_sell_icon_title:"Ropa",
         action_bouton_boutique:"Tienda",
         action_bouton_pack:"Pack",
-        ink_d_js_sell_paragraphe:"Tienes la posibilidad de comprar una prenda con el EP. Se ofrecen paquetes que hacen que los audios sean gratuitos.",
+        ink_d_js_sell_paragraphe:"Tienes la posibilidad de comprar una prenda con el EP. Se ofrecen 'packs' que hacen que los audios sean gratuitos.",
   
         //Autre EP
         article_ep:"EP",
@@ -311,26 +282,18 @@ document.addEventListener("DOMContentLoaded", function () {
         article_two_story__title:"Delisioza",
         article_three_story__title:"NoWay",
         article_four_story__title:"Room",
-        article_one_story__summary:"El 22.02.2022 a las 20:02 saldrá X. Mi primer EP. Este será un espacio de tiempo excepcional, ocurrirá muy raramente. El estilo de este EP es la música electrónica. Respira profundamente cuando llegue el momento y acompáñame en las plataformas para escuchar X.",
+        article_one_story__summary:"El 22.02.2022 a las 20:02 saldrá X. Mi primer EP. Este será un espacio de tiempo excepcional, ocurrirá muy raramente. El estilo de este EP es música electrónica. Respira profundamente cuando llegue el momento y acompáñame en las plataformas para escuchar X.",
         article_two_story__summary:"Un EP previsto para finales de 2022. Su estilo será una mezcla de Hip-hop, RnB actual, así como de electrónica. Una música cercana a Kaytranada que ocupa un lugar importante en mis inspiraciones.",
         article_three_story__summary:"Un EP previsto para el año 2023. NoWay es un concepto experimental. Las secuencias rítmicas son desordenadas, imprevisibles. ¡Este estilo no será uno de los más convencionales!",
-        article_four_story__summary:"Room es un EP para finales de 2023. Este EP es un concepto con música íntima. Estarán dispuestos a crear un momento para ti, para el otro, algo fuera de este mundo. Su propio espacio.",
+        article_four_story__summary:"Room es un EP para finales de 2023. Este EP es un concepto con música íntima. Diseñado para crear un momento para sí mismo, para todos, algo fuera de este mundo. Su propio espacio.",
   
         //Merci
         ink_f_js_container_thanks:"Gracias",
-        ink_f_js_container_subtitle:"por su visita y apoyo",
+        ink_f_js_container_subtitle:"por tu visita y apoyo",
         ink_f_js_container_title:"Me gustaría dar las gracias a todos los que me han acompañado en esta aventura:",
       }
   };
-    // Mobile Disclaimer
-    const disclaimer_mobile_h3 = document.querySelector('.disclaimer_mobile h3')
-    const disclaimer_mobile_p1 = document.querySelector('.disclaimer_mobile p:nth-of-type(1)')
-    const disclaimer_mobile_b1 = document.querySelector('.disclaimer_mobile button:nth-of-type(1)')
-    const disclaimer_mobile_p2 = document.querySelector('.disclaimer_mobile p:nth-of-type(2)')
-    const disclaimer_mobile_b2 = document.querySelector('.disclaimer_mobile a button')
-    const disclaimer_mobile_h4 = document.querySelector('.disclaimer_mobile h4')
-    
-
+  
     //Navigation
     const menuone = document.querySelector('.ink-nav-ul-li:nth-of-type(1) p')
     const menutwo = document.querySelector('.ink-nav-ul-li:nth-of-type(2) p')
@@ -388,13 +351,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttonslang = document.querySelectorAll('.nturl')
       buttonslang.forEach(element => {
         element.addEventListener('click', function (event) { 
-            disclaimer_mobile_h3.textContent = language[element.id].disclaimer_mobile_h3;
-            disclaimer_mobile_p1.textContent = language[element.id].disclaimer_mobile_p1;
-            disclaimer_mobile_b1.textContent = language[element.id].disclaimer_mobile_b1;
-            disclaimer_mobile_p2.textContent = language[element.id].disclaimer_mobile_p2;
-            disclaimer_mobile_b2.textContent = language[element.id].disclaimer_mobile_b2;
-            disclaimer_mobile_h4.textContent = language[element.id].disclaimer_mobile_h4;
-
             menuone.textContent = language[element.id].menuone;
             menutwo.textContent = language[element.id].menutwo;
             menuthree.textContent = language[element.id].menuthree;
@@ -404,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
             ink_b_js_sell_icon_title.textContent = language[element.id].ink_b_js_sell_icon_title;
             action_bouton_precommander.textContent = language[element.id].action_bouton_precommander;
-            action_bouton_vetement.textContent = language[element.id].action_bouton_vetement;
+            //action_bouton_vetement.textContent = language[element.id].action_bouton_vetement;
             ink_b_js_sell_paragraphe.textContent = language[element.id].ink_b_js_sell_paragraphe;
   
             ink_c_js_titleNews.textContent = language[element.id].ink_c_js_titleNews;
@@ -470,15 +426,7 @@ boutonContinue.onclick = function() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   if (window.matchMedia("(max-width: 768px)").matches) {
-    //stars.remove();    
-    
     disclaimer_mobile.style.visibility = "visible";
     disclaimer_mobile.style.opacity = "1";
   }
 });
-
-// document.addEventListener("DOMContentLoaded", function (event) {
-//   if (window.matchMedia("(min-width: 768px)").matches) {
-//     disclaimer_mobile.remove();      
-//   }
-// });
