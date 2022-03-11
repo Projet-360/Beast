@@ -80,9 +80,9 @@
 
             .border {
                 width: 45px;
-                height: 2px;
-                border: 0 solid white;
-                background-color: white;
+                height: 4px;
+                border: 0px solid rgb(0, 0, 0);
+                background-color: rgb(0, 0, 0);
 
                 position: absolute;
                 transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
@@ -102,8 +102,9 @@
                     top: 0;
                     margin: 0;
                     font-family: 'Raleway';
-                    color: white;
+                    color: rgb(0, 0, 0);
                     font-size: 12px;
+                    font-weight: 600;
                     text-transform: uppercase;
                     transition: all 0.4s ease 0s;
                     width: fit-content;
@@ -130,6 +131,24 @@
     }
 }
 
+.d {
+    .border {
+        border: 0px solid #ffffff !important;
+        background-color: #ffffff !important;
+    }
+    .ink-nav-ul-li-font {
+        p {
+            color: #ffffff !important;
+        }
+    }
+
+    li:nth-of-type(4) .border {        
+        border: 3px solid white !important;
+        border-color: #9ebdff !important;
+        background-color: rgb(0, 0, 0) !important;
+    }
+}
+
 .b,
 .c,
 .d,
@@ -148,7 +167,7 @@
                     width: 20px;
                     height: 30px;
                     background: #ffffff00;
-                    border: 2px solid white;
+                    border: 3px solid white;
                     transition: width 0.4s ease 0.6s, height 0.5s ease, all 0.5s ease;
 
                     -webkit-background-clip: text;
@@ -164,7 +183,7 @@
                     p {
                         opacity: 1 !important;
                         transition: all 0.8s ease 0.8s;
-                        transform: translateX(0px) !important;
+                        transform: translateX(5px) !important;
                     }
                 }
             }

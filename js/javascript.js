@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         // A propos de X
         ink_b_js_sell_icon_title: "écouter",
-        action_bouton_precommander: "Précommander",
+        action_bouton_precommander: "Commander",
         action_bouton_vetement: "Vêtements",
         ink_b_js_sell_paragraphe: "Cet EP symbolise la fin d'une chose et le début d'une autre. X est le carrefour. Je suis fier de vous présenter pour une date tout aussi symbolique, le 22.02.2022 mon EP X.",  
   
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         //Autre EP
         article_ep:"EP",
-        article_button:"Précommander",
+        article_button:"Commander",
         article_one_story__title:"X",
         article_two_story__title:"Delisioza",
         article_three_story__title:"NoWay",
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         // A propos de X
         ink_b_js_sell_icon_title: "listen",
-        action_bouton_precommander: "pre order",
+        action_bouton_precommander: "order",
         action_bouton_vetement: "clothes",
         ink_b_js_sell_paragraphe: "This EP symbolises the end of one thing and the beginning of another. X is the crossroads. I am proud to present you with my EP X on an equally symbolic date 22.02.2022 my EP X.",  
   
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         //Autre EP
         article_ep:"EP",
-        article_button:"Pre-order",
+        article_button:"order",
         article_one_story__title:"X",
         article_two_story__title:"Delisioza",
         article_three_story__title:"NoWay",
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         // A propos de X
         ink_b_js_sell_icon_title: "hören.",
-        action_bouton_precommander: "Vorbestellung",
+        action_bouton_precommander: "Bestellen",
         action_bouton_vetement: "Kleidungsstücke",
         ink_b_js_sell_paragraphe: "Dieses EP symbolisiert das Ende einer Sache und den Beginn einer anderen. X ist der Scheideweg. Ich bin stolz, Ihnen an einem ebenso symbolträchtigen Datum, dem 22.02.2022, meine EP X zu präsentieren.",  
   
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         //Autre EP
         article_ep:"EP",
-        article_button:"Vorbestellung",
+        article_button:"Bestellen",
         article_one_story__title:"X",
         article_two_story__title:"Delisioza",
         article_three_story__title:"NoWay",
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         // A propos de X
         ink_b_js_sell_icon_title: "Escuchar",
-        action_bouton_precommander: "Preventa",
+        action_bouton_precommander: "venta",
         action_bouton_vetement: "ropa",
         ink_b_js_sell_paragraphe: "Este EP simboliza el final de una cosa y el comienzo de otra. X es el cruce. Estoy orgulloso de presentarte mi EP X en una fecha tán simbólica como el 22.02.2022.",  
   
@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         //Autre EP
         article_ep:"EP",
-        article_button:"Previo pedido",
+        article_button:"venta",
         article_one_story__title:"X",
         article_two_story__title:"Delisioza",
         article_three_story__title:"NoWay",
