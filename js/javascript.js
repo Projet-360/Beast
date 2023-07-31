@@ -2,6 +2,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     gsap.registerPlugin(ScrollTrigger, EasePack);
   
+
+    function scrollDown() {
+      let vh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      window.scrollBy({ top: vh, behavior: 'smooth' });
+  }
+  
+  document.querySelector('.ink-a-js-enter').addEventListener('click', scrollDown);
+  
+  // Ajout d'un écouteur d'événements à chaque élément avec la classe .next-button
+  document.querySelectorAll('.next-button').forEach(function(element) {
+      element.addEventListener('click', scrollDown);
+  });
+
     gsap.config({
       force3D: false
     });
